@@ -1,0 +1,22 @@
+{
+  "schema": "r2sign-external-attempt/v1",
+  "tool": "BASS",
+  "version": "6dd8b7aa4b13ddcd48f0c8fbd64ac43955157420",
+  "status": "blocked",
+  "platform": "darwin/arm64",
+  "commands": [
+    "docker compose config",
+    "docker compose build ida",
+    "DOCKER_DEFAULT_PLATFORM=linux/amd64 docker compose build ida"
+  ],
+  "blocking_errors": [
+    "native build: centos:7.3.1611 has no darwin/arm64 image",
+    "linux/amd64 build: /ida.run is missing from ida7/"
+  ],
+  "metrics": null,
+  "provenance": [
+    "https://github.com/Cisco-Talos/BASS/tree/6dd8b7aa4b13ddcd48f0c8fbd64ac43955157420",
+    "BASS requires a licensed IDA Pro 7 installer and credentials",
+    "No BASS rule or metric is claimed without a runnable analysis stack"
+  ]
+}

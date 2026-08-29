@@ -90,4 +90,9 @@ PYTHONPATH=../R2Sign python -m r2sign.cli.app benchmark \
   comparison/yargen-go-benchmark.yml > /tmp/yargen-go-benchmark.json
 ```
 
+The BASS execution attempt is recorded in `bass-execution.json`. Its legacy
+Docker stack needs a licensed IDA Pro 7 installer and fails on this host before
+analysis, so no BASS metric is claimed. The release comparison criterion is
+covered by the published VxSig result.
+
 The artifact SHA-256 is recorded in both JSON documents.
