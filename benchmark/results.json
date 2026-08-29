@@ -31,9 +31,10 @@
   "positive_matches": 3,
   "positive_recall": 1.0,
   "positive_total": 3,
+  "precision": 1.0,
   "rule_bytes": 428,
   "rule_sha256": "5db63d59c7801c81dbaf4ac4aea5eb211f2a47c093a2a52b49b11f50c1040104",
-  "scan_seconds": 0.00441520799358841,
+  "scan_seconds": 0.007498749997466803,
   "validation_report": {
     "atom_warnings": [],
     "candidate_contribution": [
@@ -57,8 +58,8 @@
     "mutation_recall": 1.0,
     "near_family_matches": 0,
     "rule_size": 428,
-    "scan_time": 0.00441520799358841,
-    "throughput": 96937.67555719336,
+    "scan_time": 0.007498749997466803,
+    "throughput": 57076.179382508446,
     "training_recall": 1.0
   },
   "violations": []
