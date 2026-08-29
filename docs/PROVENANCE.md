@@ -14,17 +14,24 @@ labels. The expanded split uses the first matching family in this fixed
 priority order when a published tag contains more than one family name:
 `Mediyes`, `Cabby`, `Sirefef`, `Upatre`, `Kryptik`, `Zbot`, `FakeAV`.
 Selection is deterministic and limited to PE files whose source path and
-SHA-256 agree. The resulting split is stratified for detection evaluation; it
-does not claim to represent malware prevalence.
+SHA-256 agree. The source population contains 8878 valid labelled PE
+candidates after that priority assignment. The final malware split uses
+predeclared family quotas totalling 447 samples, with complete retention of
+families below the quota floor. Within each family, candidates are ordered by
+the SHA-256 digest of `R2Sign-corpus-v3:<family>:<sample hash>`; every fifth
+selected sample is holdout. This exceeds the approximately 95% confidence,
+plus-or-minus 5% aggregate finite-population target. Family quotas preserve
+rare families, so the split is calibrated for aggregate detection evaluation
+and does not claim to represent family prevalence.
 
 ## Selection
 
 - `training/mediyes/` contains three distinct Mediyes samples.
 - `holdout/mediyes/` contains two distinct Mediyes samples excluded from rule construction.
-- `expanded/training/<family>/` contains 14 samples per family, except Upatre
-  with 8 samples.
-- `expanded/holdout/<family>/` contains 5 samples per family, except Upatre
-  with 3 samples.
+- `expanded/training/<family>/` contains 348 samples across seven labelled
+  families.
+- `expanded/holdout/<family>/` contains 99 samples across the same families,
+  excluded from rule construction.
 - `near_family/` contains one Kryptik and one Cabby sample.
 - `goodware/pe/` contains three benign PE samples from the same published source dataset.
 - `goodware/fixtures/` contains five synthetic MIT-licensed fixtures covering ELF, Mach-O and PE on x86, x86-64 and ARM64. They were compiled locally and never executed.
