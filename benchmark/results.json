@@ -1,0 +1,65 @@
+{
+  "atom_warnings": [],
+  "candidate_contribution": [
+    [
+      "$blob_0",
+      2
+    ],
+    [
+      "$blob_1",
+      2
+    ],
+    [
+      "$blob_2",
+      1
+    ]
+  ],
+  "compiled_yara": true,
+  "compiled_yara_x": true,
+  "corpus_manifest_sha256": "2cd790071c85cc92c4085ccb4f4e31493fa6a2375dfcb055aff0fcee9d8a74cf",
+  "goodware_false_positive_rate": 0.0,
+  "goodware_matches": 0,
+  "goodware_total": 3,
+  "holdout_matches": 2,
+  "holdout_recall": 1.0,
+  "holdout_total": 2,
+  "mutation_matches": 2,
+  "mutation_total": 2,
+  "near_family_matches": 0,
+  "near_family_total": 2,
+  "passed": true,
+  "positive_matches": 3,
+  "positive_recall": 1.0,
+  "positive_total": 3,
+  "rule_bytes": 428,
+  "rule_sha256": "5db63d59c7801c81dbaf4ac4aea5eb211f2a47c093a2a52b49b11f50c1040104",
+  "scan_seconds": 0.00441520799358841,
+  "validation_report": {
+    "atom_warnings": [],
+    "candidate_contribution": [
+      [
+        "$blob_0",
+        2
+      ],
+      [
+        "$blob_1",
+        2
+      ],
+      [
+        "$blob_2",
+        1
+      ]
+    ],
+    "compiled_yara": true,
+    "compiled_yara_x": true,
+    "goodware_matches": 0,
+    "holdout_recall": 1.0,
+    "mutation_recall": 1.0,
+    "near_family_matches": 0,
+    "rule_size": 428,
+    "scan_time": 0.00441520799358841,
+    "throughput": 96937.67555719336,
+    "training_recall": 1.0
+  },
+  "violations": []
+}

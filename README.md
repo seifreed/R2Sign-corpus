@@ -16,6 +16,8 @@ for source licenses, attribution, selection rules, and mutation provenance.
 - `mutations/`: deterministic byte-level derivatives of training samples.
 - `goodware/`: benign PE samples used for false-positive checks.
 - `manifest.json`: SHA-256 protected `r2sign-corpus/v1` manifest.
+- `benchmark/`: fixed benchmark inputs and thresholds.
+- `rules/`: generated rules used by the benchmark.
 
 The current version is a seed corpus, not a prevalence estimate. Every sample
 is identified by SHA-256 and linked to its public source record.
@@ -29,3 +31,13 @@ PYTHONPATH=../R2Sign python -m r2sign.cli.app corpus manifest.json
 ```
 
 The command verifies the manifest and every sample digest.
+
+Run the benchmark and write its JSON result with:
+
+```bash
+PYTHONPATH=../R2Sign python -m r2sign.cli.app benchmark benchmark/manifest.yml \
+  > benchmark/results.json
+```
+
+The benchmark requires YARA-X when the optional dependency is installed and
+fails when any declared threshold is missed.

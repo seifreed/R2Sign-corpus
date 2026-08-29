@@ -1,7 +1,6 @@
 {
-  "schema": "r2sign-corpus/v1",
-  "name": "R2Sign public seed corpus",
   "license": "CC-BY-4.0 for source samples; MIT for repository metadata",
+  "name": "R2Sign public seed corpus",
   "provenance": [
     "https://github.com/iosifache/DikeDataset/tree/5200762e5db1d33b77a125a6964fed49b3c2dd2d",
     "https://figshare.com/articles/dataset/Malware_Detection_PE-Based_Analysis_Using_Deep_Learning_Algorithm_Dataset/6635642",
@@ -107,5 +106,6 @@
       "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/main/files/benign/00eea85752664955047caad7d6280bc7bf1ab91c61eb9a2542c26b747a12e963.exe"
     }
   ],
+  "schema": "r2sign-corpus/v1",
   "version": "0.1.0"
 }
