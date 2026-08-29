@@ -1,0 +1,111 @@
+{
+  "schema": "r2sign-corpus/v1",
+  "name": "R2Sign public seed corpus",
+  "license": "CC-BY-4.0 for source samples; MIT for repository metadata",
+  "provenance": [
+    "https://github.com/iosifache/DikeDataset/tree/5200762e5db1d33b77a125a6964fed49b3c2dd2d",
+    "https://figshare.com/articles/dataset/Malware_Detection_PE-Based_Analysis_Using_Deep_Learning_Algorithm_Dataset/6635642",
+    "DikeDataset PE source is documented as CC BY 4.0",
+    "Mutations are generated deterministically from the declared training samples"
+  ],
+  "redistributable": true,
+  "samples": [
+    {
+      "family": "mediyes",
+      "path": "training/mediyes/a616f9ac37c0a1ed6f291cab72457c887f1713a41a2ed171836564a3b6de74a7.exe",
+      "role": "training",
+      "sample_id": "a616f9ac37c0a1ed6f291cab72457c887f1713a41a2ed171836564a3b6de74a7",
+      "sha256": "a616f9ac37c0a1ed6f291cab72457c887f1713a41a2ed171836564a3b6de74a7",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/main/files/malware/a616f9ac37c0a1ed6f291cab72457c887f1713a41a2ed171836564a3b6de74a7.exe"
+    },
+    {
+      "family": "mediyes",
+      "path": "training/mediyes/8ad64f391dc4018f647c775cfa99116d6bc40e0afd2b7c5b2f87c8abe06812ca.exe",
+      "role": "training",
+      "sample_id": "8ad64f391dc4018f647c775cfa99116d6bc40e0afd2b7c5b2f87c8abe06812ca",
+      "sha256": "8ad64f391dc4018f647c775cfa99116d6bc40e0afd2b7c5b2f87c8abe06812ca",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/main/files/malware/8ad64f391dc4018f647c775cfa99116d6bc40e0afd2b7c5b2f87c8abe06812ca.exe"
+    },
+    {
+      "family": "mediyes",
+      "path": "training/mediyes/11040aa18c7311b97c83b56652770374154d3277a6163c4fb0460aede20b09f9.exe",
+      "role": "training",
+      "sample_id": "11040aa18c7311b97c83b56652770374154d3277a6163c4fb0460aede20b09f9",
+      "sha256": "11040aa18c7311b97c83b56652770374154d3277a6163c4fb0460aede20b09f9",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/main/files/malware/11040aa18c7311b97c83b56652770374154d3277a6163c4fb0460aede20b09f9.exe"
+    },
+    {
+      "family": "mediyes",
+      "path": "holdout/mediyes/a3d6470b075f81f52586a000236fb6a1310dc7140ef97e4e9207df9fe0f8266b.exe",
+      "role": "holdout",
+      "sample_id": "a3d6470b075f81f52586a000236fb6a1310dc7140ef97e4e9207df9fe0f8266b",
+      "sha256": "a3d6470b075f81f52586a000236fb6a1310dc7140ef97e4e9207df9fe0f8266b",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/main/files/malware/a3d6470b075f81f52586a000236fb6a1310dc7140ef97e4e9207df9fe0f8266b.exe"
+    },
+    {
+      "family": "mediyes",
+      "path": "holdout/mediyes/5893cb2ac5d0885271748b07e95823ef76f30b604c4cb44b356ab7530d976a6d.exe",
+      "role": "holdout",
+      "sample_id": "5893cb2ac5d0885271748b07e95823ef76f30b604c4cb44b356ab7530d976a6d",
+      "sha256": "5893cb2ac5d0885271748b07e95823ef76f30b604c4cb44b356ab7530d976a6d",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/main/files/malware/5893cb2ac5d0885271748b07e95823ef76f30b604c4cb44b356ab7530d976a6d.exe"
+    },
+    {
+      "family": "kryptik",
+      "path": "near_family/kryptik/936c36121f73b175ef68231ee234c55103c93d7dfeb75dd8fdc3480aa5c08aeb.exe",
+      "role": "near_family",
+      "sample_id": "936c36121f73b175ef68231ee234c55103c93d7dfeb75dd8fdc3480aa5c08aeb",
+      "sha256": "936c36121f73b175ef68231ee234c55103c93d7dfeb75dd8fdc3480aa5c08aeb",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/main/files/malware/936c36121f73b175ef68231ee234c55103c93d7dfeb75dd8fdc3480aa5c08aeb.exe"
+    },
+    {
+      "family": "cabby",
+      "path": "near_family/cabby/ec1f7e652aa8f48f6ad478b60b7c5104211d66a5410da450e852a9f1283a4cb5.exe",
+      "role": "near_family",
+      "sample_id": "ec1f7e652aa8f48f6ad478b60b7c5104211d66a5410da450e852a9f1283a4cb5",
+      "sha256": "ec1f7e652aa8f48f6ad478b60b7c5104211d66a5410da450e852a9f1283a4cb5",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/main/files/malware/ec1f7e652aa8f48f6ad478b60b7c5104211d66a5410da450e852a9f1283a4cb5.exe"
+    },
+    {
+      "family": "mediyes",
+      "path": "mutations/mediyes/a616f9ac37c0a1ed6f291cab72457c887f1713a41a2ed171836564a3b6de74a7-append-v1.exe",
+      "role": "mutation",
+      "sample_id": "a616f9ac37c0a1ed6f291cab72457c887f1713a41a2ed171836564a3b6de74a7-append-v1",
+      "sha256": "77349aa95b385b297b564a1af8a3d3034c4dedda9b02a24eb05e06b838dc840d",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/main/files/malware/a616f9ac37c0a1ed6f291cab72457c887f1713a41a2ed171836564a3b6de74a7.exe"
+    },
+    {
+      "family": "mediyes",
+      "path": "mutations/mediyes/8ad64f391dc4018f647c775cfa99116d6bc40e0afd2b7c5b2f87c8abe06812ca-append-v1.exe",
+      "role": "mutation",
+      "sample_id": "8ad64f391dc4018f647c775cfa99116d6bc40e0afd2b7c5b2f87c8abe06812ca-append-v1",
+      "sha256": "39318a15d151a5bd13fae4c1d09b1bf0955533edf9e82cf93eef27bfe520b32d",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/main/files/malware/8ad64f391dc4018f647c775cfa99116d6bc40e0afd2b7c5b2f87c8abe06812ca.exe"
+    },
+    {
+      "family": "benign",
+      "path": "goodware/pe/002ce0d28ec990aadbbc89df457189de37d8adaadc9c084b78eb7be9a9820c81.exe",
+      "role": "goodware",
+      "sample_id": "002ce0d28ec990aadbbc89df457189de37d8adaadc9c084b78eb7be9a9820c81",
+      "sha256": "002ce0d28ec990aadbbc89df457189de37d8adaadc9c084b78eb7be9a9820c81",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/main/files/benign/002ce0d28ec990aadbbc89df457189de37d8adaadc9c084b78eb7be9a9820c81.exe"
+    },
+    {
+      "family": "benign",
+      "path": "goodware/pe/003851675800dc05cdac1baa84cab8f68534b244906d97ced0c40f50da27df0a.exe",
+      "role": "goodware",
+      "sample_id": "003851675800dc05cdac1baa84cab8f68534b244906d97ced0c40f50da27df0a",
+      "sha256": "003851675800dc05cdac1baa84cab8f68534b244906d97ced0c40f50da27df0a",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/main/files/benign/003851675800dc05cdac1baa84cab8f68534b244906d97ced0c40f50da27df0a.exe"
+    },
+    {
+      "family": "benign",
+      "path": "goodware/pe/00eea85752664955047caad7d6280bc7bf1ab91c61eb9a2542c26b747a12e963.exe",
+      "role": "goodware",
+      "sample_id": "00eea85752664955047caad7d6280bc7bf1ab91c61eb9a2542c26b747a12e963",
+      "sha256": "00eea85752664955047caad7d6280bc7bf1ab91c61eb9a2542c26b747a12e963",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/main/files/benign/00eea85752664955047caad7d6280bc7bf1ab91c61eb9a2542c26b747a12e963.exe"
+    }
+  ],
+  "version": "0.1.0"
+}
