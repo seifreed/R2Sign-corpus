@@ -2,7 +2,7 @@
 
 ## Source dataset
 
-The PE samples in this seed corpus were selected from
+The PE samples in this corpus were selected from
 [DikeDataset](https://github.com/iosifache/DikeDataset) at commit
 `5200762e5db1d33b77a125a6964fed49b3c2dd2d`. DikeDataset documents the PE
 source as the
@@ -10,13 +10,21 @@ source as the
 and identifies that source as `CC BY 4.0`.
 
 The source dataset metadata identifies malicious samples with VirusTotal
-labels. The family labels in this repository use the dominant family names
-present in the published tags: `Mediyes`, `Kryptik`, and `Cabby`.
+labels. The expanded split uses the first matching family in this fixed
+priority order when a published tag contains more than one family name:
+`Mediyes`, `Cabby`, `Sirefef`, `Upatre`, `Kryptik`, `Zbot`, `FakeAV`.
+Selection is deterministic and limited to PE files whose source path and
+SHA-256 agree. The resulting split is stratified for detection evaluation; it
+does not claim to represent malware prevalence.
 
 ## Selection
 
 - `training/mediyes/` contains three distinct Mediyes samples.
 - `holdout/mediyes/` contains two distinct Mediyes samples excluded from rule construction.
+- `expanded/training/<family>/` contains 14 samples per family, except Upatre
+  with 8 samples.
+- `expanded/holdout/<family>/` contains 5 samples per family, except Upatre
+  with 3 samples.
 - `near_family/` contains one Kryptik and one Cabby sample.
 - `goodware/pe/` contains three benign PE samples from the same published source dataset.
 - `mutations/mediyes/` contains deterministic derivatives of two training samples.

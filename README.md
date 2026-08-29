@@ -1,6 +1,6 @@
 # R2Sign public corpus
 
-This repository contains a small, auditable seed corpus for reproducible
+This repository contains an auditable, stratified corpus for reproducible
 R2Sign signature benchmarks. Samples are PE files and must be handled in an
 isolated analysis environment. Do not execute samples on a production host.
 
@@ -12,6 +12,8 @@ for source licenses, attribution, selection rules, and mutation provenance.
 
 - `training/`: samples used to derive a detection rule.
 - `holdout/`: same-family samples excluded from rule construction.
+- `expanded/training/`: stratified training samples from seven labelled families.
+- `expanded/holdout/`: family-matched holdout samples excluded from construction.
 - `near_family/`: samples from related but distinct families.
 - `mutations/`: deterministic byte-level derivatives of training samples.
 - `goodware/`: benign PE samples used for false-positive checks.
@@ -21,8 +23,11 @@ for source licenses, attribution, selection rules, and mutation provenance.
 - `goodware-r2sign.zip`: downloadable goodware database bundle with checksums.
 - `comparison/`: reproducible VxSig/BinDiff comparison artifacts on this corpus.
 
-The current version is a seed corpus, not a prevalence estimate. Every sample
-is identified by SHA-256 and linked to its public source record.
+Version `0.2.0` contains 136 verified samples. The expanded split contains
+seven labelled families selected deterministically from the published
+VirusTotal labels: Cabby, FakeAV, Kryptik, Mediyes, Sirefef, Upatre and Zbot.
+It is a stratified detection benchmark, not a prevalence estimate. Every
+sample is identified by SHA-256 and linked to its public source record.
 
 ## Verification
 

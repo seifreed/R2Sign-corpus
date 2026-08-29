@@ -1,6 +1,6 @@
 {
   "license": "CC-BY-4.0 for source samples; MIT for repository metadata",
-  "name": "R2Sign public seed corpus",
+  "name": "R2Sign public stratified corpus",
   "provenance": [
     "https://github.com/iosifache/DikeDataset/tree/5200762e5db1d33b77a125a6964fed49b3c2dd2d",
     "https://figshare.com/articles/dataset/Malware_Detection_PE-Based_Analysis_Using_Deep_Learning_Algorithm_Dataset/6635642",
@@ -104,8 +104,1000 @@
       "sample_id": "00eea85752664955047caad7d6280bc7bf1ab91c61eb9a2542c26b747a12e963",
       "sha256": "00eea85752664955047caad7d6280bc7bf1ab91c61eb9a2542c26b747a12e963",
       "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/main/files/benign/00eea85752664955047caad7d6280bc7bf1ab91c61eb9a2542c26b747a12e963.exe"
+    },
+    {
+      "sample_id": "f5678e3e52773a719c330ccfb4e4f615a6f24f9195ae13fe78f1d26199dd8f37",
+      "role": "training",
+      "family": "sirefef",
+      "path": "expanded/training/sirefef/f5678e3e52773a719c330ccfb4e4f615a6f24f9195ae13fe78f1d26199dd8f37.exe",
+      "sha256": "f5678e3e52773a719c330ccfb4e4f615a6f24f9195ae13fe78f1d26199dd8f37",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/f5678e3e52773a719c330ccfb4e4f615a6f24f9195ae13fe78f1d26199dd8f37.exe"
+    },
+    {
+      "sample_id": "88e7cf08235820d81be6ba4f462c303c6f6b016c686675caff43e85fc95bf353",
+      "role": "training",
+      "family": "mediyes",
+      "path": "expanded/training/mediyes/88e7cf08235820d81be6ba4f462c303c6f6b016c686675caff43e85fc95bf353.exe",
+      "sha256": "88e7cf08235820d81be6ba4f462c303c6f6b016c686675caff43e85fc95bf353",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/88e7cf08235820d81be6ba4f462c303c6f6b016c686675caff43e85fc95bf353.exe"
+    },
+    {
+      "sample_id": "446e4eeb695169eccb650948fbced40f99f25dec69f09878191b0a10e3c0ec38",
+      "role": "training",
+      "family": "mediyes",
+      "path": "expanded/training/mediyes/446e4eeb695169eccb650948fbced40f99f25dec69f09878191b0a10e3c0ec38.exe",
+      "sha256": "446e4eeb695169eccb650948fbced40f99f25dec69f09878191b0a10e3c0ec38",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/446e4eeb695169eccb650948fbced40f99f25dec69f09878191b0a10e3c0ec38.exe"
+    },
+    {
+      "sample_id": "c21362fe4bf8ac601f322934fb88ce2a15c1b6f5348e0b22ac82432948703a87",
+      "role": "training",
+      "family": "mediyes",
+      "path": "expanded/training/mediyes/c21362fe4bf8ac601f322934fb88ce2a15c1b6f5348e0b22ac82432948703a87.exe",
+      "sha256": "c21362fe4bf8ac601f322934fb88ce2a15c1b6f5348e0b22ac82432948703a87",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/c21362fe4bf8ac601f322934fb88ce2a15c1b6f5348e0b22ac82432948703a87.exe"
+    },
+    {
+      "sample_id": "62461c13f8a4baf6a099be436ca478b4ffbcc6a3faa0c6ccd21466aae75157c1",
+      "role": "training",
+      "family": "mediyes",
+      "path": "expanded/training/mediyes/62461c13f8a4baf6a099be436ca478b4ffbcc6a3faa0c6ccd21466aae75157c1.exe",
+      "sha256": "62461c13f8a4baf6a099be436ca478b4ffbcc6a3faa0c6ccd21466aae75157c1",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/62461c13f8a4baf6a099be436ca478b4ffbcc6a3faa0c6ccd21466aae75157c1.exe"
+    },
+    {
+      "sample_id": "42afca5d37358032b7aac7352c9f856ba23028cc7a2b0f81c8db1af7044d7131",
+      "role": "training",
+      "family": "mediyes",
+      "path": "expanded/training/mediyes/42afca5d37358032b7aac7352c9f856ba23028cc7a2b0f81c8db1af7044d7131.exe",
+      "sha256": "42afca5d37358032b7aac7352c9f856ba23028cc7a2b0f81c8db1af7044d7131",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/42afca5d37358032b7aac7352c9f856ba23028cc7a2b0f81c8db1af7044d7131.exe"
+    },
+    {
+      "sample_id": "ad641a90df642aaac7eb751c668a80813818102ac739d3e44cf21ad92e92feed",
+      "role": "training",
+      "family": "mediyes",
+      "path": "expanded/training/mediyes/ad641a90df642aaac7eb751c668a80813818102ac739d3e44cf21ad92e92feed.exe",
+      "sha256": "ad641a90df642aaac7eb751c668a80813818102ac739d3e44cf21ad92e92feed",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/ad641a90df642aaac7eb751c668a80813818102ac739d3e44cf21ad92e92feed.exe"
+    },
+    {
+      "sample_id": "57fb9405c175a9e69623f29eeaf447daab2642ec4878f496ce6c698a1908a744",
+      "role": "training",
+      "family": "mediyes",
+      "path": "expanded/training/mediyes/57fb9405c175a9e69623f29eeaf447daab2642ec4878f496ce6c698a1908a744.exe",
+      "sha256": "57fb9405c175a9e69623f29eeaf447daab2642ec4878f496ce6c698a1908a744",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/57fb9405c175a9e69623f29eeaf447daab2642ec4878f496ce6c698a1908a744.exe"
+    },
+    {
+      "sample_id": "3789d21af78d253d852ddef09701acd5ed404aee31e14f8eb7ec013c6a0f7838",
+      "role": "training",
+      "family": "mediyes",
+      "path": "expanded/training/mediyes/3789d21af78d253d852ddef09701acd5ed404aee31e14f8eb7ec013c6a0f7838.exe",
+      "sha256": "3789d21af78d253d852ddef09701acd5ed404aee31e14f8eb7ec013c6a0f7838",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/3789d21af78d253d852ddef09701acd5ed404aee31e14f8eb7ec013c6a0f7838.exe"
+    },
+    {
+      "sample_id": "29b9113bd03d039301ede557e559761f6df51353c23c8bba78581f82335320b4",
+      "role": "training",
+      "family": "mediyes",
+      "path": "expanded/training/mediyes/29b9113bd03d039301ede557e559761f6df51353c23c8bba78581f82335320b4.exe",
+      "sha256": "29b9113bd03d039301ede557e559761f6df51353c23c8bba78581f82335320b4",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/29b9113bd03d039301ede557e559761f6df51353c23c8bba78581f82335320b4.exe"
+    },
+    {
+      "sample_id": "2b97ca28dc6f457206be5e0d01ce19b876f0f175255aae6ae1a2d6e1e0762239",
+      "role": "training",
+      "family": "mediyes",
+      "path": "expanded/training/mediyes/2b97ca28dc6f457206be5e0d01ce19b876f0f175255aae6ae1a2d6e1e0762239.exe",
+      "sha256": "2b97ca28dc6f457206be5e0d01ce19b876f0f175255aae6ae1a2d6e1e0762239",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/2b97ca28dc6f457206be5e0d01ce19b876f0f175255aae6ae1a2d6e1e0762239.exe"
+    },
+    {
+      "sample_id": "d946dbcfc8c597205097928b6e565ad38d980486a2cb484bc4867b84250ed3b4",
+      "role": "training",
+      "family": "mediyes",
+      "path": "expanded/training/mediyes/d946dbcfc8c597205097928b6e565ad38d980486a2cb484bc4867b84250ed3b4.exe",
+      "sha256": "d946dbcfc8c597205097928b6e565ad38d980486a2cb484bc4867b84250ed3b4",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/d946dbcfc8c597205097928b6e565ad38d980486a2cb484bc4867b84250ed3b4.exe"
+    },
+    {
+      "sample_id": "6fca89008b95542a20c229c52e93e4022bd28e5815581035d2becffa0430ef86",
+      "role": "training",
+      "family": "mediyes",
+      "path": "expanded/training/mediyes/6fca89008b95542a20c229c52e93e4022bd28e5815581035d2becffa0430ef86.exe",
+      "sha256": "6fca89008b95542a20c229c52e93e4022bd28e5815581035d2becffa0430ef86",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/6fca89008b95542a20c229c52e93e4022bd28e5815581035d2becffa0430ef86.exe"
+    },
+    {
+      "sample_id": "a91de46aefd65e1f056fed11b661b4cbd0dbcfd4f6821c98570128f20a5c53d6",
+      "role": "training",
+      "family": "mediyes",
+      "path": "expanded/training/mediyes/a91de46aefd65e1f056fed11b661b4cbd0dbcfd4f6821c98570128f20a5c53d6.exe",
+      "sha256": "a91de46aefd65e1f056fed11b661b4cbd0dbcfd4f6821c98570128f20a5c53d6",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/a91de46aefd65e1f056fed11b661b4cbd0dbcfd4f6821c98570128f20a5c53d6.exe"
+    },
+    {
+      "sample_id": "2474b7b692256053a34d44c05ba1a342e5a188fe64d850bc32d3c3c94bfcd39b",
+      "role": "training",
+      "family": "mediyes",
+      "path": "expanded/training/mediyes/2474b7b692256053a34d44c05ba1a342e5a188fe64d850bc32d3c3c94bfcd39b.exe",
+      "sha256": "2474b7b692256053a34d44c05ba1a342e5a188fe64d850bc32d3c3c94bfcd39b",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/2474b7b692256053a34d44c05ba1a342e5a188fe64d850bc32d3c3c94bfcd39b.exe"
+    },
+    {
+      "sample_id": "08468051fabc87f9a2c603652700c72217af8dce019ca492767869502f46f3c2",
+      "role": "holdout",
+      "family": "mediyes",
+      "path": "expanded/holdout/mediyes/08468051fabc87f9a2c603652700c72217af8dce019ca492767869502f46f3c2.exe",
+      "sha256": "08468051fabc87f9a2c603652700c72217af8dce019ca492767869502f46f3c2",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/08468051fabc87f9a2c603652700c72217af8dce019ca492767869502f46f3c2.exe"
+    },
+    {
+      "sample_id": "d1dd03ade413852e743afe2c1d1dd515b4a167add59e59d7bd647da23443afc0",
+      "role": "training",
+      "family": "cabby",
+      "path": "expanded/training/cabby/d1dd03ade413852e743afe2c1d1dd515b4a167add59e59d7bd647da23443afc0.exe",
+      "sha256": "d1dd03ade413852e743afe2c1d1dd515b4a167add59e59d7bd647da23443afc0",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/d1dd03ade413852e743afe2c1d1dd515b4a167add59e59d7bd647da23443afc0.exe"
+    },
+    {
+      "sample_id": "2c719454d0de13ac4564d00aa10c9e0b005b0bc91f5fc58d3bea10f067a07413",
+      "role": "training",
+      "family": "zbot",
+      "path": "expanded/training/zbot/2c719454d0de13ac4564d00aa10c9e0b005b0bc91f5fc58d3bea10f067a07413.exe",
+      "sha256": "2c719454d0de13ac4564d00aa10c9e0b005b0bc91f5fc58d3bea10f067a07413",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/2c719454d0de13ac4564d00aa10c9e0b005b0bc91f5fc58d3bea10f067a07413.exe"
+    },
+    {
+      "sample_id": "ee177b068a2ac964536637fe4f04ff2deed524e981e69f5cceb2e0dd935c3f65",
+      "role": "training",
+      "family": "kryptik",
+      "path": "expanded/training/kryptik/ee177b068a2ac964536637fe4f04ff2deed524e981e69f5cceb2e0dd935c3f65.exe",
+      "sha256": "ee177b068a2ac964536637fe4f04ff2deed524e981e69f5cceb2e0dd935c3f65",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/ee177b068a2ac964536637fe4f04ff2deed524e981e69f5cceb2e0dd935c3f65.exe"
+    },
+    {
+      "sample_id": "1b99720ff518a77349947048153711262cb9bda67b98b654cd025426c440cbef",
+      "role": "training",
+      "family": "cabby",
+      "path": "expanded/training/cabby/1b99720ff518a77349947048153711262cb9bda67b98b654cd025426c440cbef.exe",
+      "sha256": "1b99720ff518a77349947048153711262cb9bda67b98b654cd025426c440cbef",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/1b99720ff518a77349947048153711262cb9bda67b98b654cd025426c440cbef.exe"
+    },
+    {
+      "sample_id": "b9ba3a88356a596b05c61aea4aa31f60888bd53a40c976dab277cc561d9100a7",
+      "role": "training",
+      "family": "cabby",
+      "path": "expanded/training/cabby/b9ba3a88356a596b05c61aea4aa31f60888bd53a40c976dab277cc561d9100a7.exe",
+      "sha256": "b9ba3a88356a596b05c61aea4aa31f60888bd53a40c976dab277cc561d9100a7",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/b9ba3a88356a596b05c61aea4aa31f60888bd53a40c976dab277cc561d9100a7.exe"
+    },
+    {
+      "sample_id": "f3728fa9e6e91fd51f73ff1c426458e7d3b58af69b1174c9a4a97c3c8f77bc11",
+      "role": "training",
+      "family": "kryptik",
+      "path": "expanded/training/kryptik/f3728fa9e6e91fd51f73ff1c426458e7d3b58af69b1174c9a4a97c3c8f77bc11.exe",
+      "sha256": "f3728fa9e6e91fd51f73ff1c426458e7d3b58af69b1174c9a4a97c3c8f77bc11",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/f3728fa9e6e91fd51f73ff1c426458e7d3b58af69b1174c9a4a97c3c8f77bc11.exe"
+    },
+    {
+      "sample_id": "3a101185d6dfae71e84fb1c37bcd07da18d34b084ab6837d1c49f1bd99642bcc",
+      "role": "training",
+      "family": "cabby",
+      "path": "expanded/training/cabby/3a101185d6dfae71e84fb1c37bcd07da18d34b084ab6837d1c49f1bd99642bcc.exe",
+      "sha256": "3a101185d6dfae71e84fb1c37bcd07da18d34b084ab6837d1c49f1bd99642bcc",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/3a101185d6dfae71e84fb1c37bcd07da18d34b084ab6837d1c49f1bd99642bcc.exe"
+    },
+    {
+      "sample_id": "55663890da2ae879fef79536927c64ed94d4d93e88ee04de46aca1acf4565935",
+      "role": "training",
+      "family": "kryptik",
+      "path": "expanded/training/kryptik/55663890da2ae879fef79536927c64ed94d4d93e88ee04de46aca1acf4565935.exe",
+      "sha256": "55663890da2ae879fef79536927c64ed94d4d93e88ee04de46aca1acf4565935",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/55663890da2ae879fef79536927c64ed94d4d93e88ee04de46aca1acf4565935.exe"
+    },
+    {
+      "sample_id": "4713c13b3e97f08e359fbcb9cab00b688192516bbaa96547347f3f786dfc77ba",
+      "role": "training",
+      "family": "kryptik",
+      "path": "expanded/training/kryptik/4713c13b3e97f08e359fbcb9cab00b688192516bbaa96547347f3f786dfc77ba.exe",
+      "sha256": "4713c13b3e97f08e359fbcb9cab00b688192516bbaa96547347f3f786dfc77ba",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/4713c13b3e97f08e359fbcb9cab00b688192516bbaa96547347f3f786dfc77ba.exe"
+    },
+    {
+      "sample_id": "968e9de58d3f6f985b13498f0a1c53aedcfadc79f3770f3e0ad22daeaa556657",
+      "role": "training",
+      "family": "zbot",
+      "path": "expanded/training/zbot/968e9de58d3f6f985b13498f0a1c53aedcfadc79f3770f3e0ad22daeaa556657.exe",
+      "sha256": "968e9de58d3f6f985b13498f0a1c53aedcfadc79f3770f3e0ad22daeaa556657",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/968e9de58d3f6f985b13498f0a1c53aedcfadc79f3770f3e0ad22daeaa556657.exe"
+    },
+    {
+      "sample_id": "f878f758d6345968afb2c9f0df6d4d3d2a160d77b4a87eedb5fca6a0bcd7cca2",
+      "role": "training",
+      "family": "kryptik",
+      "path": "expanded/training/kryptik/f878f758d6345968afb2c9f0df6d4d3d2a160d77b4a87eedb5fca6a0bcd7cca2.exe",
+      "sha256": "f878f758d6345968afb2c9f0df6d4d3d2a160d77b4a87eedb5fca6a0bcd7cca2",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/f878f758d6345968afb2c9f0df6d4d3d2a160d77b4a87eedb5fca6a0bcd7cca2.exe"
+    },
+    {
+      "sample_id": "7108cdcdfe97cb004cb82d7be93c2d1ad7488596ffa98b3b24bb5df5b31cc739",
+      "role": "training",
+      "family": "cabby",
+      "path": "expanded/training/cabby/7108cdcdfe97cb004cb82d7be93c2d1ad7488596ffa98b3b24bb5df5b31cc739.exe",
+      "sha256": "7108cdcdfe97cb004cb82d7be93c2d1ad7488596ffa98b3b24bb5df5b31cc739",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/7108cdcdfe97cb004cb82d7be93c2d1ad7488596ffa98b3b24bb5df5b31cc739.exe"
+    },
+    {
+      "sample_id": "e58768c3df867270aa9e3177709415005914b39d272623e8d296106ad5cf125c",
+      "role": "training",
+      "family": "zbot",
+      "path": "expanded/training/zbot/e58768c3df867270aa9e3177709415005914b39d272623e8d296106ad5cf125c.exe",
+      "sha256": "e58768c3df867270aa9e3177709415005914b39d272623e8d296106ad5cf125c",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/e58768c3df867270aa9e3177709415005914b39d272623e8d296106ad5cf125c.exe"
+    },
+    {
+      "sample_id": "bc0fe6e41d875ee7b506d513b912bc091e818c5e6ed3177e10fc95639c6488f1",
+      "role": "training",
+      "family": "zbot",
+      "path": "expanded/training/zbot/bc0fe6e41d875ee7b506d513b912bc091e818c5e6ed3177e10fc95639c6488f1.exe",
+      "sha256": "bc0fe6e41d875ee7b506d513b912bc091e818c5e6ed3177e10fc95639c6488f1",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/bc0fe6e41d875ee7b506d513b912bc091e818c5e6ed3177e10fc95639c6488f1.exe"
+    },
+    {
+      "sample_id": "a09fdc55f1b9c88e199f402f11d105f4d190135fa624b5a02ae61b500def34a9",
+      "role": "training",
+      "family": "kryptik",
+      "path": "expanded/training/kryptik/a09fdc55f1b9c88e199f402f11d105f4d190135fa624b5a02ae61b500def34a9.exe",
+      "sha256": "a09fdc55f1b9c88e199f402f11d105f4d190135fa624b5a02ae61b500def34a9",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/a09fdc55f1b9c88e199f402f11d105f4d190135fa624b5a02ae61b500def34a9.exe"
+    },
+    {
+      "sample_id": "654c473412c0e3f812c94d25f785c3173e2d8bda08701efdc7a937e55a27d692",
+      "role": "training",
+      "family": "zbot",
+      "path": "expanded/training/zbot/654c473412c0e3f812c94d25f785c3173e2d8bda08701efdc7a937e55a27d692.exe",
+      "sha256": "654c473412c0e3f812c94d25f785c3173e2d8bda08701efdc7a937e55a27d692",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/654c473412c0e3f812c94d25f785c3173e2d8bda08701efdc7a937e55a27d692.exe"
+    },
+    {
+      "sample_id": "93b766ee8eb3337a82ecf74470036299b6b35871ae2dc2acba4f0610d6393e73",
+      "role": "training",
+      "family": "zbot",
+      "path": "expanded/training/zbot/93b766ee8eb3337a82ecf74470036299b6b35871ae2dc2acba4f0610d6393e73.exe",
+      "sha256": "93b766ee8eb3337a82ecf74470036299b6b35871ae2dc2acba4f0610d6393e73",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/93b766ee8eb3337a82ecf74470036299b6b35871ae2dc2acba4f0610d6393e73.exe"
+    },
+    {
+      "sample_id": "5fcfe5a7e9f266b15634522d5b8da09a5a9d057805740651ca9d271f535eac13",
+      "role": "training",
+      "family": "sirefef",
+      "path": "expanded/training/sirefef/5fcfe5a7e9f266b15634522d5b8da09a5a9d057805740651ca9d271f535eac13.exe",
+      "sha256": "5fcfe5a7e9f266b15634522d5b8da09a5a9d057805740651ca9d271f535eac13",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/5fcfe5a7e9f266b15634522d5b8da09a5a9d057805740651ca9d271f535eac13.exe"
+    },
+    {
+      "sample_id": "a8a960ea0176e006d2820aa4db5052b542b39cc34cbd209bc269a9586a2bc316",
+      "role": "training",
+      "family": "zbot",
+      "path": "expanded/training/zbot/a8a960ea0176e006d2820aa4db5052b542b39cc34cbd209bc269a9586a2bc316.exe",
+      "sha256": "a8a960ea0176e006d2820aa4db5052b542b39cc34cbd209bc269a9586a2bc316",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/a8a960ea0176e006d2820aa4db5052b542b39cc34cbd209bc269a9586a2bc316.exe"
+    },
+    {
+      "sample_id": "bacaec79a6c419ddfb6a9b1ec7512f549b9ac66f2ecb5cf38aa8ce3d31175ada",
+      "role": "training",
+      "family": "cabby",
+      "path": "expanded/training/cabby/bacaec79a6c419ddfb6a9b1ec7512f549b9ac66f2ecb5cf38aa8ce3d31175ada.exe",
+      "sha256": "bacaec79a6c419ddfb6a9b1ec7512f549b9ac66f2ecb5cf38aa8ce3d31175ada",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/bacaec79a6c419ddfb6a9b1ec7512f549b9ac66f2ecb5cf38aa8ce3d31175ada.exe"
+    },
+    {
+      "sample_id": "1473d1688a73b47d1a08dd591ffc5b5591860e3deb79a47aa35e987b2956adf4",
+      "role": "training",
+      "family": "zbot",
+      "path": "expanded/training/zbot/1473d1688a73b47d1a08dd591ffc5b5591860e3deb79a47aa35e987b2956adf4.exe",
+      "sha256": "1473d1688a73b47d1a08dd591ffc5b5591860e3deb79a47aa35e987b2956adf4",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/1473d1688a73b47d1a08dd591ffc5b5591860e3deb79a47aa35e987b2956adf4.exe"
+    },
+    {
+      "sample_id": "4c5cdf14bb3e1fd93fdb12dfaebcec8fdfb6bbeb578673984bd81294dfa69f7d",
+      "role": "training",
+      "family": "upatre",
+      "path": "expanded/training/upatre/4c5cdf14bb3e1fd93fdb12dfaebcec8fdfb6bbeb578673984bd81294dfa69f7d.exe",
+      "sha256": "4c5cdf14bb3e1fd93fdb12dfaebcec8fdfb6bbeb578673984bd81294dfa69f7d",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/4c5cdf14bb3e1fd93fdb12dfaebcec8fdfb6bbeb578673984bd81294dfa69f7d.exe"
+    },
+    {
+      "sample_id": "8afc51fb904b25124bd5cb41985e917333071d1af1c6ab83cc7ae408e7cb0e7e",
+      "role": "training",
+      "family": "zbot",
+      "path": "expanded/training/zbot/8afc51fb904b25124bd5cb41985e917333071d1af1c6ab83cc7ae408e7cb0e7e.exe",
+      "sha256": "8afc51fb904b25124bd5cb41985e917333071d1af1c6ab83cc7ae408e7cb0e7e",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/8afc51fb904b25124bd5cb41985e917333071d1af1c6ab83cc7ae408e7cb0e7e.exe"
+    },
+    {
+      "sample_id": "7dd3021e2a72386b37612b40e45612f1c331023b2b285b0e5d9fe621253c5853",
+      "role": "training",
+      "family": "kryptik",
+      "path": "expanded/training/kryptik/7dd3021e2a72386b37612b40e45612f1c331023b2b285b0e5d9fe621253c5853.exe",
+      "sha256": "7dd3021e2a72386b37612b40e45612f1c331023b2b285b0e5d9fe621253c5853",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/7dd3021e2a72386b37612b40e45612f1c331023b2b285b0e5d9fe621253c5853.exe"
+    },
+    {
+      "sample_id": "44aa2f01b2209ea15123a7cdc57e2076139aebfb656798f7cb166e5cb275f7b2",
+      "role": "training",
+      "family": "kryptik",
+      "path": "expanded/training/kryptik/44aa2f01b2209ea15123a7cdc57e2076139aebfb656798f7cb166e5cb275f7b2.exe",
+      "sha256": "44aa2f01b2209ea15123a7cdc57e2076139aebfb656798f7cb166e5cb275f7b2",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/44aa2f01b2209ea15123a7cdc57e2076139aebfb656798f7cb166e5cb275f7b2.exe"
+    },
+    {
+      "sample_id": "0b7ba7992f2eb7f2474be11fb91b3b75e2f693a1eb8e33908611f092823d3639",
+      "role": "training",
+      "family": "kryptik",
+      "path": "expanded/training/kryptik/0b7ba7992f2eb7f2474be11fb91b3b75e2f693a1eb8e33908611f092823d3639.exe",
+      "sha256": "0b7ba7992f2eb7f2474be11fb91b3b75e2f693a1eb8e33908611f092823d3639",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/0b7ba7992f2eb7f2474be11fb91b3b75e2f693a1eb8e33908611f092823d3639.exe"
+    },
+    {
+      "sample_id": "689c60852a6f4c8589cce35fd85550d50ad98d6053c05a145be8febc40068211",
+      "role": "training",
+      "family": "kryptik",
+      "path": "expanded/training/kryptik/689c60852a6f4c8589cce35fd85550d50ad98d6053c05a145be8febc40068211.exe",
+      "sha256": "689c60852a6f4c8589cce35fd85550d50ad98d6053c05a145be8febc40068211",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/689c60852a6f4c8589cce35fd85550d50ad98d6053c05a145be8febc40068211.exe"
+    },
+    {
+      "sample_id": "53289fe1e83427a8a958a72006230428fca100c8bf59c6a25fe8fface2c32a84",
+      "role": "training",
+      "family": "sirefef",
+      "path": "expanded/training/sirefef/53289fe1e83427a8a958a72006230428fca100c8bf59c6a25fe8fface2c32a84.exe",
+      "sha256": "53289fe1e83427a8a958a72006230428fca100c8bf59c6a25fe8fface2c32a84",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/53289fe1e83427a8a958a72006230428fca100c8bf59c6a25fe8fface2c32a84.exe"
+    },
+    {
+      "sample_id": "45f134b31622effb21d6ec2f5a4baa4ba9a9c50a6a733b85b3b101c22aa08211",
+      "role": "training",
+      "family": "kryptik",
+      "path": "expanded/training/kryptik/45f134b31622effb21d6ec2f5a4baa4ba9a9c50a6a733b85b3b101c22aa08211.exe",
+      "sha256": "45f134b31622effb21d6ec2f5a4baa4ba9a9c50a6a733b85b3b101c22aa08211",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/45f134b31622effb21d6ec2f5a4baa4ba9a9c50a6a733b85b3b101c22aa08211.exe"
+    },
+    {
+      "sample_id": "775f3e62adf3c815b71b97c6238341dd27ec3fb9be91ac6cf4f28d7c89bc766f",
+      "role": "training",
+      "family": "sirefef",
+      "path": "expanded/training/sirefef/775f3e62adf3c815b71b97c6238341dd27ec3fb9be91ac6cf4f28d7c89bc766f.exe",
+      "sha256": "775f3e62adf3c815b71b97c6238341dd27ec3fb9be91ac6cf4f28d7c89bc766f",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/775f3e62adf3c815b71b97c6238341dd27ec3fb9be91ac6cf4f28d7c89bc766f.exe"
+    },
+    {
+      "sample_id": "e2e27a6ef9fd02bf7ab3cc12f8069b78c1930e2e7ab9db1660759cd38adb0a4c",
+      "role": "training",
+      "family": "kryptik",
+      "path": "expanded/training/kryptik/e2e27a6ef9fd02bf7ab3cc12f8069b78c1930e2e7ab9db1660759cd38adb0a4c.exe",
+      "sha256": "e2e27a6ef9fd02bf7ab3cc12f8069b78c1930e2e7ab9db1660759cd38adb0a4c",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/e2e27a6ef9fd02bf7ab3cc12f8069b78c1930e2e7ab9db1660759cd38adb0a4c.exe"
+    },
+    {
+      "sample_id": "65fc78b9f37706acb9c1d69455b058bbb0357e71af1728c3dd16d145a0d34572",
+      "role": "training",
+      "family": "kryptik",
+      "path": "expanded/training/kryptik/65fc78b9f37706acb9c1d69455b058bbb0357e71af1728c3dd16d145a0d34572.exe",
+      "sha256": "65fc78b9f37706acb9c1d69455b058bbb0357e71af1728c3dd16d145a0d34572",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/65fc78b9f37706acb9c1d69455b058bbb0357e71af1728c3dd16d145a0d34572.exe"
+    },
+    {
+      "sample_id": "fe714e0c9393bc3bba151c62ef0050b857e70653da44ba5895a4e72165461808",
+      "role": "training",
+      "family": "zbot",
+      "path": "expanded/training/zbot/fe714e0c9393bc3bba151c62ef0050b857e70653da44ba5895a4e72165461808.exe",
+      "sha256": "fe714e0c9393bc3bba151c62ef0050b857e70653da44ba5895a4e72165461808",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/fe714e0c9393bc3bba151c62ef0050b857e70653da44ba5895a4e72165461808.exe"
+    },
+    {
+      "sample_id": "47f84419a3c49e289492b9e348c14c268b117cd26964746fa65318c893cbe81f",
+      "role": "training",
+      "family": "zbot",
+      "path": "expanded/training/zbot/47f84419a3c49e289492b9e348c14c268b117cd26964746fa65318c893cbe81f.exe",
+      "sha256": "47f84419a3c49e289492b9e348c14c268b117cd26964746fa65318c893cbe81f",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/47f84419a3c49e289492b9e348c14c268b117cd26964746fa65318c893cbe81f.exe"
+    },
+    {
+      "sample_id": "05482830f3f256740b428ce8a0cdf68637141e7af9715bf1facb81c9b188eac4",
+      "role": "training",
+      "family": "cabby",
+      "path": "expanded/training/cabby/05482830f3f256740b428ce8a0cdf68637141e7af9715bf1facb81c9b188eac4.exe",
+      "sha256": "05482830f3f256740b428ce8a0cdf68637141e7af9715bf1facb81c9b188eac4",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/05482830f3f256740b428ce8a0cdf68637141e7af9715bf1facb81c9b188eac4.exe"
+    },
+    {
+      "sample_id": "cd85bf4f33df12a86b8f88708e5da9c02cedbc58e87c529d6370340fdf3a0f52",
+      "role": "training",
+      "family": "zbot",
+      "path": "expanded/training/zbot/cd85bf4f33df12a86b8f88708e5da9c02cedbc58e87c529d6370340fdf3a0f52.exe",
+      "sha256": "cd85bf4f33df12a86b8f88708e5da9c02cedbc58e87c529d6370340fdf3a0f52",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/cd85bf4f33df12a86b8f88708e5da9c02cedbc58e87c529d6370340fdf3a0f52.exe"
+    },
+    {
+      "sample_id": "84364dd4a932b16e4324e791243475afc5c2abda3d08bd290f47c0df5449246a",
+      "role": "training",
+      "family": "zbot",
+      "path": "expanded/training/zbot/84364dd4a932b16e4324e791243475afc5c2abda3d08bd290f47c0df5449246a.exe",
+      "sha256": "84364dd4a932b16e4324e791243475afc5c2abda3d08bd290f47c0df5449246a",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/84364dd4a932b16e4324e791243475afc5c2abda3d08bd290f47c0df5449246a.exe"
+    },
+    {
+      "sample_id": "65d985debfd483eb49b40c58a3ff22641391a7cd6122784b23d439c49d034bea",
+      "role": "training",
+      "family": "upatre",
+      "path": "expanded/training/upatre/65d985debfd483eb49b40c58a3ff22641391a7cd6122784b23d439c49d034bea.exe",
+      "sha256": "65d985debfd483eb49b40c58a3ff22641391a7cd6122784b23d439c49d034bea",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/65d985debfd483eb49b40c58a3ff22641391a7cd6122784b23d439c49d034bea.exe"
+    },
+    {
+      "sample_id": "4c93a949237bc367b8ab5073298cd76495039058b9cb566d41f2b443b3f43661",
+      "role": "training",
+      "family": "kryptik",
+      "path": "expanded/training/kryptik/4c93a949237bc367b8ab5073298cd76495039058b9cb566d41f2b443b3f43661.exe",
+      "sha256": "4c93a949237bc367b8ab5073298cd76495039058b9cb566d41f2b443b3f43661",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/4c93a949237bc367b8ab5073298cd76495039058b9cb566d41f2b443b3f43661.exe"
+    },
+    {
+      "sample_id": "620bae1ab9de6fa46fe9eae40169f00e74374d9df32bc87c1a6a2954a70a6dce",
+      "role": "training",
+      "family": "upatre",
+      "path": "expanded/training/upatre/620bae1ab9de6fa46fe9eae40169f00e74374d9df32bc87c1a6a2954a70a6dce.exe",
+      "sha256": "620bae1ab9de6fa46fe9eae40169f00e74374d9df32bc87c1a6a2954a70a6dce",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/620bae1ab9de6fa46fe9eae40169f00e74374d9df32bc87c1a6a2954a70a6dce.exe"
+    },
+    {
+      "sample_id": "38f19fd63ff083f1181d17aa75362ef198c1d380daaab5f418dc7ac73fa16f87",
+      "role": "holdout",
+      "family": "kryptik",
+      "path": "expanded/holdout/kryptik/38f19fd63ff083f1181d17aa75362ef198c1d380daaab5f418dc7ac73fa16f87.exe",
+      "sha256": "38f19fd63ff083f1181d17aa75362ef198c1d380daaab5f418dc7ac73fa16f87",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/38f19fd63ff083f1181d17aa75362ef198c1d380daaab5f418dc7ac73fa16f87.exe"
+    },
+    {
+      "sample_id": "0923fef4732c5b5a71f1bdd10ca75b59fd9a0590fc883a32d434a375689835c8",
+      "role": "training",
+      "family": "cabby",
+      "path": "expanded/training/cabby/0923fef4732c5b5a71f1bdd10ca75b59fd9a0590fc883a32d434a375689835c8.exe",
+      "sha256": "0923fef4732c5b5a71f1bdd10ca75b59fd9a0590fc883a32d434a375689835c8",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/0923fef4732c5b5a71f1bdd10ca75b59fd9a0590fc883a32d434a375689835c8.exe"
+    },
+    {
+      "sample_id": "8d35efba8a1da4bad3e37e18653bfaa971eafbd6155cb6ca1a77367f3a06788c",
+      "role": "holdout",
+      "family": "kryptik",
+      "path": "expanded/holdout/kryptik/8d35efba8a1da4bad3e37e18653bfaa971eafbd6155cb6ca1a77367f3a06788c.exe",
+      "sha256": "8d35efba8a1da4bad3e37e18653bfaa971eafbd6155cb6ca1a77367f3a06788c",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/8d35efba8a1da4bad3e37e18653bfaa971eafbd6155cb6ca1a77367f3a06788c.exe"
+    },
+    {
+      "sample_id": "308412cd93186c90be5c4c9f52c89152a153269301e691a558343f8ef008b8f1",
+      "role": "training",
+      "family": "zbot",
+      "path": "expanded/training/zbot/308412cd93186c90be5c4c9f52c89152a153269301e691a558343f8ef008b8f1.exe",
+      "sha256": "308412cd93186c90be5c4c9f52c89152a153269301e691a558343f8ef008b8f1",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/308412cd93186c90be5c4c9f52c89152a153269301e691a558343f8ef008b8f1.exe"
+    },
+    {
+      "sample_id": "76d5eb9ac24984de0e5a7e108e77e8c9d2253065ff293a2c84e212c9f55a5a0e",
+      "role": "training",
+      "family": "cabby",
+      "path": "expanded/training/cabby/76d5eb9ac24984de0e5a7e108e77e8c9d2253065ff293a2c84e212c9f55a5a0e.exe",
+      "sha256": "76d5eb9ac24984de0e5a7e108e77e8c9d2253065ff293a2c84e212c9f55a5a0e",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/76d5eb9ac24984de0e5a7e108e77e8c9d2253065ff293a2c84e212c9f55a5a0e.exe"
+    },
+    {
+      "sample_id": "ab097e8b19ec166a2ff65d10ab06a8d572216cee2b0c44ebe183a8cb60b2bae7",
+      "role": "holdout",
+      "family": "zbot",
+      "path": "expanded/holdout/zbot/ab097e8b19ec166a2ff65d10ab06a8d572216cee2b0c44ebe183a8cb60b2bae7.exe",
+      "sha256": "ab097e8b19ec166a2ff65d10ab06a8d572216cee2b0c44ebe183a8cb60b2bae7",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/ab097e8b19ec166a2ff65d10ab06a8d572216cee2b0c44ebe183a8cb60b2bae7.exe"
+    },
+    {
+      "sample_id": "cdb3640a51be469fd01b71148a7296a84fcac4cc08c9b39d34496f5485497196",
+      "role": "training",
+      "family": "cabby",
+      "path": "expanded/training/cabby/cdb3640a51be469fd01b71148a7296a84fcac4cc08c9b39d34496f5485497196.exe",
+      "sha256": "cdb3640a51be469fd01b71148a7296a84fcac4cc08c9b39d34496f5485497196",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/cdb3640a51be469fd01b71148a7296a84fcac4cc08c9b39d34496f5485497196.exe"
+    },
+    {
+      "sample_id": "77b1019db74ef3208cb38b6f213cd7725e9a2573019e60bb5358f7e2245cd74d",
+      "role": "training",
+      "family": "fakeav",
+      "path": "expanded/training/fakeav/77b1019db74ef3208cb38b6f213cd7725e9a2573019e60bb5358f7e2245cd74d.exe",
+      "sha256": "77b1019db74ef3208cb38b6f213cd7725e9a2573019e60bb5358f7e2245cd74d",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/77b1019db74ef3208cb38b6f213cd7725e9a2573019e60bb5358f7e2245cd74d.exe"
+    },
+    {
+      "sample_id": "d1da3e358f94987c242f836716a8fbf98f96be96b620147677937dc0b2920d1b",
+      "role": "training",
+      "family": "sirefef",
+      "path": "expanded/training/sirefef/d1da3e358f94987c242f836716a8fbf98f96be96b620147677937dc0b2920d1b.exe",
+      "sha256": "d1da3e358f94987c242f836716a8fbf98f96be96b620147677937dc0b2920d1b",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/d1da3e358f94987c242f836716a8fbf98f96be96b620147677937dc0b2920d1b.exe"
+    },
+    {
+      "sample_id": "185eee5d2b5295185f1e5ec11cb889f4b134d54cca911751ca5f291183e8d86d",
+      "role": "training",
+      "family": "cabby",
+      "path": "expanded/training/cabby/185eee5d2b5295185f1e5ec11cb889f4b134d54cca911751ca5f291183e8d86d.exe",
+      "sha256": "185eee5d2b5295185f1e5ec11cb889f4b134d54cca911751ca5f291183e8d86d",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/185eee5d2b5295185f1e5ec11cb889f4b134d54cca911751ca5f291183e8d86d.exe"
+    },
+    {
+      "sample_id": "524c03385d015de420537ef39dde0bab2f4a25a0f58ab01155ea48cd13a07447",
+      "role": "training",
+      "family": "cabby",
+      "path": "expanded/training/cabby/524c03385d015de420537ef39dde0bab2f4a25a0f58ab01155ea48cd13a07447.exe",
+      "sha256": "524c03385d015de420537ef39dde0bab2f4a25a0f58ab01155ea48cd13a07447",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/524c03385d015de420537ef39dde0bab2f4a25a0f58ab01155ea48cd13a07447.exe"
+    },
+    {
+      "sample_id": "7df70b8c0ac04259b3586c084cccfcd088aee66a4892e4b73771643042ee11ac",
+      "role": "holdout",
+      "family": "zbot",
+      "path": "expanded/holdout/zbot/7df70b8c0ac04259b3586c084cccfcd088aee66a4892e4b73771643042ee11ac.exe",
+      "sha256": "7df70b8c0ac04259b3586c084cccfcd088aee66a4892e4b73771643042ee11ac",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/7df70b8c0ac04259b3586c084cccfcd088aee66a4892e4b73771643042ee11ac.exe"
+    },
+    {
+      "sample_id": "5a7f019ebc03ab96a85dd43c3b73d5e57bdcbea91f3a5530115d5d1c17faa4cb",
+      "role": "holdout",
+      "family": "zbot",
+      "path": "expanded/holdout/zbot/5a7f019ebc03ab96a85dd43c3b73d5e57bdcbea91f3a5530115d5d1c17faa4cb.exe",
+      "sha256": "5a7f019ebc03ab96a85dd43c3b73d5e57bdcbea91f3a5530115d5d1c17faa4cb",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/5a7f019ebc03ab96a85dd43c3b73d5e57bdcbea91f3a5530115d5d1c17faa4cb.exe"
+    },
+    {
+      "sample_id": "a1eb3d2cd241fbfbebd12180691371ad3df04e3aa7cacdf63d6107b8edb85f4b",
+      "role": "holdout",
+      "family": "kryptik",
+      "path": "expanded/holdout/kryptik/a1eb3d2cd241fbfbebd12180691371ad3df04e3aa7cacdf63d6107b8edb85f4b.exe",
+      "sha256": "a1eb3d2cd241fbfbebd12180691371ad3df04e3aa7cacdf63d6107b8edb85f4b",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/a1eb3d2cd241fbfbebd12180691371ad3df04e3aa7cacdf63d6107b8edb85f4b.exe"
+    },
+    {
+      "sample_id": "33cb567562c38b59e044ff8b92da621c2d6625c5e40c0a94d42274ca942ce181",
+      "role": "holdout",
+      "family": "zbot",
+      "path": "expanded/holdout/zbot/33cb567562c38b59e044ff8b92da621c2d6625c5e40c0a94d42274ca942ce181.exe",
+      "sha256": "33cb567562c38b59e044ff8b92da621c2d6625c5e40c0a94d42274ca942ce181",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/33cb567562c38b59e044ff8b92da621c2d6625c5e40c0a94d42274ca942ce181.exe"
+    },
+    {
+      "sample_id": "de74e2edfa09985396bef33fc3dda948a0eb51c2abeb911c237ed35bcdc7cd5f",
+      "role": "holdout",
+      "family": "kryptik",
+      "path": "expanded/holdout/kryptik/de74e2edfa09985396bef33fc3dda948a0eb51c2abeb911c237ed35bcdc7cd5f.exe",
+      "sha256": "de74e2edfa09985396bef33fc3dda948a0eb51c2abeb911c237ed35bcdc7cd5f",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/de74e2edfa09985396bef33fc3dda948a0eb51c2abeb911c237ed35bcdc7cd5f.exe"
+    },
+    {
+      "sample_id": "967963c655388dbd1020f110d14496e67dde7fa16c3ec0ea2d0b09d3a60b4fdd",
+      "role": "holdout",
+      "family": "kryptik",
+      "path": "expanded/holdout/kryptik/967963c655388dbd1020f110d14496e67dde7fa16c3ec0ea2d0b09d3a60b4fdd.exe",
+      "sha256": "967963c655388dbd1020f110d14496e67dde7fa16c3ec0ea2d0b09d3a60b4fdd",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/967963c655388dbd1020f110d14496e67dde7fa16c3ec0ea2d0b09d3a60b4fdd.exe"
+    },
+    {
+      "sample_id": "2d2fa95aa9bf662fdcd71d75dc4ddb6e322b3db907d7555450c5db9def301012",
+      "role": "training",
+      "family": "cabby",
+      "path": "expanded/training/cabby/2d2fa95aa9bf662fdcd71d75dc4ddb6e322b3db907d7555450c5db9def301012.exe",
+      "sha256": "2d2fa95aa9bf662fdcd71d75dc4ddb6e322b3db907d7555450c5db9def301012",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/2d2fa95aa9bf662fdcd71d75dc4ddb6e322b3db907d7555450c5db9def301012.exe"
+    },
+    {
+      "sample_id": "430c7c0a11333d4eb0846004f59508b12c7fc3759772cb6f5dfe217cfcbf632e",
+      "role": "training",
+      "family": "cabby",
+      "path": "expanded/training/cabby/430c7c0a11333d4eb0846004f59508b12c7fc3759772cb6f5dfe217cfcbf632e.exe",
+      "sha256": "430c7c0a11333d4eb0846004f59508b12c7fc3759772cb6f5dfe217cfcbf632e",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/430c7c0a11333d4eb0846004f59508b12c7fc3759772cb6f5dfe217cfcbf632e.exe"
+    },
+    {
+      "sample_id": "cb441028db30d7e4efa99ee23a9491dad53ae38e7197da2b6341773229db4cd0",
+      "role": "training",
+      "family": "upatre",
+      "path": "expanded/training/upatre/cb441028db30d7e4efa99ee23a9491dad53ae38e7197da2b6341773229db4cd0.exe",
+      "sha256": "cb441028db30d7e4efa99ee23a9491dad53ae38e7197da2b6341773229db4cd0",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/cb441028db30d7e4efa99ee23a9491dad53ae38e7197da2b6341773229db4cd0.exe"
+    },
+    {
+      "sample_id": "82381ce8a08b7454abecf5237e9b501690ba49f18dd9fa2e6199c6ebc64efc46",
+      "role": "holdout",
+      "family": "zbot",
+      "path": "expanded/holdout/zbot/82381ce8a08b7454abecf5237e9b501690ba49f18dd9fa2e6199c6ebc64efc46.exe",
+      "sha256": "82381ce8a08b7454abecf5237e9b501690ba49f18dd9fa2e6199c6ebc64efc46",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/82381ce8a08b7454abecf5237e9b501690ba49f18dd9fa2e6199c6ebc64efc46.exe"
+    },
+    {
+      "sample_id": "a135e701ffc86a81c12526190468bc393dbc2e872cac294120986d243ac0c3e7",
+      "role": "training",
+      "family": "fakeav",
+      "path": "expanded/training/fakeav/a135e701ffc86a81c12526190468bc393dbc2e872cac294120986d243ac0c3e7.exe",
+      "sha256": "a135e701ffc86a81c12526190468bc393dbc2e872cac294120986d243ac0c3e7",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/a135e701ffc86a81c12526190468bc393dbc2e872cac294120986d243ac0c3e7.exe"
+    },
+    {
+      "sample_id": "4dffc3ab0e3b519bf0993dafa2f41613636f68dffcadacee7ae6fecf3a47970c",
+      "role": "training",
+      "family": "fakeav",
+      "path": "expanded/training/fakeav/4dffc3ab0e3b519bf0993dafa2f41613636f68dffcadacee7ae6fecf3a47970c.exe",
+      "sha256": "4dffc3ab0e3b519bf0993dafa2f41613636f68dffcadacee7ae6fecf3a47970c",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/4dffc3ab0e3b519bf0993dafa2f41613636f68dffcadacee7ae6fecf3a47970c.exe"
+    },
+    {
+      "sample_id": "be666aac63402f6a18a789c182d27725d92a990d4a6d5bc537941493811647b6",
+      "role": "training",
+      "family": "upatre",
+      "path": "expanded/training/upatre/be666aac63402f6a18a789c182d27725d92a990d4a6d5bc537941493811647b6.exe",
+      "sha256": "be666aac63402f6a18a789c182d27725d92a990d4a6d5bc537941493811647b6",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/be666aac63402f6a18a789c182d27725d92a990d4a6d5bc537941493811647b6.exe"
+    },
+    {
+      "sample_id": "8aa557a317c70a4a1ef3bdb7f6a95be381fbd091b4735c5e9458d1c7f78c8cd2",
+      "role": "holdout",
+      "family": "zbot",
+      "path": "expanded/holdout/zbot/8aa557a317c70a4a1ef3bdb7f6a95be381fbd091b4735c5e9458d1c7f78c8cd2.exe",
+      "sha256": "8aa557a317c70a4a1ef3bdb7f6a95be381fbd091b4735c5e9458d1c7f78c8cd2",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/8aa557a317c70a4a1ef3bdb7f6a95be381fbd091b4735c5e9458d1c7f78c8cd2.exe"
+    },
+    {
+      "sample_id": "abdd1e87c06fd7aa29850f32468f7bc27ccb694c38fd56e5584aa5f828e1e12c",
+      "role": "holdout",
+      "family": "cabby",
+      "path": "expanded/holdout/cabby/abdd1e87c06fd7aa29850f32468f7bc27ccb694c38fd56e5584aa5f828e1e12c.exe",
+      "sha256": "abdd1e87c06fd7aa29850f32468f7bc27ccb694c38fd56e5584aa5f828e1e12c",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/abdd1e87c06fd7aa29850f32468f7bc27ccb694c38fd56e5584aa5f828e1e12c.exe"
+    },
+    {
+      "sample_id": "233963cb511540091e199dbeaf48ba4b3a79d59b724fec930ecd99a699d8e0c0",
+      "role": "holdout",
+      "family": "cabby",
+      "path": "expanded/holdout/cabby/233963cb511540091e199dbeaf48ba4b3a79d59b724fec930ecd99a699d8e0c0.exe",
+      "sha256": "233963cb511540091e199dbeaf48ba4b3a79d59b724fec930ecd99a699d8e0c0",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/233963cb511540091e199dbeaf48ba4b3a79d59b724fec930ecd99a699d8e0c0.exe"
+    },
+    {
+      "sample_id": "898c986c60c67e4d3b01014628542dfa3baf149aecc47816a80e470a12b305eb",
+      "role": "holdout",
+      "family": "cabby",
+      "path": "expanded/holdout/cabby/898c986c60c67e4d3b01014628542dfa3baf149aecc47816a80e470a12b305eb.exe",
+      "sha256": "898c986c60c67e4d3b01014628542dfa3baf149aecc47816a80e470a12b305eb",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/898c986c60c67e4d3b01014628542dfa3baf149aecc47816a80e470a12b305eb.exe"
+    },
+    {
+      "sample_id": "42ace0db6ea5b1bb28045b9bb5dc0495a8871fd2c40fd168c209d67e6ef51087",
+      "role": "training",
+      "family": "fakeav",
+      "path": "expanded/training/fakeav/42ace0db6ea5b1bb28045b9bb5dc0495a8871fd2c40fd168c209d67e6ef51087.exe",
+      "sha256": "42ace0db6ea5b1bb28045b9bb5dc0495a8871fd2c40fd168c209d67e6ef51087",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/42ace0db6ea5b1bb28045b9bb5dc0495a8871fd2c40fd168c209d67e6ef51087.exe"
+    },
+    {
+      "sample_id": "6c9feb09c2f76717829b2696c2ebe59d11b2ce69d4bccf698fd3aa0ba5c3fd21",
+      "role": "training",
+      "family": "upatre",
+      "path": "expanded/training/upatre/6c9feb09c2f76717829b2696c2ebe59d11b2ce69d4bccf698fd3aa0ba5c3fd21.exe",
+      "sha256": "6c9feb09c2f76717829b2696c2ebe59d11b2ce69d4bccf698fd3aa0ba5c3fd21",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/6c9feb09c2f76717829b2696c2ebe59d11b2ce69d4bccf698fd3aa0ba5c3fd21.exe"
+    },
+    {
+      "sample_id": "9fc1642402d4e88b14b8d16f577152fc30623fbd4fe6a89acde421f28e270c8d",
+      "role": "training",
+      "family": "sirefef",
+      "path": "expanded/training/sirefef/9fc1642402d4e88b14b8d16f577152fc30623fbd4fe6a89acde421f28e270c8d.exe",
+      "sha256": "9fc1642402d4e88b14b8d16f577152fc30623fbd4fe6a89acde421f28e270c8d",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/9fc1642402d4e88b14b8d16f577152fc30623fbd4fe6a89acde421f28e270c8d.exe"
+    },
+    {
+      "sample_id": "6964e876a24d494d67445d658f88221f5080274e2ae06ca5431318da8e25139f",
+      "role": "holdout",
+      "family": "cabby",
+      "path": "expanded/holdout/cabby/6964e876a24d494d67445d658f88221f5080274e2ae06ca5431318da8e25139f.exe",
+      "sha256": "6964e876a24d494d67445d658f88221f5080274e2ae06ca5431318da8e25139f",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/6964e876a24d494d67445d658f88221f5080274e2ae06ca5431318da8e25139f.exe"
+    },
+    {
+      "sample_id": "65bef3ff372b0d8774f93781614cc0ac0f7a55f6d1ebfe8274299a22f362dd75",
+      "role": "holdout",
+      "family": "cabby",
+      "path": "expanded/holdout/cabby/65bef3ff372b0d8774f93781614cc0ac0f7a55f6d1ebfe8274299a22f362dd75.exe",
+      "sha256": "65bef3ff372b0d8774f93781614cc0ac0f7a55f6d1ebfe8274299a22f362dd75",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/65bef3ff372b0d8774f93781614cc0ac0f7a55f6d1ebfe8274299a22f362dd75.exe"
+    },
+    {
+      "sample_id": "e213df7615354110f20c9be9dcadf5699680ae9cf6d3d751e37957dca7844d65",
+      "role": "training",
+      "family": "fakeav",
+      "path": "expanded/training/fakeav/e213df7615354110f20c9be9dcadf5699680ae9cf6d3d751e37957dca7844d65.exe",
+      "sha256": "e213df7615354110f20c9be9dcadf5699680ae9cf6d3d751e37957dca7844d65",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/e213df7615354110f20c9be9dcadf5699680ae9cf6d3d751e37957dca7844d65.exe"
+    },
+    {
+      "sample_id": "c618567230780392bb77960d8ff083ee1f9c082ae72ea507146fc40fd19a3175",
+      "role": "training",
+      "family": "fakeav",
+      "path": "expanded/training/fakeav/c618567230780392bb77960d8ff083ee1f9c082ae72ea507146fc40fd19a3175.exe",
+      "sha256": "c618567230780392bb77960d8ff083ee1f9c082ae72ea507146fc40fd19a3175",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/c618567230780392bb77960d8ff083ee1f9c082ae72ea507146fc40fd19a3175.exe"
+    },
+    {
+      "sample_id": "e3eb51a284027df84a519223d450a5205cde71d7262ade49ceb37bf4ea967d84",
+      "role": "training",
+      "family": "sirefef",
+      "path": "expanded/training/sirefef/e3eb51a284027df84a519223d450a5205cde71d7262ade49ceb37bf4ea967d84.exe",
+      "sha256": "e3eb51a284027df84a519223d450a5205cde71d7262ade49ceb37bf4ea967d84",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/e3eb51a284027df84a519223d450a5205cde71d7262ade49ceb37bf4ea967d84.exe"
+    },
+    {
+      "sample_id": "e20b045e0d7ded1ebd934e971bc26659862d8cd375a49de21266a987431b4b81",
+      "role": "training",
+      "family": "fakeav",
+      "path": "expanded/training/fakeav/e20b045e0d7ded1ebd934e971bc26659862d8cd375a49de21266a987431b4b81.exe",
+      "sha256": "e20b045e0d7ded1ebd934e971bc26659862d8cd375a49de21266a987431b4b81",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/e20b045e0d7ded1ebd934e971bc26659862d8cd375a49de21266a987431b4b81.exe"
+    },
+    {
+      "sample_id": "e92ff031f999e25ce7f28d69f3c92cb9adeef3adb4431f4f5d43eab1925c7e6e",
+      "role": "training",
+      "family": "fakeav",
+      "path": "expanded/training/fakeav/e92ff031f999e25ce7f28d69f3c92cb9adeef3adb4431f4f5d43eab1925c7e6e.exe",
+      "sha256": "e92ff031f999e25ce7f28d69f3c92cb9adeef3adb4431f4f5d43eab1925c7e6e",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/e92ff031f999e25ce7f28d69f3c92cb9adeef3adb4431f4f5d43eab1925c7e6e.exe"
+    },
+    {
+      "sample_id": "70b83202f63f97c4be4139788470ff8553711e1a6f63a561c1a87ab4c3dc4270",
+      "role": "training",
+      "family": "sirefef",
+      "path": "expanded/training/sirefef/70b83202f63f97c4be4139788470ff8553711e1a6f63a561c1a87ab4c3dc4270.exe",
+      "sha256": "70b83202f63f97c4be4139788470ff8553711e1a6f63a561c1a87ab4c3dc4270",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/70b83202f63f97c4be4139788470ff8553711e1a6f63a561c1a87ab4c3dc4270.exe"
+    },
+    {
+      "sample_id": "0cec760f61cb1e4c2a7a89ef80be5d45420066c0a338e222482de9522a26a2e6",
+      "role": "training",
+      "family": "sirefef",
+      "path": "expanded/training/sirefef/0cec760f61cb1e4c2a7a89ef80be5d45420066c0a338e222482de9522a26a2e6.exe",
+      "sha256": "0cec760f61cb1e4c2a7a89ef80be5d45420066c0a338e222482de9522a26a2e6",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/0cec760f61cb1e4c2a7a89ef80be5d45420066c0a338e222482de9522a26a2e6.exe"
+    },
+    {
+      "sample_id": "f4a29ef9322d68551447b572645dba6dfc3fee4be8cb4ceb1f6e19006e205939",
+      "role": "training",
+      "family": "fakeav",
+      "path": "expanded/training/fakeav/f4a29ef9322d68551447b572645dba6dfc3fee4be8cb4ceb1f6e19006e205939.exe",
+      "sha256": "f4a29ef9322d68551447b572645dba6dfc3fee4be8cb4ceb1f6e19006e205939",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/f4a29ef9322d68551447b572645dba6dfc3fee4be8cb4ceb1f6e19006e205939.exe"
+    },
+    {
+      "sample_id": "7d3bbc5f34229bccb475ff2a9d337150be053e5d6fdaa46eb5f07270645f7bc6",
+      "role": "training",
+      "family": "fakeav",
+      "path": "expanded/training/fakeav/7d3bbc5f34229bccb475ff2a9d337150be053e5d6fdaa46eb5f07270645f7bc6.exe",
+      "sha256": "7d3bbc5f34229bccb475ff2a9d337150be053e5d6fdaa46eb5f07270645f7bc6",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/7d3bbc5f34229bccb475ff2a9d337150be053e5d6fdaa46eb5f07270645f7bc6.exe"
+    },
+    {
+      "sample_id": "98c8a26c303f246f79869311874ed74479d8b46b2e319ceaf194d1ac8e0ced60",
+      "role": "training",
+      "family": "sirefef",
+      "path": "expanded/training/sirefef/98c8a26c303f246f79869311874ed74479d8b46b2e319ceaf194d1ac8e0ced60.exe",
+      "sha256": "98c8a26c303f246f79869311874ed74479d8b46b2e319ceaf194d1ac8e0ced60",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/98c8a26c303f246f79869311874ed74479d8b46b2e319ceaf194d1ac8e0ced60.exe"
+    },
+    {
+      "sample_id": "471c843f82ed27b2897d7ae36d56c7b87d4293549713971ab109a8116ec27daa",
+      "role": "training",
+      "family": "sirefef",
+      "path": "expanded/training/sirefef/471c843f82ed27b2897d7ae36d56c7b87d4293549713971ab109a8116ec27daa.exe",
+      "sha256": "471c843f82ed27b2897d7ae36d56c7b87d4293549713971ab109a8116ec27daa",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/471c843f82ed27b2897d7ae36d56c7b87d4293549713971ab109a8116ec27daa.exe"
+    },
+    {
+      "sample_id": "e6bdac0c86b0bb32d57ab593e09852da520c58554c7779c59b68d0ad42137c1c",
+      "role": "training",
+      "family": "sirefef",
+      "path": "expanded/training/sirefef/e6bdac0c86b0bb32d57ab593e09852da520c58554c7779c59b68d0ad42137c1c.exe",
+      "sha256": "e6bdac0c86b0bb32d57ab593e09852da520c58554c7779c59b68d0ad42137c1c",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/e6bdac0c86b0bb32d57ab593e09852da520c58554c7779c59b68d0ad42137c1c.exe"
+    },
+    {
+      "sample_id": "151db4a68203268c79bcc4874ff511fa4825add817fc2b791dc30bbd27faa2ac",
+      "role": "training",
+      "family": "upatre",
+      "path": "expanded/training/upatre/151db4a68203268c79bcc4874ff511fa4825add817fc2b791dc30bbd27faa2ac.exe",
+      "sha256": "151db4a68203268c79bcc4874ff511fa4825add817fc2b791dc30bbd27faa2ac",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/151db4a68203268c79bcc4874ff511fa4825add817fc2b791dc30bbd27faa2ac.exe"
+    },
+    {
+      "sample_id": "8f357a1caff2b15a2eee9fc98f24c8a92c525d6f460c3bff5ea53f743f0882b2",
+      "role": "training",
+      "family": "fakeav",
+      "path": "expanded/training/fakeav/8f357a1caff2b15a2eee9fc98f24c8a92c525d6f460c3bff5ea53f743f0882b2.exe",
+      "sha256": "8f357a1caff2b15a2eee9fc98f24c8a92c525d6f460c3bff5ea53f743f0882b2",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/8f357a1caff2b15a2eee9fc98f24c8a92c525d6f460c3bff5ea53f743f0882b2.exe"
+    },
+    {
+      "sample_id": "1adcac9cedbdb55d81789566b5f2dabf71c99b5d1270558d605379a0fda945ed",
+      "role": "training",
+      "family": "sirefef",
+      "path": "expanded/training/sirefef/1adcac9cedbdb55d81789566b5f2dabf71c99b5d1270558d605379a0fda945ed.exe",
+      "sha256": "1adcac9cedbdb55d81789566b5f2dabf71c99b5d1270558d605379a0fda945ed",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/1adcac9cedbdb55d81789566b5f2dabf71c99b5d1270558d605379a0fda945ed.exe"
+    },
+    {
+      "sample_id": "b1110ac4176c82134ae226c742d7ab5b0649d9ad4e35464342abcc33d4cf0215",
+      "role": "training",
+      "family": "sirefef",
+      "path": "expanded/training/sirefef/b1110ac4176c82134ae226c742d7ab5b0649d9ad4e35464342abcc33d4cf0215.exe",
+      "sha256": "b1110ac4176c82134ae226c742d7ab5b0649d9ad4e35464342abcc33d4cf0215",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/b1110ac4176c82134ae226c742d7ab5b0649d9ad4e35464342abcc33d4cf0215.exe"
+    },
+    {
+      "sample_id": "29ac2e0d0a5ced71cbbbbca2b01ae299d9f39af646e494675cedec3777284260",
+      "role": "training",
+      "family": "fakeav",
+      "path": "expanded/training/fakeav/29ac2e0d0a5ced71cbbbbca2b01ae299d9f39af646e494675cedec3777284260.exe",
+      "sha256": "29ac2e0d0a5ced71cbbbbca2b01ae299d9f39af646e494675cedec3777284260",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/29ac2e0d0a5ced71cbbbbca2b01ae299d9f39af646e494675cedec3777284260.exe"
+    },
+    {
+      "sample_id": "8bfc988826ada39dded311d560e240967177d130bbacb6d28c461a157c511c95",
+      "role": "training",
+      "family": "fakeav",
+      "path": "expanded/training/fakeav/8bfc988826ada39dded311d560e240967177d130bbacb6d28c461a157c511c95.exe",
+      "sha256": "8bfc988826ada39dded311d560e240967177d130bbacb6d28c461a157c511c95",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/8bfc988826ada39dded311d560e240967177d130bbacb6d28c461a157c511c95.exe"
+    },
+    {
+      "sample_id": "0ca892a65beee945dc60ffd229ee4a49f15ba4001707a925739b445c0fa65e81",
+      "role": "holdout",
+      "family": "sirefef",
+      "path": "expanded/holdout/sirefef/0ca892a65beee945dc60ffd229ee4a49f15ba4001707a925739b445c0fa65e81.exe",
+      "sha256": "0ca892a65beee945dc60ffd229ee4a49f15ba4001707a925739b445c0fa65e81",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/0ca892a65beee945dc60ffd229ee4a49f15ba4001707a925739b445c0fa65e81.exe"
+    },
+    {
+      "sample_id": "b849c570c0ceac64734f975913a7c8652c8de75c7fddb55d026523907004c823",
+      "role": "holdout",
+      "family": "sirefef",
+      "path": "expanded/holdout/sirefef/b849c570c0ceac64734f975913a7c8652c8de75c7fddb55d026523907004c823.exe",
+      "sha256": "b849c570c0ceac64734f975913a7c8652c8de75c7fddb55d026523907004c823",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/b849c570c0ceac64734f975913a7c8652c8de75c7fddb55d026523907004c823.exe"
+    },
+    {
+      "sample_id": "5f44120d86db22107653b15a11811e4a00a9d6052955120693270e17cd48c84d",
+      "role": "training",
+      "family": "fakeav",
+      "path": "expanded/training/fakeav/5f44120d86db22107653b15a11811e4a00a9d6052955120693270e17cd48c84d.exe",
+      "sha256": "5f44120d86db22107653b15a11811e4a00a9d6052955120693270e17cd48c84d",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/5f44120d86db22107653b15a11811e4a00a9d6052955120693270e17cd48c84d.exe"
+    },
+    {
+      "sample_id": "86f510a695db1297106eb44515aebf62a28190afbb6d13b786484e9470b0bf52",
+      "role": "holdout",
+      "family": "sirefef",
+      "path": "expanded/holdout/sirefef/86f510a695db1297106eb44515aebf62a28190afbb6d13b786484e9470b0bf52.exe",
+      "sha256": "86f510a695db1297106eb44515aebf62a28190afbb6d13b786484e9470b0bf52",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/86f510a695db1297106eb44515aebf62a28190afbb6d13b786484e9470b0bf52.exe"
+    },
+    {
+      "sample_id": "bd65863f71a0a31f6898b30f7b26a56844c16c494a4071e0e24edda1a89418ce",
+      "role": "holdout",
+      "family": "fakeav",
+      "path": "expanded/holdout/fakeav/bd65863f71a0a31f6898b30f7b26a56844c16c494a4071e0e24edda1a89418ce.exe",
+      "sha256": "bd65863f71a0a31f6898b30f7b26a56844c16c494a4071e0e24edda1a89418ce",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/bd65863f71a0a31f6898b30f7b26a56844c16c494a4071e0e24edda1a89418ce.exe"
+    },
+    {
+      "sample_id": "5370da93fdee2623a326d93ba4b36f9131b904a302b9c0ad63dd9f06fb41ff02",
+      "role": "holdout",
+      "family": "fakeav",
+      "path": "expanded/holdout/fakeav/5370da93fdee2623a326d93ba4b36f9131b904a302b9c0ad63dd9f06fb41ff02.exe",
+      "sha256": "5370da93fdee2623a326d93ba4b36f9131b904a302b9c0ad63dd9f06fb41ff02",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/5370da93fdee2623a326d93ba4b36f9131b904a302b9c0ad63dd9f06fb41ff02.exe"
+    },
+    {
+      "sample_id": "772931ede844e384d8c8261aa0b8402369577cb177061399db7d35dbde5be56d",
+      "role": "holdout",
+      "family": "fakeav",
+      "path": "expanded/holdout/fakeav/772931ede844e384d8c8261aa0b8402369577cb177061399db7d35dbde5be56d.exe",
+      "sha256": "772931ede844e384d8c8261aa0b8402369577cb177061399db7d35dbde5be56d",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/772931ede844e384d8c8261aa0b8402369577cb177061399db7d35dbde5be56d.exe"
+    },
+    {
+      "sample_id": "0f0a34192c8bf3acdc8b356b4977c2a268528e7c75e58157c9709ec86ba44f51",
+      "role": "holdout",
+      "family": "sirefef",
+      "path": "expanded/holdout/sirefef/0f0a34192c8bf3acdc8b356b4977c2a268528e7c75e58157c9709ec86ba44f51.exe",
+      "sha256": "0f0a34192c8bf3acdc8b356b4977c2a268528e7c75e58157c9709ec86ba44f51",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/0f0a34192c8bf3acdc8b356b4977c2a268528e7c75e58157c9709ec86ba44f51.exe"
+    },
+    {
+      "sample_id": "1bacdf198de3b85653ab0cc9f7e447966fc38853326c1960f2a31306867643fa",
+      "role": "training",
+      "family": "upatre",
+      "path": "expanded/training/upatre/1bacdf198de3b85653ab0cc9f7e447966fc38853326c1960f2a31306867643fa.exe",
+      "sha256": "1bacdf198de3b85653ab0cc9f7e447966fc38853326c1960f2a31306867643fa",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/1bacdf198de3b85653ab0cc9f7e447966fc38853326c1960f2a31306867643fa.exe"
+    },
+    {
+      "sample_id": "c37f0aa647a5d8f1d5c67a50fdf128c3f9ebad7d5d5fc09cb9e2e4409a09f3df",
+      "role": "holdout",
+      "family": "sirefef",
+      "path": "expanded/holdout/sirefef/c37f0aa647a5d8f1d5c67a50fdf128c3f9ebad7d5d5fc09cb9e2e4409a09f3df.exe",
+      "sha256": "c37f0aa647a5d8f1d5c67a50fdf128c3f9ebad7d5d5fc09cb9e2e4409a09f3df",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/c37f0aa647a5d8f1d5c67a50fdf128c3f9ebad7d5d5fc09cb9e2e4409a09f3df.exe"
+    },
+    {
+      "sample_id": "ca44ebd37ac52f82c31fbff0024fdb2612001e1bbe8f44022977d6e86ebe5eb5",
+      "role": "holdout",
+      "family": "sirefef",
+      "path": "expanded/holdout/sirefef/ca44ebd37ac52f82c31fbff0024fdb2612001e1bbe8f44022977d6e86ebe5eb5.exe",
+      "sha256": "ca44ebd37ac52f82c31fbff0024fdb2612001e1bbe8f44022977d6e86ebe5eb5",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/ca44ebd37ac52f82c31fbff0024fdb2612001e1bbe8f44022977d6e86ebe5eb5.exe"
+    },
+    {
+      "sample_id": "278e64142df7b133305e24e96b8f9d891ec4588dd44e0152f40095701374f7a1",
+      "role": "holdout",
+      "family": "fakeav",
+      "path": "expanded/holdout/fakeav/278e64142df7b133305e24e96b8f9d891ec4588dd44e0152f40095701374f7a1.exe",
+      "sha256": "278e64142df7b133305e24e96b8f9d891ec4588dd44e0152f40095701374f7a1",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/278e64142df7b133305e24e96b8f9d891ec4588dd44e0152f40095701374f7a1.exe"
+    },
+    {
+      "sample_id": "e2871310fc3d9d24e10cca1d48b17b5ef68e26491e7286d7ff650be38bfc4f66",
+      "role": "holdout",
+      "family": "fakeav",
+      "path": "expanded/holdout/fakeav/e2871310fc3d9d24e10cca1d48b17b5ef68e26491e7286d7ff650be38bfc4f66.exe",
+      "sha256": "e2871310fc3d9d24e10cca1d48b17b5ef68e26491e7286d7ff650be38bfc4f66",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/e2871310fc3d9d24e10cca1d48b17b5ef68e26491e7286d7ff650be38bfc4f66.exe"
+    },
+    {
+      "sample_id": "8c9037a8e454de159ce4c60f91f94b77dca931b8b0c2d8a98ee8357736e72158",
+      "role": "holdout",
+      "family": "fakeav",
+      "path": "expanded/holdout/fakeav/8c9037a8e454de159ce4c60f91f94b77dca931b8b0c2d8a98ee8357736e72158.exe",
+      "sha256": "8c9037a8e454de159ce4c60f91f94b77dca931b8b0c2d8a98ee8357736e72158",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/8c9037a8e454de159ce4c60f91f94b77dca931b8b0c2d8a98ee8357736e72158.exe"
+    },
+    {
+      "sample_id": "048a0153d4ff0ebc84b4fc28e2a0d5adfc107058359ff35c400925de2cf4cf3c",
+      "role": "holdout",
+      "family": "upatre",
+      "path": "expanded/holdout/upatre/048a0153d4ff0ebc84b4fc28e2a0d5adfc107058359ff35c400925de2cf4cf3c.exe",
+      "sha256": "048a0153d4ff0ebc84b4fc28e2a0d5adfc107058359ff35c400925de2cf4cf3c",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/048a0153d4ff0ebc84b4fc28e2a0d5adfc107058359ff35c400925de2cf4cf3c.exe"
+    },
+    {
+      "sample_id": "44d1ddbc1f48356ab98a4d249f1da0b8e48ff72d6bfc69f5589d63042b8e1e42",
+      "role": "holdout",
+      "family": "upatre",
+      "path": "expanded/holdout/upatre/44d1ddbc1f48356ab98a4d249f1da0b8e48ff72d6bfc69f5589d63042b8e1e42.exe",
+      "sha256": "44d1ddbc1f48356ab98a4d249f1da0b8e48ff72d6bfc69f5589d63042b8e1e42",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/44d1ddbc1f48356ab98a4d249f1da0b8e48ff72d6bfc69f5589d63042b8e1e42.exe"
+    },
+    {
+      "sample_id": "63d4965ed89e6951bb68f5e76a28f7f9512bf3feb64fcedfc3b98bc72dbcd070",
+      "role": "holdout",
+      "family": "upatre",
+      "path": "expanded/holdout/upatre/63d4965ed89e6951bb68f5e76a28f7f9512bf3feb64fcedfc3b98bc72dbcd070.exe",
+      "sha256": "63d4965ed89e6951bb68f5e76a28f7f9512bf3feb64fcedfc3b98bc72dbcd070",
+      "source_url": "https://raw.githubusercontent.com/iosifache/DikeDataset/5200762e5db1d33b77a125a6964fed49b3c2dd2d/files/malware/63d4965ed89e6951bb68f5e76a28f7f9512bf3feb64fcedfc3b98bc72dbcd070.exe"
     }
   ],
   "schema": "r2sign-corpus/v1",
-  "version": "0.1.0"
+  "version": "0.2.0"
 }
