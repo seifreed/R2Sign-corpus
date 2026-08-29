@@ -19,6 +19,7 @@ for source licenses, attribution, selection rules, and mutation provenance.
 - `benchmark/`: fixed benchmark inputs and thresholds.
 - `rules/`: generated rules used by the benchmark.
 - `goodware-r2sign.zip`: downloadable goodware database bundle with checksums.
+- `comparison/`: reproducible VxSig/BinDiff comparison artifacts on this corpus.
 
 The current version is a seed corpus, not a prevalence estimate. Every sample
 is identified by SHA-256 and linked to its public source record.
@@ -59,3 +60,11 @@ The published bundle SHA-256 is
 `fe28aff430dfaa989040fdc9a0247187535a348502380faf935e26cf9695b0f1`.
 Redistribution remains subject to the source dataset license and attribution
 requirements documented in [PROVENANCE.md](docs/PROVENANCE.md).
+
+## External comparison
+
+`comparison/comparison.json` records the metric deltas against VxSig built from
+commit `5afa34b60656624e125e8555dc48b04e3ae8ef04`. The directory also contains
+the generated VxSig rule, its benchmark JSON, and the real BinDiff v8 artifact
+created from Ghidra `BinExport` files for one training and one holdout sample.
+The artifact SHA-256 is recorded in both JSON documents.

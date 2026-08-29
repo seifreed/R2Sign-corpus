@@ -1,0 +1,33 @@
+{
+  "artifact": "a616-vs-a3d.BinDiff",
+  "artifact_sha256": "49071566f4cef57de6724ad08f5190d75cc6c9a1124195b669a9470ced46263c",
+  "metrics": {
+    "corpus_manifest_sha256": "2cd790071c85cc92c4085ccb4f4e31493fa6a2375dfcb055aff0fcee9d8a74cf",
+    "goodware_false_positive_rate": 0.0,
+    "goodware_matches": 0,
+    "goodware_total": 3,
+    "holdout_matches": 2,
+    "holdout_recall": 1.0,
+    "holdout_total": 2,
+    "mutation_matches": 2,
+    "mutation_recall": 1.0,
+    "mutation_total": 2,
+    "near_family_matches": 0,
+    "near_family_total": 0,
+    "positive_matches": 3,
+    "positive_recall": 1.0,
+    "positive_total": 3,
+    "rule_sha256": "188df01a425a25fcf86fe82f82dd2740a39c327cf576b615781df028b59eae64",
+    "scan_seconds": 0.020036249996337574
+  },
+  "provenance": [
+    "https://github.com/google/vxsig/tree/5afa34b60656624e125e8555dc48b04e3ae8ef04",
+    "https://github.com/google/bindiff/releases/tag/v8",
+    "https://github.com/seifreed/R2Sign-corpus/tree/main"
+  ],
+  "rule": "mediyes-vxsig.yar",
+  "rule_sha256": "188df01a425a25fcf86fe82f82dd2740a39c327cf576b615781df028b59eae64",
+  "schema": "r2sign-external-benchmark/v1",
+  "tool": "vxsig",
+  "version": "5afa34b60656624e125e8555dc48b04e3ae8ef04"
+}
