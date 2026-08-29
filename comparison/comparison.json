@@ -6,7 +6,7 @@
     "holdout_recall": 0.0,
     "mutation_recall": 0.0,
     "positive_recall": 0.0,
-    "scan_seconds": -0.015621042002749164
+    "scan_seconds": -0.008370499999728054
   },
   "external": {
     "corpus_manifest_sha256": "2cd790071c85cc92c4085ccb4f4e31493fa6a2375dfcb055aff0fcee9d8a74cf",
@@ -15,7 +15,7 @@
     "mutation_recall": 1.0,
     "positive_recall": 1.0,
     "rule_sha256": "188df01a425a25fcf86fe82f82dd2740a39c327cf576b615781df028b59eae64",
-    "scan_seconds": 0.020036249996337574
+    "scan_seconds": 0.015869249997194856
   },
   "external_version": "5afa34b60656624e125e8555dc48b04e3ae8ef04",
   "ours": {
@@ -25,7 +25,7 @@
     "mutation_recall": 1.0,
     "positive_recall": 1.0,
     "rule_sha256": "5db63d59c7801c81dbaf4ac4aea5eb211f2a47c093a2a52b49b11f50c1040104",
-    "scan_seconds": 0.00441520799358841
+    "scan_seconds": 0.007498749997466803
   },
   "provenance": [
     "https://github.com/google/vxsig/tree/5afa34b60656624e125e8555dc48b04e3ae8ef04",

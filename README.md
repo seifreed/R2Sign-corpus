@@ -65,6 +65,13 @@ requirements documented in [PROVENANCE.md](docs/PROVENANCE.md).
 
 `comparison/comparison.json` records the metric deltas against VxSig built from
 commit `5afa34b60656624e125e8555dc48b04e3ae8ef04`. The directory also contains
-the generated VxSig rule, its benchmark JSON, and the real BinDiff v8 artifact
-created from Ghidra `BinExport` files for one training and one holdout sample.
+the generated VxSig rule, its benchmark manifest and JSON, and the real BinDiff
+v8 artifact created from Ghidra `BinExport` files for one training and one
+holdout sample. Reproduce the external benchmark with:
+
+```bash
+PYTHONPATH=../R2Sign python -m r2sign.cli.app benchmark \
+  comparison/vxsig-benchmark.yml > /tmp/vxsig-benchmark.json
+```
+
 The artifact SHA-256 is recorded in both JSON documents.
