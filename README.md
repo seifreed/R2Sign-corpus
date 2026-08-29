@@ -99,6 +99,12 @@ Docker stack needs a licensed IDA Pro 7 installer and fails on this host before
 analysis, so no BASS metric is claimed. The release comparison criterion is
 covered by the published VxSig result.
 
+`comparison/bass-algorithm-benchmark.json` separately records execution of
+BASS's published `hamming_klcs_c` component over the same 32 recompilations used
+for the R2Sign matcher validation. It produced a 67-byte common sequence with
+32/32 subsequence recall. This is explicitly an algorithm-component comparison,
+not a substitute for the unavailable IDA/BinExport pipeline.
+
 `comparison/recompilation-benchmark.json` records a local scale validation of
 the progressive alignment matcher over 32 independently compiled variants of
 the benign `recompilation_fixture.c` source. The report includes the compiler,

@@ -1,0 +1,25 @@
+{
+  "algorithm": "hamming_klcs_c",
+  "algorithm_library_sha256": "16dd77cd285e0a2dc3a2afd7feb04d1d94e626cb809bcef4b670d91dfc502e3f",
+  "bass_common_sequence_bytes": 67,
+  "bass_subsequence_matches": 32,
+  "bass_subsequence_recall": 1.0,
+  "execution_scope": "algorithm_component_only",
+  "fixture": "recompilation_fixture.c",
+  "fixture_sha256": "e9862e573ca9363bb7845fd2c8d2832d24a2d9b04f4637cc45e2f3d9a27665e0",
+  "full_pipeline_executed": false,
+  "function": "sym._r2sign_stable_transform",
+  "limitations": [
+    "BASS full pipeline was not executable because its IDA Pro 7 service requires a licensed ida.run installer and BinExport.",
+    "No ClamAV ndb scan was claimed because clamscan is not installed on this host.",
+    "This report compares the published BASS k-LCS component with R2Sign progressive alignment on the same compiled fixture variants."
+  ],
+  "r2sign_binary_matches": 32,
+  "r2sign_binary_recall": 1.0,
+  "r2sign_pattern": "82 8F D2 ?? E9 AF F2 ?? 37 CF F2 ?? C6 F3 F2 08 [0-5] 00 [0-7] ?? ?? 08 75 ?? CA [0-8] 29 B7 9C D2 89 9C A3 F2 A9 ED C8 F2 09 EB F7 F2 08 7D 09 9B [0-12] 08 7D ?? CA [0-8] 69 3D 82 D2 29 66 A2 F2 69 37 C9 F2 09 9A F2 F2 08 7D 09 9B",
+  "r2sign_progressive_pattern_bytes": 67,
+  "schema": "r2sign-bass-algorithm-benchmark/v1",
+  "tool": "BASS",
+  "variant_count": 32,
+  "version": "6dd8b7aa4b13ddcd48f0c8fbd64ac43955157420"
+}
