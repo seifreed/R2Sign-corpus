@@ -2,30 +2,30 @@
   "artifact": "a616-vs-a3d.BinDiff",
   "artifact_sha256": "49071566f4cef57de6724ad08f5190d75cc6c9a1124195b669a9470ced46263c",
   "deltas": {
-    "goodware_false_positive_rate": 0.0,
+    "positive_recall": 0.0,
     "holdout_recall": 0.0,
     "mutation_recall": 0.0,
-    "positive_recall": 0.0,
-    "scan_seconds": -0.009310999004810583
+    "goodware_false_positive_rate": 0.0,
+    "scan_seconds": -0.005167041999811772
   },
   "external": {
-    "corpus_manifest_sha256": "8d83cb5a25dc016599fb9c17f53f8460bd8cee12d5948a0c1a749a25f0dcba08",
+    "corpus_manifest_sha256": "c2c2c63713e36bf3ceceae50d0dc9b6f45381a9d6cd39424adfb3778f52c9f8a",
     "goodware_false_positive_rate": 0.0,
     "holdout_recall": 1.0,
     "mutation_recall": 1.0,
     "positive_recall": 1.0,
     "rule_sha256": "188df01a425a25fcf86fe82f82dd2740a39c327cf576b615781df028b59eae64",
-    "scan_seconds": 0.014217708005162422
+    "scan_seconds": 0.011887749999004882
   },
   "external_version": "5afa34b60656624e125e8555dc48b04e3ae8ef04",
   "ours": {
-    "corpus_manifest_sha256": "8d83cb5a25dc016599fb9c17f53f8460bd8cee12d5948a0c1a749a25f0dcba08",
+    "corpus_manifest_sha256": "c2c2c63713e36bf3ceceae50d0dc9b6f45381a9d6cd39424adfb3778f52c9f8a",
     "goodware_false_positive_rate": 0.0,
     "holdout_recall": 1.0,
     "mutation_recall": 1.0,
     "positive_recall": 1.0,
     "rule_sha256": "5db63d59c7801c81dbaf4ac4aea5eb211f2a47c093a2a52b49b11f50c1040104",
-    "scan_seconds": 0.004906709000351839
+    "scan_seconds": 0.00672070799919311
   },
   "provenance": [
     "https://github.com/google/vxsig/tree/5afa34b60656624e125e8555dc48b04e3ae8ef04",

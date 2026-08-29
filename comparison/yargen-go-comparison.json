@@ -2,30 +2,30 @@
   "artifact": "yargen-go-mediyes.yar",
   "artifact_sha256": "d57d05fbf14c3b84bc94a765646194007cf2327992d9bb15525b471aa265bfa7",
   "deltas": {
-    "goodware_false_positive_rate": -0.3333333333333333,
+    "positive_recall": 0.0,
     "holdout_recall": 0.0,
     "mutation_recall": 0.0,
-    "positive_recall": 0.0,
-    "scan_seconds": -0.0022860410026623867
+    "goodware_false_positive_rate": -0.3333333333333333,
+    "scan_seconds": -0.0005768340051872656
   },
   "external": {
-    "corpus_manifest_sha256": "8d83cb5a25dc016599fb9c17f53f8460bd8cee12d5948a0c1a749a25f0dcba08",
+    "corpus_manifest_sha256": "c2c2c63713e36bf3ceceae50d0dc9b6f45381a9d6cd39424adfb3778f52c9f8a",
     "goodware_false_positive_rate": 0.3333333333333333,
     "holdout_recall": 1.0,
     "mutation_recall": 1.0,
     "positive_recall": 1.0,
     "rule_sha256": "d57d05fbf14c3b84bc94a765646194007cf2327992d9bb15525b471aa265bfa7",
-    "scan_seconds": 0.0071927500030142255
+    "scan_seconds": 0.007297542004380375
   },
   "external_version": "0.1.0",
   "ours": {
-    "corpus_manifest_sha256": "8d83cb5a25dc016599fb9c17f53f8460bd8cee12d5948a0c1a749a25f0dcba08",
+    "corpus_manifest_sha256": "c2c2c63713e36bf3ceceae50d0dc9b6f45381a9d6cd39424adfb3778f52c9f8a",
     "goodware_false_positive_rate": 0.0,
     "holdout_recall": 1.0,
     "mutation_recall": 1.0,
     "positive_recall": 1.0,
     "rule_sha256": "5db63d59c7801c81dbaf4ac4aea5eb211f2a47c093a2a52b49b11f50c1040104",
-    "scan_seconds": 0.004906709000351839
+    "scan_seconds": 0.00672070799919311
   },
   "provenance": [
     "https://github.com/Neo23x0/yarGen-Go/tree/2efb97368ecc12250c4762977e51505d71ccc6a0",
