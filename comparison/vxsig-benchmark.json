@@ -17,6 +17,7 @@
     "positive_matches": 3,
     "positive_recall": 1.0,
     "positive_total": 3,
+    "precision": 1.0,
     "rule_sha256": "188df01a425a25fcf86fe82f82dd2740a39c327cf576b615781df028b59eae64",
     "scan_seconds": 0.020036249996337574
   },
