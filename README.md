@@ -99,4 +99,11 @@ Docker stack needs a licensed IDA Pro 7 installer and fails on this host before
 analysis, so no BASS metric is claimed. The release comparison criterion is
 covered by the published VxSig result.
 
+`comparison/recompilation-benchmark.json` records a local scale validation of
+the progressive alignment matcher over 32 independently compiled variants of
+the benign `recompilation_fixture.c` source. The report includes the compiler,
+radare2, source digest, selected pattern, and complete `32/32` recall. Binaries
+are intentionally not distributed; they are regenerated from the committed
+fixture.
+
 The artifact SHA-256 is recorded in both JSON documents.

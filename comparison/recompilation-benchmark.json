@@ -1,0 +1,83 @@
+{
+  "all_variants_matched": true,
+  "compiler": "/opt/homebrew/opt/llvm/bin/clang",
+  "compiler_version": "Homebrew clang version 23.1.0",
+  "function": "sym._r2sign_stable_transform",
+  "function_sizes": {
+    "maximum": 144,
+    "minimum": 76
+  },
+  "matched_variants": 32,
+  "matcher": "AlignmentMatcher.find_progressive_masked_patterns",
+  "minimum_pattern_length": 16,
+  "pattern_count": 1,
+  "radare2_version": "radare2 6.2.0 +0 abi:132 @ darwin-arm_64",
+  "recall": 1.0,
+  "schema": "r2sign-recompilation-validation/v1",
+  "selected_pattern": "82 8F D2 ?? E9 AF F2 ?? 37 CF F2 ?? C6 F3 F2 08 [0-5] 00 [0-7] ?? ?? 08 75 ?? CA [0-8] 29 B7 9C D2 89 9C A3 F2 A9 ED C8 F2 09 EB F7 F2 08 7D 09 9B [0-12] 08 7D ?? CA [0-8] 69 3D 82 D2 29 66 A2 F2 69 37 C9 F2 09 9A F2 F2 08 7D 09 9B",
+  "selected_pattern_bytes": 67,
+  "selected_pattern_gaps": [
+    {
+      "maximum": 5,
+      "minimum": 0,
+      "start": 16
+    },
+    {
+      "maximum": 7,
+      "minimum": 0,
+      "start": 17
+    },
+    {
+      "maximum": 8,
+      "minimum": 0,
+      "start": 23
+    },
+    {
+      "maximum": 12,
+      "minimum": 0,
+      "start": 43
+    },
+    {
+      "maximum": 8,
+      "minimum": 0,
+      "start": 47
+    }
+  ],
+  "source": "recompilation_fixture.c",
+  "source_sha256": "e9862e573ca9363bb7845fd2c8d2832d24a2d9b04f4637cc45e2f3d9a27665e0",
+  "variant_count": 32,
+  "variant_names": [
+    "variant-00",
+    "variant-01",
+    "variant-02",
+    "variant-03",
+    "variant-04",
+    "variant-05",
+    "variant-06",
+    "variant-07",
+    "variant-08",
+    "variant-09",
+    "variant-10",
+    "variant-11",
+    "variant-12",
+    "variant-13",
+    "variant-14",
+    "variant-15",
+    "variant-16",
+    "variant-17",
+    "variant-18",
+    "variant-19",
+    "variant-20",
+    "variant-21",
+    "variant-22",
+    "variant-23",
+    "variant-24",
+    "variant-25",
+    "variant-26",
+    "variant-27",
+    "variant-28",
+    "variant-29",
+    "variant-30",
+    "variant-31"
+  ]
+}
