@@ -80,4 +80,14 @@ PYTHONPATH=../R2Sign python -m r2sign.cli.app benchmark \
   comparison/vxsig-benchmark.yml > /tmp/vxsig-benchmark.json
 ```
 
+The directory also contains the reproducible yarGen-Go `0.1.0` comparison from
+commit `2efb97368ecc12250c4762977e51505d71ccc6a0`. It uses a local goodware
+database built from this repository and records the exact rule, manifest, and
+metric delta in `yargen-go-comparison.json`. Reproduce it with:
+
+```bash
+PYTHONPATH=../R2Sign python -m r2sign.cli.app benchmark \
+  comparison/yargen-go-benchmark.yml > /tmp/yargen-go-benchmark.json
+```
+
 The artifact SHA-256 is recorded in both JSON documents.

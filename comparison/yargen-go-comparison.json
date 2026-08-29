@@ -1,0 +1,38 @@
+{
+  "artifact": "yargen-go-mediyes.yar",
+  "artifact_sha256": "d57d05fbf14c3b84bc94a765646194007cf2327992d9bb15525b471aa265bfa7",
+  "deltas": {
+    "goodware_false_positive_rate": -0.3333333333333333,
+    "holdout_recall": 0.0,
+    "mutation_recall": 0.0,
+    "positive_recall": 0.0,
+    "scan_seconds": 0.00605879099748563
+  },
+  "external": {
+    "corpus_manifest_sha256": "582ce338fd9a1ab3283916d96ca2d61503c1e7015da42dc2ce3c0f5fe4c2cce6",
+    "goodware_false_positive_rate": 0.3333333333333333,
+    "holdout_recall": 1.0,
+    "mutation_recall": 1.0,
+    "positive_recall": 1.0,
+    "rule_sha256": "d57d05fbf14c3b84bc94a765646194007cf2327992d9bb15525b471aa265bfa7",
+    "scan_seconds": 0.005504000000655651
+  },
+  "external_version": "0.1.0",
+  "ours": {
+    "corpus_manifest_sha256": "582ce338fd9a1ab3283916d96ca2d61503c1e7015da42dc2ce3c0f5fe4c2cce6",
+    "goodware_false_positive_rate": 0.0,
+    "holdout_recall": 1.0,
+    "mutation_recall": 1.0,
+    "positive_recall": 1.0,
+    "rule_sha256": "5db63d59c7801c81dbaf4ac4aea5eb211f2a47c093a2a52b49b11f50c1040104",
+    "scan_seconds": 0.011562790998141281
+  },
+  "provenance": [
+    "https://github.com/Neo23x0/yarGen-Go/tree/2efb97368ecc12250c4762977e51505d71ccc6a0",
+    "Built locally with Go 1.27.0",
+    "Goodware database generated locally from the public R2Sign goodware bundle",
+    "No LLM, opcode extraction, magic or filesize conditions"
+  ],
+  "schema": "r2sign-external-comparison/v1",
+  "tool": "yarGen-Go"
+}
