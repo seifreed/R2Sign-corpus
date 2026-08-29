@@ -18,6 +18,7 @@ for source licenses, attribution, selection rules, and mutation provenance.
 - `manifest.json`: SHA-256 protected `r2sign-corpus/v1` manifest.
 - `benchmark/`: fixed benchmark inputs and thresholds.
 - `rules/`: generated rules used by the benchmark.
+- `goodware-r2sign.zip`: downloadable goodware database bundle with checksums.
 
 The current version is a seed corpus, not a prevalence estimate. Every sample
 is identified by SHA-256 and linked to its public source record.
@@ -41,3 +42,20 @@ PYTHONPATH=../R2Sign python -m r2sign.cli.app benchmark benchmark/manifest.yml \
 
 The benchmark requires YARA-X when the optional dependency is installed and
 fails when any declared threshold is missed.
+
+## Goodware distribution
+
+`goodware-r2sign.zip` contains the SQLite pattern database, its
+`r2sign-goodware/v1` manifest, and `SHA256SUMS`. The database contains three
+benign PE samples from the public source dataset. Verify it with:
+
+```bash
+PYTHONPATH=../R2Sign python -m r2sign.cli.app goodware verify goodware-db/manifest.json
+PYTHONPATH=../R2Sign python -m r2sign.cli.app goodware package goodware-db/manifest.json \
+  --output /tmp/goodware-r2sign.zip
+```
+
+The published bundle SHA-256 is
+`fe28aff430dfaa989040fdc9a0247187535a348502380faf935e26cf9695b0f1`.
+Redistribution remains subject to the source dataset license and attribution
+requirements documented in [PROVENANCE.md](docs/PROVENANCE.md).

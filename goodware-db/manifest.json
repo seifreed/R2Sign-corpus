@@ -1,0 +1,23 @@
+{
+  "architectures": [
+    "x86-64"
+  ],
+  "created_at": "2026-08-29T15:39:50.743980+00:00",
+  "database": "goodware_patterns.db",
+  "extractor_version": "r2sign-goodware/v1",
+  "license": "CC-BY-4.0 for source samples; MIT for repository metadata",
+  "normalization_profile": "normal",
+  "radare2_version": "radare2 6.2.0 +0 abi:132 @ darwin-arm_64",
+  "sample_count": 3,
+  "schema": "r2sign-goodware/v1",
+  "sha256": "a1981da2465a1416d08f9d14720e3bed017f14ed7353ac10cc96506452644c09",
+  "sources": [
+    "DikeDataset PE benign samples"
+  ],
+  "provenance": [
+    "https://github.com/iosifache/DikeDataset/tree/5200762e5db1d33b77a125a6964fed49b3c2dd2d",
+    "https://figshare.com/articles/dataset/Malware_Detection_PE-Based_Analysis_Using_Deep_Learning_Algorithm_Dataset/6635642",
+    "DikeDataset documents the PE source as CC BY 4.0",
+    "Sample SHA-256 values are retained in the corpus manifest"
+  ]
+}
