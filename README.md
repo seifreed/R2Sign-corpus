@@ -53,7 +53,8 @@ fails when any declared threshold is missed.
 
 `goodware-r2sign.zip` contains the SQLite pattern database, its
 `r2sign-goodware/v1` manifest, and `SHA256SUMS`. The database contains three
-benign PE samples from the public source dataset. Verify it with:
+benign PE samples from the public source dataset plus five synthetic fixtures
+covering ELF, Mach-O and PE on x86, x86-64 and ARM64. Verify it with:
 
 ```bash
 PYTHONPATH=../R2Sign python -m r2sign.cli.app goodware verify goodware-db/manifest.json
@@ -61,8 +62,8 @@ PYTHONPATH=../R2Sign python -m r2sign.cli.app goodware package goodware-db/manif
   --output /tmp/goodware-r2sign.zip
 ```
 
-The published bundle SHA-256 is
-`fe28aff430dfaa989040fdc9a0247187535a348502380faf935e26cf9695b0f1`.
+The published bundle SHA-256 is recorded in the release asset and the bundle's
+`SHA256SUMS` file.
 Redistribution remains subject to the source dataset license and attribution
 requirements documented in [PROVENANCE.md](docs/PROVENANCE.md).
 
