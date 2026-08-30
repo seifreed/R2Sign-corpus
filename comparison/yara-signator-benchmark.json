@@ -1,0 +1,165 @@
+{
+  "artifact": "yara-signator-mediyes.yar",
+  "artifact_sha256": "150baa06fc6de74fca908c7269c4c18eed3bdab16322831a4a05bfa851273755",
+  "metrics": {
+    "atom_warnings": [
+      "$sequence_0 has no stable four-byte atom",
+      "$sequence_1 has no stable four-byte atom",
+      "$sequence_2 has no stable four-byte atom",
+      "$sequence_3 has no stable four-byte atom",
+      "$sequence_4 has no stable four-byte atom",
+      "$sequence_5 has no stable four-byte atom",
+      "$sequence_6 has no stable four-byte atom",
+      "$sequence_7 has no stable four-byte atom",
+      "$sequence_8 has no stable four-byte atom",
+      "$sequence_9 has no stable four-byte atom"
+    ],
+    "candidate_ablation": [],
+    "candidate_contribution": [
+      [
+        "$sequence_0",
+        3
+      ],
+      [
+        "$sequence_1",
+        3
+      ],
+      [
+        "$sequence_2",
+        3
+      ],
+      [
+        "$sequence_3",
+        3
+      ],
+      [
+        "$sequence_4",
+        3
+      ],
+      [
+        "$sequence_5",
+        3
+      ],
+      [
+        "$sequence_6",
+        3
+      ],
+      [
+        "$sequence_7",
+        3
+      ],
+      [
+        "$sequence_8",
+        3
+      ],
+      [
+        "$sequence_9",
+        3
+      ]
+    ],
+    "commit_sha": "d4ad79c45876d69c5ede35064fc27c79cad33c1e",
+    "compiled_yara": true,
+    "compiled_yara_x": true,
+    "corpus_bytes_scanned": 2121716,
+    "corpus_manifest_sha256": "c2c2c63713e36bf3ceceae50d0dc9b6f45381a9d6cd39424adfb3778f52c9f8a",
+    "files_scanned": 12,
+    "goodware_false_positive_rate": 0.0,
+    "goodware_matches": 0,
+    "goodware_total": 3,
+    "holdout_matches": 2,
+    "holdout_recall": 1.0,
+    "holdout_total": 2,
+    "latency_p50": 0.0007377919973805547,
+    "latency_p95": 0.0022447920055128634,
+    "mutation_matches": 2,
+    "mutation_total": 2,
+    "near_family_matches": 0,
+    "near_family_total": 2,
+    "passed": true,
+    "positive_matches": 3,
+    "positive_recall": 1.0,
+    "positive_total": 3,
+    "precision": 1.0,
+    "rule_bytes": 5320,
+    "rule_sha256": "150baa06fc6de74fca908c7269c4c18eed3bdab16322831a4a05bfa851273755",
+    "scan_seconds": 0.009044416015967727,
+    "throughput": 234588501.48579577,
+    "validation_report": {
+      "atom_warnings": [
+        "$sequence_0 has no stable four-byte atom",
+        "$sequence_1 has no stable four-byte atom",
+        "$sequence_2 has no stable four-byte atom",
+        "$sequence_3 has no stable four-byte atom",
+        "$sequence_4 has no stable four-byte atom",
+        "$sequence_5 has no stable four-byte atom",
+        "$sequence_6 has no stable four-byte atom",
+        "$sequence_7 has no stable four-byte atom",
+        "$sequence_8 has no stable four-byte atom",
+        "$sequence_9 has no stable four-byte atom"
+      ],
+      "candidate_contribution": [
+        [
+          "$sequence_0",
+          3
+        ],
+        [
+          "$sequence_1",
+          3
+        ],
+        [
+          "$sequence_2",
+          3
+        ],
+        [
+          "$sequence_3",
+          3
+        ],
+        [
+          "$sequence_4",
+          3
+        ],
+        [
+          "$sequence_5",
+          3
+        ],
+        [
+          "$sequence_6",
+          3
+        ],
+        [
+          "$sequence_7",
+          3
+        ],
+        [
+          "$sequence_8",
+          3
+        ],
+        [
+          "$sequence_9",
+          3
+        ]
+      ],
+      "compiled_yara": true,
+      "compiled_yara_x": true,
+      "goodware_matches": 0,
+      "holdout_recall": 1.0,
+      "mutation_recall": 1.0,
+      "near_family_matches": 0,
+      "rule_size": 5320,
+      "scan_time": 0.009044416015967727,
+      "throughput": 234588501.48579577,
+      "training_recall": 1.0
+    },
+    "violations": []
+  },
+  "provenance": [
+    "https://github.com/fxb-cocacoding/yara-signator/tree/b7e005aba0cbbd789fd653c2303fd1e2dfe7f3b0",
+    "https://github.com/danielplohmann/smda/tree/ff1dbced844cb2a8918f48ec95921199fbc7ac60",
+    "https://github.com/fxb-cocacoding/capstone_server/tree/cca51b296b87ad84fccd5bce5aed7219aafab1cd",
+    "https://github.com/seifreed/R2Sign-corpus/tree/main",
+    "Generated from three real mediyes training samples with SMDA reports."
+  ],
+  "schema": "r2sign-external-benchmark/v1",
+  "tool": "yara-signator",
+  "version": "source b7e005aba0cbbd789fd653c2303fd1e2dfe7f3b0; SMDA 4.5.0"
+}

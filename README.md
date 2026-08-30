@@ -94,6 +94,13 @@ PYTHONPATH=../R2Sign python -m r2sign.cli.app benchmark \
   comparison/yargen-go-benchmark.yml > /tmp/yargen-go-benchmark.json
 ```
 
+The directory also contains the `yara-signator` rule and benchmark generated
+from three real `mediyes` training samples using SMDA `4.5.0`. Its benchmark
+records `1.0` training, holdout, and mutation recall with zero goodware false
+positives. The original Java pipeline requires PostgreSQL and capstone-server;
+the generated artifact and normalized benchmark are retained here for direct
+comparison.
+
 The BASS execution attempt is recorded in `bass-execution.json`. Its legacy
 Docker stack needs a licensed IDA Pro 7 installer and fails on this host before
 analysis, so no BASS metric is claimed. The release comparison criterion is
