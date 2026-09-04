@@ -12,6 +12,7 @@ audit=$3
 option=${4:-}
 limit=
 download=true
+download_workers=${R2SIGN_RL_DOWNLOAD_WORKERS:-4}
 
 if [ "$option" = "--audit-only" ]; then
     download=false
@@ -23,6 +24,12 @@ if [ -n "$limit" ] && { ! [ "$limit" -eq "$limit" ] 2>/dev/null || [ "$limit" -l
     echo "LIMIT must be a positive integer" >&2
     exit 2
 fi
+case $download_workers in
+    '' | *[!0-9]* | 0)
+        echo "R2SIGN_RL_DOWNLOAD_WORKERS must be a positive integer" >&2
+        exit 2
+        ;;
+esac
 
 command -v rl-cli >/dev/null
 command -v jq >/dev/null
@@ -85,17 +92,21 @@ if [ "$download" = true ] && [ -s "$pending" ]; then
     sort -u "$pending" >"$temporary/pending.sorted"
     comm -12 "$temporary/pending.sorted" "$temporary/available.sorted" >"$downloadable"
 
-    while IFS= read -r digest; do
-        candidate=$temporary/download/$digest.malware
-        rm -f "$candidate"
-        if rl-cli -q a1000 download "$digest" --output-dir "$temporary/download" >/dev/null 2>&1 &&
-            [ -f "$candidate" ] &&
-            [ "$(shasum -a 256 "$candidate" | cut -d ' ' -f 1)" = "$digest" ]; then
-            mv "$candidate" "$output/$digest"
-        else
-            rl_status=1
-        fi
-    done <"$downloadable"
+    if [ -s "$downloadable" ]; then
+        export output temporary
+        download_one=$temporary/download-one
+        cat >"$download_one" <<'EOF'
+digest=$1
+candidate=$temporary/download/$digest.malware
+rm -f "$candidate"
+if rl-cli -q a1000 download "$digest" --output-dir "$temporary/download" >/dev/null 2>&1 &&
+    [ -f "$candidate" ] &&
+    [ "$(shasum -a 256 "$candidate" | cut -d ' ' -f 1)" = "$digest" ]; then
+    mv "$candidate" "$output/$digest"
+fi
+EOF
+        xargs -P "$download_workers" -n 1 sh "$download_one" <"$downloadable"
+    fi
 fi
 
 while IFS= read -r digest; do
