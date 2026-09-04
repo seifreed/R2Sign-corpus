@@ -87,6 +87,12 @@ while IFS= read -r digest; do
     fi
 done <"$hashes"
 
+verified_count=$(wc -l <"$verified" | tr -d ' ')
+absent_count=$(wc -l <"$absent" | tr -d ' ')
+if [ "$download" = true ] && [ "$vt_status" -eq 0 ] && [ "$absent_count" -ne 0 ]; then
+    vt_status=1
+fi
+
 jq -Rs 'split("\n") | map(select(length > 0)) | sort' "$verified" >"$hash_array"
 jq -Rs 'split("\n") | map(select(length > 0)) | sort' "$absent" >"$absent_array"
 manifest_sha256=$(shasum -a 256 "$manifest" | cut -d ' ' -f 1)
@@ -109,8 +115,6 @@ jq -n \
     }' >"$audit.tmp"
 mv "$audit.tmp" "$audit"
 
-verified_count=$(wc -l <"$verified" | tr -d ' ')
-absent_count=$(wc -l <"$absent" | tr -d ' ')
 printf 'verified=%s missing=%s\n' "$verified_count" "$absent_count"
 if [ "$download" = true ]; then
     test "$vt_status" -eq 0 && test "$absent_count" -eq 0

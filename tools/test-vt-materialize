@@ -1,0 +1,35 @@
+#!/bin/sh
+set -eu
+
+root=$(mktemp -d)
+trap 'rm -rf "$root"' EXIT HUP INT TERM
+mkdir -p "$root/bin"
+
+cat >"$root/bin/vt" <<'EOF'
+#!/bin/sh
+cat >/dev/null
+exit 0
+EOF
+chmod +x "$root/bin/vt"
+
+cat >"$root/manifest.json" <<'EOF'
+{
+  "schema": "r2sign-corpus/v1",
+  "redistributable": true,
+  "license": "MIT",
+  "provenance": ["test"],
+  "samples": [{
+    "role": "training",
+    "source_url": "https://example.test/sample",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  }]
+}
+EOF
+
+if PATH="$root/bin:$PATH" tools/vt-materialize \
+    "$root/manifest.json" "$root/output" "$root/audit.json"; then
+    echo "materializer accepted a missing download" >&2
+    exit 1
+fi
+
+jq -e '.vt_exit_code == 1 and .samples_missing == 1' "$root/audit.json" >/dev/null
