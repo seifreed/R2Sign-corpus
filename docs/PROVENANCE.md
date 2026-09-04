@@ -45,6 +45,14 @@ The original samples retain their published SHA-256 identifiers in their
 filenames. The manifest records the digest of every stored file, including
 mutations.
 
+## Label confidence
+
+`metadata/label-evidence.json` retains the DikeDataset malice score for every
+source sample. Malware confidence uses that score directly; benign confidence
+uses `1 - malice_score`. Scores at or above `0.8` are high, scores at or above
+`0.5` are medium, and lower scores are low. Deterministic mutations inherit
+the label evidence of their declared source sample.
+
 ## Mutations
 
 Each mutation is made by appending the fixed ASCII marker `R2SIGN-MUTATION-V1`

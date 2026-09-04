@@ -23,13 +23,33 @@ jq -e '
         and (.sha256 | type == "string" and test("^[0-9a-f]{64}$"))
         and (.source_url | type == "string" and startswith("https://"))
         and (.similarity_algorithm | type == "string" and length > 0)
-        and (.similarity_hash | type == "string" and length > 0))
+        and (.similarity_hash | type == "string" and length > 0)
+        and (.label_confidence == "low" or .label_confidence == "medium" or
+            .label_confidence == "high"))
     and (([.samples[].sample_id] | length) == ([.samples[].sample_id] | unique | length))
     and (([.samples[].path] | length) == ([.samples[].path] | unique | length))
     and (([.samples[].sha256] | length) == ([.samples[].sha256] | unique | length))
     and (([.samples[] | [(.similarity_algorithm | ascii_downcase), .similarity_hash]] | length) ==
         ([.samples[] | [(.similarity_algorithm | ascii_downcase), .similarity_hash]] | unique | length))
 ' manifest.json >/dev/null
+
+jq -e -s '
+    .[0] as $manifest |
+    .[1] as $evidence |
+    ($evidence.samples | map({key:.sha256, value:.label_confidence}) | from_entries) as $labels |
+    $evidence.schema == "r2sign-label-evidence/v1"
+    and $evidence.source_commit == "5200762e5db1d33b77a125a6964fed49b3c2dd2d"
+    and (($evidence.samples | length) == ($manifest.samples | length))
+    and (($evidence.samples | map(.sha256) | length) ==
+        ($evidence.samples | map(.sha256) | unique | length))
+    and all($manifest.samples[]; .label_confidence == $labels[.sha256])
+    and all($evidence.samples[];
+        (.confidence_score >= 0 and .confidence_score <= 1)
+        and .label_confidence ==
+            (if .confidence_score >= 0.8 then "high"
+             elif .confidence_score >= 0.5 then "medium"
+             else "low" end))
+' manifest.json metadata/label-evidence.json >/dev/null
 
 checksums=$(mktemp)
 trap 'rm -f "$checksums"' EXIT HUP INT TERM
