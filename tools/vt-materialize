@@ -35,7 +35,11 @@ jq -e '
 
 hashes=$(mktemp)
 hash_array=$(mktemp)
-trap 'rm -f "$hashes" "$hash_array"' EXIT HUP INT TERM
+pending=$(mktemp)
+verified=$(mktemp)
+absent=$(mktemp)
+absent_array=$(mktemp)
+trap 'rm -f "$hashes" "$hash_array" "$pending" "$verified" "$absent" "$absent_array"' EXIT HUP INT TERM
 
 jq -er '
     .samples[] | select(.role != "mutation") | .sha256 |
@@ -53,21 +57,49 @@ if [ "$(sort "$hashes" | uniq | wc -l | tr -d ' ')" -ne "$(wc -l <"$hashes" | tr
 fi
 
 mkdir -p "$output" "$(dirname "$audit")"
-vt --silent download - --output "$output" --threads 5 <"$hashes"
+while IFS= read -r digest; do
+    if [ -f "$output/$digest" ] &&
+        [ "$(shasum -a 256 "$output/$digest" | cut -d ' ' -f 1)" = "$digest" ]; then
+        continue
+    fi
+    printf '%s\n' "$digest" >>"$pending"
+done <"$hashes"
+
+vt_status=0
+if [ -s "$pending" ]; then
+    vt --silent download - --output "$output" --threads 5 <"$pending" || vt_status=$?
+fi
 
 while IFS= read -r digest; do
-    printf '%s  %s\n' "$digest" "$output/$digest"
-done <"$hashes" | shasum -a 256 -c -
+    if [ -f "$output/$digest" ] &&
+        [ "$(shasum -a 256 "$output/$digest" | cut -d ' ' -f 1)" = "$digest" ]; then
+        printf '%s\n' "$digest" >>"$verified"
+    else
+        printf '%s\n' "$digest" >>"$absent"
+    fi
+done <"$hashes"
 
-jq -Rs 'split("\n") | map(select(length > 0)) | sort' "$hashes" >"$hash_array"
+jq -Rs 'split("\n") | map(select(length > 0)) | sort' "$verified" >"$hash_array"
+jq -Rs 'split("\n") | map(select(length > 0)) | sort' "$absent" >"$absent_array"
 manifest_sha256=$(shasum -a 256 "$manifest" | cut -d ' ' -f 1)
 jq -n \
     --arg manifest_sha256 "$manifest_sha256" \
+    --argjson vt_exit_code "$vt_status" \
     --slurpfile hashes "$hash_array" \
+    --slurpfile missing "$absent_array" \
     '{
         schema: "r2sign-vt-materialization/v1",
         manifest_sha256: $manifest_sha256,
+        vt_exit_code: $vt_exit_code,
+        samples_requested: (($hashes[0] | length) + ($missing[0] | length)),
         samples_verified: ($hashes[0] | length),
-        sha256: $hashes[0]
+        samples_missing: ($missing[0] | length),
+        sha256: $hashes[0],
+        missing_sha256: $missing[0]
     }' >"$audit.tmp"
 mv "$audit.tmp" "$audit"
+
+verified_count=$(wc -l <"$verified" | tr -d ' ')
+absent_count=$(wc -l <"$absent" | tr -d ' ')
+printf 'verified=%s missing=%s\n' "$verified_count" "$absent_count"
+test "$vt_status" -eq 0 && test "$absent_count" -eq 0

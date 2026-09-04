@@ -54,7 +54,9 @@ tools/vt-materialize manifest.json .vt-materialized \
 The command accepts only a manifest marked as redistributable, sends declared
 SHA-256 values to `vt download`, verifies every downloaded digest, and writes a
 hash-only audit. Mutation samples remain reproducible from their documented
-source sample and are not requested from VirusTotal.
+source sample and are not requested from VirusTotal. Interrupted or
+quota-limited runs are resumable: subsequent executions request only missing
+or invalid files and refresh the audit with verified and pending hashes.
 
 Run the benchmark and write its JSON result with:
 
