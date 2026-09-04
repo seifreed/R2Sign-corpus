@@ -57,6 +57,8 @@ hash-only audit. Mutation samples remain reproducible from their documented
 source sample and are not requested from VirusTotal. Interrupted or
 quota-limited runs are resumable: subsequent executions request only missing
 or invalid files and refresh the audit with verified and pending hashes.
+Use `--audit-only` as the final argument to refresh the partial report without
+consuming VirusTotal quota.
 
 Run the benchmark and write its JSON result with:
 

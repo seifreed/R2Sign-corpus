@@ -2,14 +2,22 @@
 set -eu
 
 if [ "$#" -lt 3 ] || [ "$#" -gt 4 ]; then
-    echo "usage: vt-materialize MANIFEST OUTPUT AUDIT [LIMIT]" >&2
+    echo "usage: vt-materialize MANIFEST OUTPUT AUDIT [LIMIT|--audit-only]" >&2
     exit 2
 fi
 
 manifest=$1
 output=$2
 audit=$3
-limit=${4:-}
+option=${4:-}
+limit=
+download=true
+
+if [ "$option" = "--audit-only" ]; then
+    download=false
+else
+    limit=$option
+fi
 
 if [ -n "$limit" ] && { ! [ "$limit" -eq "$limit" ] 2>/dev/null || [ "$limit" -lt 1 ]; }; then
     echo "LIMIT must be a positive integer" >&2
@@ -66,7 +74,7 @@ while IFS= read -r digest; do
 done <"$hashes"
 
 vt_status=0
-if [ -s "$pending" ]; then
+if [ "$download" = true ] && [ -s "$pending" ]; then
     vt --silent download - --output "$output" --threads 5 <"$pending" || vt_status=$?
 fi
 
@@ -84,12 +92,14 @@ jq -Rs 'split("\n") | map(select(length > 0)) | sort' "$absent" >"$absent_array"
 manifest_sha256=$(shasum -a 256 "$manifest" | cut -d ' ' -f 1)
 jq -n \
     --arg manifest_sha256 "$manifest_sha256" \
+    --argjson download_attempted "$download" \
     --argjson vt_exit_code "$vt_status" \
     --slurpfile hashes "$hash_array" \
     --slurpfile missing "$absent_array" \
     '{
         schema: "r2sign-vt-materialization/v1",
         manifest_sha256: $manifest_sha256,
+        download_attempted: $download_attempted,
         vt_exit_code: $vt_exit_code,
         samples_requested: (($hashes[0] | length) + ($missing[0] | length)),
         samples_verified: ($hashes[0] | length),
@@ -102,4 +112,6 @@ mv "$audit.tmp" "$audit"
 verified_count=$(wc -l <"$verified" | tr -d ' ')
 absent_count=$(wc -l <"$absent" | tr -d ' ')
 printf 'verified=%s missing=%s\n' "$verified_count" "$absent_count"
-test "$vt_status" -eq 0 && test "$absent_count" -eq 0
+if [ "$download" = true ]; then
+    test "$vt_status" -eq 0 && test "$absent_count" -eq 0
+fi
