@@ -1,6 +1,6 @@
 {
   "schema": "r2sign-vt-materialization/v1",
-  "manifest_sha256": "c6d904c1561cbd6ae818c0b39807beee2acb23abcad3fd5fee64fd66ede2f521",
+  "manifest_sha256": "330ce003713ed6c7a825d9fe8f39217980e843d81918a02c269668470ad88495",
   "download_attempted": false,
   "vt_exit_code": 0,
   "samples_requested": 1408,

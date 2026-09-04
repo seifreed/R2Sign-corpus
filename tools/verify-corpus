@@ -24,6 +24,7 @@ jq -e '
         and (.source_url | type == "string" and startswith("https://"))
         and (.similarity_algorithm | type == "string" and length > 0)
         and (.similarity_hash | type == "string" and length > 0)
+        and (.runtime | type == "string" and length > 0)
         and (.label_confidence == "low" or .label_confidence == "medium" or
             .label_confidence == "high"))
     and (([.samples[].sample_id] | length) == ([.samples[].sample_id] | unique | length))
@@ -50,6 +51,20 @@ jq -e -s '
              elif .confidence_score >= 0.5 then "medium"
              else "low" end))
 ' manifest.json metadata/label-evidence.json >/dev/null
+
+jq -e -s '
+    .[0] as $manifest |
+    .[1] as $evidence |
+    ($evidence.samples | map({key:.sha256, value:.runtime}) | from_entries) as $runtimes |
+    $evidence.schema == "r2sign-runtime-evidence/v1"
+    and $evidence.extractor.command == "rabin2 -Ij"
+    and (($evidence.samples | length) == ($manifest.samples | length))
+    and (($evidence.samples | map(.sha256) | length) ==
+        ($evidence.samples | map(.sha256) | unique | length))
+    and all($manifest.samples[]; .runtime == $runtimes[.sha256])
+    and all($evidence.samples[];
+        .runtime == ((.os | ascii_downcase) + "-" + (.arch | ascii_downcase) + "-" + (.bits | tostring)))
+' manifest.json metadata/runtime-evidence.json >/dev/null
 
 checksums=$(mktemp)
 trap 'rm -f "$checksums"' EXIT HUP INT TERM

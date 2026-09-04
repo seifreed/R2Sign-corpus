@@ -53,6 +53,12 @@ uses `1 - malice_score`. Scores at or above `0.8` are high, scores at or above
 `0.5` are medium, and lower scores are low. Deterministic mutations inherit
 the label evidence of their declared source sample.
 
+## Runtime evidence
+
+`metadata/runtime-evidence.json` records the operating system, architecture,
+and bit width reported by `rabin2 -Ij` for every sample. The manifest runtime
+is the normalized `<os>-<arch>-<bits>` value derived from those fields.
+
 ## Mutations
 
 Each mutation is made by appending the fixed ASCII marker `R2SIGN-MUTATION-V1`

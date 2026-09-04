@@ -23,7 +23,7 @@ for source licenses, attribution, selection rules, and mutation provenance.
 - `goodware-r2sign.zip`: downloadable goodware database bundle with checksums.
 - `comparison/`: reproducible VxSig/BinDiff comparison artifacts on this corpus.
 
-Version `0.4.3` contains 1,410 verified samples: 440 labelled malware samples,
+Version `0.4.4` contains 1,410 verified samples: 440 labelled malware samples,
 966 goodware samples, two near-family samples, and two deterministic
 mutations. The malware split covers seven labelled families selected from the
 published VirusTotal labels: Cabby, FakeAV, Kryptik, Mediyes, Sirefef, Upatre
@@ -34,6 +34,8 @@ for aggregate detection evaluation rather than a family-prevalence estimate.
 Every sample is identified by SHA-256 and ssdeep, and linked to its public
 source record. Label confidence is derived from the pinned DikeDataset malice
 score and recorded with its source evidence in `metadata/label-evidence.json`.
+Runtime metadata is extracted with `rabin2 -Ij` and retained in
+`metadata/runtime-evidence.json`.
 
 ## Verification
 
@@ -49,7 +51,7 @@ scale fixtures. The R2Sign release-contract check additionally requires the
 pending VirusTotal provenance metadata:
 
 ```bash
-PYTHONPATH=../R2Sign python -m r2sign.cli.app corpus manifest.json
+PYTHONPATH=../R2Sign/src python3.14 -m r2sign.cli.app corpus manifest.json
 ```
 
 Materialize the licensed, non-derived samples through an authenticated
@@ -84,7 +86,7 @@ audit. Files not present in A1000 remain listed as missing.
 Run the benchmark and write its JSON result with:
 
 ```bash
-PYTHONPATH=../R2Sign python -m r2sign.cli.app benchmark benchmark/manifest.yml \
+PYTHONPATH=../R2Sign/src python3.14 -m r2sign.cli.app benchmark benchmark/manifest.yml \
   > benchmark/results.json
 ```
 
@@ -99,8 +101,8 @@ benign PE samples from the public source dataset plus five synthetic fixtures
 covering ELF, Mach-O and PE on x86, x86-64 and ARM64. Verify it with:
 
 ```bash
-PYTHONPATH=../R2Sign python -m r2sign.cli.app goodware verify goodware-db/manifest.json
-PYTHONPATH=../R2Sign python -m r2sign.cli.app goodware package goodware-db/manifest.json \
+PYTHONPATH=../R2Sign/src python3.14 -m r2sign.cli.app goodware verify goodware-db/manifest.json
+PYTHONPATH=../R2Sign/src python3.14 -m r2sign.cli.app goodware package goodware-db/manifest.json \
   --output /tmp/goodware-r2sign.zip
 ```
 
@@ -130,7 +132,7 @@ v8 artifact created from Ghidra `BinExport` files for one training and one
 holdout sample. Reproduce the external benchmark with:
 
 ```bash
-PYTHONPATH=../R2Sign python -m r2sign.cli.app benchmark \
+PYTHONPATH=../R2Sign/src python3.14 -m r2sign.cli.app benchmark \
   comparison/vxsig-benchmark.yml > /tmp/vxsig-benchmark.json
 ```
 
@@ -140,7 +142,7 @@ database built from this repository and records the exact rule, manifest, and
 metric delta in `yargen-go-comparison.json`. Reproduce it with:
 
 ```bash
-PYTHONPATH=../R2Sign python -m r2sign.cli.app benchmark \
+PYTHONPATH=../R2Sign/src python3.14 -m r2sign.cli.app benchmark \
   comparison/yargen-go-benchmark.yml > /tmp/yargen-go-benchmark.json
 ```
 
