@@ -36,13 +36,20 @@ source record.
 
 ## Verification
 
-From the R2Sign repository:
+Run the standalone integrity checks from this repository:
+
+```bash
+tools/verify-corpus
+```
+
+This verifies the manifest structure and uniqueness, every sample SHA-256,
+the VirusTotal audit partition, the goodware database digest, and all 10,000
+scale fixtures. The R2Sign release-contract check additionally requires the
+pending VirusTotal provenance metadata:
 
 ```bash
 PYTHONPATH=../R2Sign python -m r2sign.cli.app corpus manifest.json
 ```
-
-The command verifies the manifest and every sample digest.
 
 Materialize the licensed, non-derived samples through an authenticated
 VirusTotal CLI without placing the downloaded staging directory in Git:
