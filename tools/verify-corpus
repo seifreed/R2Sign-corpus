@@ -105,9 +105,10 @@ a1000_manifest_sha256=$(shasum -a 256 metadata/a1000-corpus.json | cut -d ' ' -f
 jq -e --arg manifest_sha256 "$a1000_manifest_sha256" '
     .schema == "r2sign-rl-materialization/v1"
     and .manifest_sha256 == $manifest_sha256
-    and .samples_requested == 48
-    and .samples_verified == 48
+    and .samples_requested == (.sha256 | length)
+    and .samples_verified == (.sha256 | length)
     and .samples_missing == 0
+    and (.missing_sha256 | length) == 0
 ' metadata/a1000-materialization.json >/dev/null
 jq -e -s '
     ([.[0].samples[].sha256] | sort) == (.[1].sha256 | sort)
