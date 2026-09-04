@@ -23,8 +23,8 @@ for source licenses, attribution, selection rules, and mutation provenance.
 - `goodware-r2sign.zip`: downloadable goodware database bundle with checksums.
 - `comparison/`: reproducible VxSig/BinDiff comparison artifacts on this corpus.
 
-Version `0.4.2` contains 1,426 verified samples: 440 labelled malware samples,
-982 goodware samples, two near-family samples, and two deterministic
+Version `0.4.3` contains 1,410 verified samples: 440 labelled malware samples,
+966 goodware samples, two near-family samples, and two deterministic
 mutations. The malware split covers seven labelled families selected from the
 published VirusTotal labels: Cabby, FakeAV, Kryptik, Mediyes, Sirefef, Upatre
 and Zbot. Its aggregate size exceeds the approximately 95% confidence,

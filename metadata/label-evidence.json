@@ -91,14 +91,6 @@
       "label_confidence": "high"
     },
     {
-      "sha256": "01a38ae91ae28ca9dcc89790292ad106a3f5bf8c16318b7ac9c1e7ab4ca628d4",
-      "source_sha256": "01a38ae91ae28ca9dcc89790292ad106a3f5bf8c16318b7ac9c1e7ab4ca628d4",
-      "source_label": "benign",
-      "malice_score": 0,
-      "confidence_score": 1,
-      "label_confidence": "high"
-    },
-    {
       "sha256": "02137a839aaec764236e42cf1e944139184ce81d3c89e722fd5b99e94a6146c9",
       "source_sha256": "02137a839aaec764236e42cf1e944139184ce81d3c89e722fd5b99e94a6146c9",
       "source_label": "malware",
@@ -240,14 +232,6 @@
       "source_label": "malware",
       "malice_score": 0.9312977099236641,
       "confidence_score": 0.9312977099236641,
-      "label_confidence": "high"
-    },
-    {
-      "sha256": "056ef243d86778e7a84a840a8562f14ae6dcf1a00492bc82c74b2d1e3c165056",
-      "source_sha256": "056ef243d86778e7a84a840a8562f14ae6dcf1a00492bc82c74b2d1e3c165056",
-      "source_label": "benign",
-      "malice_score": 0,
-      "confidence_score": 1,
       "label_confidence": "high"
     },
     {
@@ -781,14 +765,6 @@
     {
       "sha256": "1296acd35b7b7c0754e887430518b65c3a9efb89f111961a852806a07055d344",
       "source_sha256": "1296acd35b7b7c0754e887430518b65c3a9efb89f111961a852806a07055d344",
-      "source_label": "benign",
-      "malice_score": 0,
-      "confidence_score": 1,
-      "label_confidence": "high"
-    },
-    {
-      "sha256": "1302667485bd8b4dfcb5cc273cd05da1ca61927b5e923a5acbc2aaa1829ecfa1",
-      "source_sha256": "1302667485bd8b4dfcb5cc273cd05da1ca61927b5e923a5acbc2aaa1829ecfa1",
       "source_label": "benign",
       "malice_score": 0,
       "confidence_score": 1,
@@ -2067,14 +2043,6 @@
       "label_confidence": "high"
     },
     {
-      "sha256": "2ea4e14ea0250e212e217cc3663be8b1dde72a181016d6ba9a918299266953fc",
-      "source_sha256": "2ea4e14ea0250e212e217cc3663be8b1dde72a181016d6ba9a918299266953fc",
-      "source_label": "benign",
-      "malice_score": 0,
-      "confidence_score": 1,
-      "label_confidence": "high"
-    },
-    {
       "sha256": "2edf7c8fd59cd5fcd19fa528f60cbd6ddb9a8076ae0280b11d8ea8eaf7d39958",
       "source_sha256": "2edf7c8fd59cd5fcd19fa528f60cbd6ddb9a8076ae0280b11d8ea8eaf7d39958",
       "source_label": "benign",
@@ -2437,14 +2405,6 @@
     {
       "sha256": "37df0036b3a3d49c4d2d717ae8cff0576811b9a2726fa3b044af5934a48f48f9",
       "source_sha256": "37df0036b3a3d49c4d2d717ae8cff0576811b9a2726fa3b044af5934a48f48f9",
-      "source_label": "benign",
-      "malice_score": 0,
-      "confidence_score": 1,
-      "label_confidence": "high"
-    },
-    {
-      "sha256": "37df607966b7219faf58bb94e931b455b27e86c52c54878307c9a4c564067cf4",
-      "source_sha256": "37df607966b7219faf58bb94e931b455b27e86c52c54878307c9a4c564067cf4",
       "source_label": "benign",
       "malice_score": 0,
       "confidence_score": 1,
@@ -3667,14 +3627,6 @@
       "label_confidence": "high"
     },
     {
-      "sha256": "50e2677453fb89b7ba30c1e93a8bde682d4cd2ea37cfc3a8652b5adfead9e573",
-      "source_sha256": "50e2677453fb89b7ba30c1e93a8bde682d4cd2ea37cfc3a8652b5adfead9e573",
-      "source_label": "benign",
-      "malice_score": 0,
-      "confidence_score": 1,
-      "label_confidence": "high"
-    },
-    {
       "sha256": "50fd4a601f5165a93a50bdef41f255f7d4242c31c4413095e9d294f7029c1b3e",
       "source_sha256": "50fd4a601f5165a93a50bdef41f255f7d4242c31c4413095e9d294f7029c1b3e",
       "source_label": "benign",
@@ -3709,14 +3661,6 @@
     {
       "sha256": "51bd880654939f595158f3da086ce3b4e10bca532fda5b3c03033ac55e672ae7",
       "source_sha256": "51bd880654939f595158f3da086ce3b4e10bca532fda5b3c03033ac55e672ae7",
-      "source_label": "benign",
-      "malice_score": 0,
-      "confidence_score": 1,
-      "label_confidence": "high"
-    },
-    {
-      "sha256": "51ee81dbc0add93b11aa0d4ad02308243c1c194b4bed94722cb18bcf8f2836cf",
-      "source_sha256": "51ee81dbc0add93b11aa0d4ad02308243c1c194b4bed94722cb18bcf8f2836cf",
       "source_label": "benign",
       "malice_score": 0,
       "confidence_score": 1,
@@ -4080,14 +4024,6 @@
       "source_label": "malware",
       "malice_score": 0.8721804511278195,
       "confidence_score": 0.8721804511278195,
-      "label_confidence": "high"
-    },
-    {
-      "sha256": "58b5e00312deee5474cf42f0c86664254ae7123055219c342a80ab5754e48bf6",
-      "source_sha256": "58b5e00312deee5474cf42f0c86664254ae7123055219c342a80ab5754e48bf6",
-      "source_label": "benign",
-      "malice_score": 0,
-      "confidence_score": 1,
       "label_confidence": "high"
     },
     {
@@ -4531,14 +4467,6 @@
       "label_confidence": "high"
     },
     {
-      "sha256": "634d81d9020c188a9b3092ba5db2d70c988b0388acbe94ef954985b0cdfcc5a2",
-      "source_sha256": "634d81d9020c188a9b3092ba5db2d70c988b0388acbe94ef954985b0cdfcc5a2",
-      "source_label": "benign",
-      "malice_score": 0,
-      "confidence_score": 1,
-      "label_confidence": "high"
-    },
-    {
       "sha256": "639dfb6bb9a11a0b1ad03c560235d9c36cebb009aa2518e63f0a374c8de731eb",
       "source_sha256": "639dfb6bb9a11a0b1ad03c560235d9c36cebb009aa2518e63f0a374c8de731eb",
       "source_label": "benign",
@@ -4605,14 +4533,6 @@
     {
       "sha256": "647df4453044059c24cfcc2e37824159f29474bdc0b5755ae1a832d019aba289",
       "source_sha256": "647df4453044059c24cfcc2e37824159f29474bdc0b5755ae1a832d019aba289",
-      "source_label": "benign",
-      "malice_score": 0,
-      "confidence_score": 1,
-      "label_confidence": "high"
-    },
-    {
-      "sha256": "647ff3ef69a5e98dd602f79dc236659994d7b32f96c1828122ea907df388f360",
-      "source_sha256": "647ff3ef69a5e98dd602f79dc236659994d7b32f96c1828122ea907df388f360",
       "source_label": "benign",
       "malice_score": 0,
       "confidence_score": 1,
@@ -6579,14 +6499,6 @@
       "label_confidence": "high"
     },
     {
-      "sha256": "8e5c8ac9bacfbf9516847f8f6421f408c323065ff4c61d9c0afc22beb7b9833e",
-      "source_sha256": "8e5c8ac9bacfbf9516847f8f6421f408c323065ff4c61d9c0afc22beb7b9833e",
-      "source_label": "benign",
-      "malice_score": 0,
-      "confidence_score": 1,
-      "label_confidence": "high"
-    },
-    {
       "sha256": "8e6d981a214509a24d1886c9e972c50a8e732369a1c519b4caba85160deb650b",
       "source_sha256": "8e6d981a214509a24d1886c9e972c50a8e732369a1c519b4caba85160deb650b",
       "source_label": "malware",
@@ -6781,14 +6693,6 @@
     {
       "sha256": "959cf7ad86d1d9a697ff2161ea26f4825ab4d369b4651d3a3ad0e81e8416a2eb",
       "source_sha256": "959cf7ad86d1d9a697ff2161ea26f4825ab4d369b4651d3a3ad0e81e8416a2eb",
-      "source_label": "benign",
-      "malice_score": 0,
-      "confidence_score": 1,
-      "label_confidence": "high"
-    },
-    {
-      "sha256": "959d1fb46a3bb295e6e5d78525feedd5cde0c6c9d8c3a76dea01477d97f0e829",
-      "source_sha256": "959d1fb46a3bb295e6e5d78525feedd5cde0c6c9d8c3a76dea01477d97f0e829",
       "source_label": "benign",
       "malice_score": 0,
       "confidence_score": 1,
@@ -10099,14 +10003,6 @@
       "label_confidence": "high"
     },
     {
-      "sha256": "df23113f3c534e5becbd452bf2ad92cbcf2a92641f775f4f579c91ad7c0ac7f4",
-      "source_sha256": "df23113f3c534e5becbd452bf2ad92cbcf2a92641f775f4f579c91ad7c0ac7f4",
-      "source_label": "benign",
-      "malice_score": 0,
-      "confidence_score": 1,
-      "label_confidence": "high"
-    },
-    {
       "sha256": "df3be72be588f2b532738f0e78ea853f79facfb8bb26d4e5882de3fe1481780a",
       "source_sha256": "df3be72be588f2b532738f0e78ea853f79facfb8bb26d4e5882de3fe1481780a",
       "source_label": "benign",
@@ -10411,14 +10307,6 @@
       "label_confidence": "high"
     },
     {
-      "sha256": "e65843dd08f0044bfebc429e3ced7e936dc83c2d304fe7774147b0db382e5965",
-      "source_sha256": "e65843dd08f0044bfebc429e3ced7e936dc83c2d304fe7774147b0db382e5965",
-      "source_label": "benign",
-      "malice_score": 0,
-      "confidence_score": 1,
-      "label_confidence": "high"
-    },
-    {
       "sha256": "e68d0aff6f9b17d0c48a18f79e0f405f420242ac9c0c4579c8cced7ef699aa46",
       "source_sha256": "e68d0aff6f9b17d0c48a18f79e0f405f420242ac9c0c4579c8cced7ef699aa46",
       "source_label": "benign",
@@ -10701,14 +10589,6 @@
     {
       "sha256": "ed95b1141f32e8d2180b47426a1cbe89085764e744938e9bca98c5be411a52a6",
       "source_sha256": "ed95b1141f32e8d2180b47426a1cbe89085764e744938e9bca98c5be411a52a6",
-      "source_label": "benign",
-      "malice_score": 0,
-      "confidence_score": 1,
-      "label_confidence": "high"
-    },
-    {
-      "sha256": "ee01b01fbb047bbeabc6fd119ca91797f00bc7b59d8dab2c7f5a60e6b056972d",
-      "source_sha256": "ee01b01fbb047bbeabc6fd119ca91797f00bc7b59d8dab2c7f5a60e6b056972d",
       "source_label": "benign",
       "malice_score": 0,
       "confidence_score": 1,
@@ -11109,14 +10989,6 @@
     {
       "sha256": "f8b29d56375db2665c596014831a0daa7804df5ed2ead414c644f565c6b488d2",
       "source_sha256": "f8b29d56375db2665c596014831a0daa7804df5ed2ead414c644f565c6b488d2",
-      "source_label": "benign",
-      "malice_score": 0,
-      "confidence_score": 1,
-      "label_confidence": "high"
-    },
-    {
-      "sha256": "f8bfadc869da5c87fde870c0282bb9a7d104e27583fbea9a6f5b7e34ffea8a55",
-      "source_sha256": "f8bfadc869da5c87fde870c0282bb9a7d104e27583fbea9a6f5b7e34ffea8a55",
       "source_label": "benign",
       "malice_score": 0,
       "confidence_score": 1,
