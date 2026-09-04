@@ -24,6 +24,11 @@ jq -e '
         and (.source_url | type == "string" and startswith("https://"))
         and (.similarity_algorithm | type == "string" and length > 0)
         and (.similarity_hash | type == "string" and length > 0)
+        and (.first_seen | type == "string" and
+            test("^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}([.][0-9]+)?(Z|[+-][0-9]{2}:[0-9]{2})$"))
+        and (.builder | type == "string" and length > 0)
+        and (((.campaign // "") | length > 0) or
+            ((.sample_version // "") | length > 0))
         and (.runtime | type == "string" and length > 0)
         and (.label_confidence == "low" or .label_confidence == "medium" or
             .label_confidence == "high"))
@@ -65,6 +70,56 @@ jq -e -s '
     and all($evidence.samples[];
         .runtime == ((.os | ascii_downcase) + "-" + (.arch | ascii_downcase) + "-" + (.bits | tostring)))
 ' manifest.json metadata/runtime-evidence.json >/dev/null
+
+jq -e -s '
+    .[0] as $manifest |
+    .[1] as $evidence |
+    ($evidence.samples | map({key:.sha256, value:.}) | from_entries) as $records |
+    $evidence.schema == "r2sign-provenance-evidence/v1"
+    and $evidence.source_snapshot == "5200762e5db1d33b77a125a6964fed49b3c2dd2d"
+    and $evidence.builder_extractor.command == "rabin2 -HHj"
+    and (($evidence.samples | length) == ($manifest.samples | length))
+    and (($evidence.samples | map(.sha256) | length) ==
+        ($evidence.samples | map(.sha256) | unique | length))
+    and all($manifest.samples[];
+        .first_seen == $records[.sha256].first_seen
+        and .sample_version == $records[.sha256].sample_version
+        and .builder == $records[.sha256].builder)
+    and all($evidence.samples[];
+        (.source_commit | test("^[0-9a-f]{40}$"))
+        and (.builder_evidence.fingerprint_sha256 | test("^[0-9a-f]{64}$"))
+        and .builder == (.builder_evidence.kind + ":" +
+            .builder_evidence.fingerprint_sha256[0:16])
+        and (.builder_evidence.kind == "rich" or
+            .builder_evidence.kind == "pe-header" or
+            .builder_evidence.kind == "binary-prefix"))
+' manifest.json metadata/provenance-evidence.json >/dev/null
+
+python3.14 - <<'PY'
+from collections import defaultdict
+from datetime import datetime
+import json
+from pathlib import Path
+
+samples = json.loads(Path("manifest.json").read_text(encoding="utf-8"))["samples"]
+families = defaultdict(lambda: {"training": [], "holdout": []})
+for sample in samples:
+    if sample["role"] in {"training", "holdout"}:
+        families[sample["family"]][sample["role"]].append(sample)
+for family, split in families.items():
+    training = split["training"]
+    holdout = split["holdout"]
+    if not training or not holdout:
+        raise ValueError(f"temporal split is incomplete for {family}")
+    if min(datetime.fromisoformat(item["first_seen"]) for item in holdout) <= max(
+        datetime.fromisoformat(item["first_seen"]) for item in training
+    ):
+        raise ValueError(f"holdout is not newer than training for {family}")
+    training_versions = {item["sample_version"] for item in training}
+    holdout_versions = {item["sample_version"] for item in holdout}
+    if training_versions & holdout_versions:
+        raise ValueError(f"sample version crosses the temporal split for {family}")
+PY
 
 checksums=$(mktemp)
 trap 'rm -f "$checksums"' EXIT HUP INT TERM

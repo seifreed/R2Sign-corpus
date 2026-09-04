@@ -10,21 +10,20 @@ for source licenses, attribution, selection rules, and mutation provenance.
 
 ## Layout
 
-- `training/`: samples used to derive a detection rule.
-- `holdout/`: same-family samples excluded from rule construction.
 - `expanded/training/`: stratified training samples from seven labelled families.
 - `expanded/holdout/`: family-matched holdout samples excluded from construction.
 - `near_family/`: samples from related but distinct families.
 - `mutations/`: deterministic byte-level derivatives of training samples.
 - `goodware/`: benign PE samples used for false-positive checks.
 - `manifest.json`: SHA-256 protected `r2sign-corpus/v1` manifest.
+- `metadata/provenance-evidence.json`: source timestamps and builder fingerprints.
 - `metadata/a1000-corpus.json`: non-redistributable A1000 sample index.
 - `benchmark/`: fixed benchmark inputs and thresholds.
 - `rules/`: generated rules used by the benchmark.
 - `goodware-r2sign.zip`: downloadable goodware database bundle with checksums.
 - `comparison/`: reproducible VxSig/BinDiff comparison artifacts on this corpus.
 
-Version `0.4.4` contains 1,410 verified samples: 440 labelled malware samples,
+Version `0.5.0` contains 1,410 verified samples: 440 labelled malware samples,
 966 goodware samples, two near-family samples, and two deterministic
 mutations. The malware split covers seven labelled families selected from the
 published VirusTotal labels: Cabby, FakeAV, Kryptik, Mediyes, Sirefef, Upatre
@@ -36,7 +35,10 @@ Every sample is identified by SHA-256 and ssdeep, and linked to its public
 source record. Label confidence is derived from the pinned DikeDataset malice
 score and recorded with its source evidence in `metadata/label-evidence.json`.
 Runtime metadata is extracted with `rabin2 -Ij` and retained in
-`metadata/runtime-evidence.json`.
+`metadata/runtime-evidence.json`. The 307 training samples come from the two
+earlier source commits; all 133 holdout samples come from the later commit.
+`metadata/provenance-evidence.json` records the source commit timestamp and an
+opaque Rich Header or binary-header builder fingerprint for every sample.
 
 ## Verification
 
@@ -48,8 +50,8 @@ tools/verify-corpus
 
 This verifies the manifest structure and uniqueness, every sample SHA-256,
 the provider audit partitions, the goodware database digest, and all 10,000
-scale fixtures. The R2Sign release-contract check additionally requires the
-pending VirusTotal provenance metadata:
+scale fixtures. The R2Sign release-contract check additionally validates the
+redistribution and temporal-separation metadata:
 
 ```bash
 PYTHONPATH=../R2Sign/src python3.14 -m r2sign.cli.app corpus manifest.json

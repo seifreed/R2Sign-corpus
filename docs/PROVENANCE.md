@@ -15,26 +15,24 @@ priority order when a published tag contains more than one family name:
 `Mediyes`, `Cabby`, `Sirefef`, `Upatre`, `Kryptik`, `Zbot`, `FakeAV`.
 Selection is deterministic and limited to PE files whose source path and
 SHA-256 agree. The source population contains 8878 valid labelled PE
-candidates after that priority assignment. The initial malware split uses
+candidates after that priority assignment. The initial malware selection uses
 predeclared family quotas totalling 447 samples, with complete retention of
 families below the quota floor. Exact ssdeep duplicates are reduced to one
-representative, removing seven redundant samples. The holdout representative
-is retained when a duplicate group crosses splits; otherwise a VT-verified
-member with the smallest SHA-256 is retained. Within each family, candidates
-are ordered by
-the SHA-256 digest of `R2Sign-corpus-v3:<family>:<sample hash>`; every fifth
-selected sample is holdout. This exceeds the approximately 95% confidence,
-plus-or-minus 5% aggregate finite-population target. Family quotas preserve
-rare families, so the split is calibrated for aggregate detection evaluation
-and does not claim to represent family prevalence.
+representative, removing seven redundant samples. The 440 retained malware
+files are then split by source history: 307 samples first committed in the two
+earlier source batches are training data, and 133 samples first committed in
+the latest source batch are holdout data. Every represented family occurs on
+both sides of the split, and no source batch version crosses it. This exceeds
+the approximately 95% confidence, plus-or-minus 5% aggregate finite-population
+target. Family quotas preserve rare families, so the split is calibrated for
+aggregate detection evaluation and does not claim to represent family
+prevalence.
 
 ## Selection
 
-- `training/mediyes/` contains three distinct Mediyes samples.
-- `holdout/mediyes/` contains two distinct Mediyes samples excluded from rule construction.
-- `expanded/training/<family>/` contains 342 samples across seven labelled
+- `expanded/training/<family>/` contains 307 samples across seven labelled
   families.
-- `expanded/holdout/<family>/` contains 98 samples across the same families,
+- `expanded/holdout/<family>/` contains 133 samples across the same families,
   excluded from rule construction.
 - `near_family/` contains one Kryptik and one Cabby sample.
 - `goodware/pe/` contains 966 benign PE samples from the same published source dataset.
@@ -58,6 +56,20 @@ the label evidence of their declared source sample.
 `metadata/runtime-evidence.json` records the operating system, architecture,
 and bit width reported by `rabin2 -Ij` for every sample. The manifest runtime
 is the normalized `<os>-<arch>-<bits>` value derived from those fields.
+
+## Temporal and builder evidence
+
+`metadata/provenance-evidence.json` records the first Git commit adding each
+source path and preserves its timezone-aware commit timestamp as `first_seen`.
+The source commit is also the sample version used to prove that training and
+holdout batches do not overlap. Mutations instead use their first repository
+commit timestamp and an `append-v1` version tied to the source commit.
+
+The builder field is an opaque cohort fingerprint, not a compiler-vendor
+claim. It hashes decoded Rich Header product entries when present, selected PE
+header fields otherwise, and a bounded binary prefix for the six source files
+where `rabin2 -HHj` exposes neither. The evidence retains the exact extractor
+version, method, and full digest; the committed binaries allow regeneration.
 
 ## Mutations
 

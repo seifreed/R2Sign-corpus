@@ -1,7 +1,7 @@
 external_tool: yargen-go
 rule: yargen-go-mediyes.yar
-positive: ../training/mediyes
-holdout: ../holdout/mediyes
+positive: ../expanded/training/mediyes
+holdout: ../expanded/holdout/mediyes
 goodware: ../goodware/pe
 near_family: ../near_family
 mutations: ../mutations/mediyes
