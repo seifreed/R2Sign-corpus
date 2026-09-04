@@ -29,8 +29,9 @@ command -v jq >/dev/null
 command -v shasum >/dev/null
 
 jq -e '
-    .schema == "r2sign-corpus/v1"
-    and .redistributable == true
+    ((.schema == "r2sign-corpus/v1" and .redistributable == true)
+        or (.schema == "r2sign-a1000-corpus/v1" and .redistributable == false
+            and .provider == "ReversingLabs A1000"))
     and (.samples | type == "array" and length > 0)
     and all(.samples[] | select(.role != "mutation");
         (.sha256 | type == "string" and test("^[0-9a-fA-F]{64}$")))
@@ -69,7 +70,7 @@ done <"$hashes"
 
 rl_status=0
 if [ "$download" = true ] && [ -s "$pending" ]; then
-    split -l 50 "$pending" "$temporary/chunk."
+    split -l 10 "$pending" "$temporary/chunk."
     for chunk in "$temporary"/chunk.*; do
         query=$(awk 'BEGIN { separator = "" } { printf "%ssha256:%s", separator, $0; separator = " OR " }' "$chunk")
         result=$chunk.json

@@ -7,12 +7,17 @@ mkdir -p "$root/bin"
 content=r2sign-reversinglabs-fixture
 digest=$(printf '%s' "$content" | shasum -a 256 | cut -d ' ' -f 1)
 export RL_TEST_CONTENT="$content" RL_TEST_DIGEST="$digest"
+export RL_TEST_CALLS="$root/calls"
 
 cat >"$root/bin/rl-cli" <<'EOF'
 #!/bin/sh
 case " $* " in
     *" a1000 search "*)
-        printf '[{"sha256":"%s"}]\n' "$RL_TEST_DIGEST"
+        printf '%s\n' "$*" >>"$RL_TEST_CALLS"
+        case " $* " in
+            *"sha256:$RL_TEST_DIGEST"*) printf '[{"sha256":"%s"}]\n' "$RL_TEST_DIGEST" ;;
+            *) printf '[]\n' ;;
+        esac
         ;;
     *" a1000 download "*)
         while [ "$#" -gt 0 ]; do
@@ -33,9 +38,10 @@ chmod +x "$root/bin/rl-cli"
 
 cat >"$root/manifest.json" <<EOF
 {
-  "schema": "r2sign-corpus/v1",
-  "redistributable": true,
-  "samples": [{"role": "training", "sha256": "$digest"}]
+  "schema": "r2sign-a1000-corpus/v1",
+  "provider": "ReversingLabs A1000",
+  "redistributable": false,
+  "samples": [{"sha256": "$digest"}]
 }
 EOF
 
@@ -45,3 +51,21 @@ PATH="$root/bin:$PATH" tools/rl-materialize \
 test "$(shasum -a 256 "$root/output/$digest" | cut -d ' ' -f 1)" = "$digest"
 jq -e '.rl_exit_code == 0 and .samples_verified == 1 and .samples_missing == 0' \
     "$root/audit.json" >/dev/null
+
+printf '{"schema":"r2sign-a1000-corpus/v1","provider":"ReversingLabs A1000","redistributable":false,"samples":[' >"$root/batch.json"
+separator=
+index=1
+while [ "$index" -le 11 ]; do
+    printf '%s{"sha256":"%064x"}' "$separator" "$index" >>"$root/batch.json"
+    separator=,
+    index=$((index + 1))
+done
+printf ']}\n' >>"$root/batch.json"
+: >"$RL_TEST_CALLS"
+if PATH="$root/bin:$PATH" tools/rl-materialize \
+    "$root/batch.json" "$root/batch-output" "$root/batch-audit.json"; then
+    exit 1
+fi
+test "$(wc -l <"$RL_TEST_CALLS" | tr -d ' ')" -eq 2
+awk '{ line = $0; count = 0; while (sub(/sha256:/, "", line)) count++; if (count > 10) exit 1 }' \
+    "$RL_TEST_CALLS"

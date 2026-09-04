@@ -18,6 +18,7 @@ for source licenses, attribution, selection rules, and mutation provenance.
 - `mutations/`: deterministic byte-level derivatives of training samples.
 - `goodware/`: benign PE samples used for false-positive checks.
 - `manifest.json`: SHA-256 protected `r2sign-corpus/v1` manifest.
+- `metadata/a1000-corpus.json`: non-redistributable A1000 sample index.
 - `benchmark/`: fixed benchmark inputs and thresholds.
 - `rules/`: generated rules used by the benchmark.
 - `goodware-r2sign.zip`: downloadable goodware database bundle with checksums.
@@ -82,6 +83,19 @@ tools/rl-materialize manifest.json .rl-materialized \
 The command searches pending hashes in batches, downloads only samples marked
 available by A1000, verifies each SHA-256, and records a resumable hash-only
 audit. Files not present in A1000 remain listed as missing.
+
+`metadata/a1000-corpus.json` adds 48 available malicious PE records from 18
+families for analysts with access to the configured A1000 instance. Materialize
+and verify them locally with:
+
+```bash
+tools/rl-materialize metadata/a1000-corpus.json .rl-materialized/a1000 \
+  metadata/a1000-materialization.json
+```
+
+The index contains hashes and analysis metadata only. The downloaded binaries
+remain ignored because A1000 access does not grant this repository permission
+to redistribute them.
 
 Run the benchmark and write its JSON result with:
 

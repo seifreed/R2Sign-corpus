@@ -87,6 +87,32 @@ done
 jq -e '.schema == "r2sign-vt-materialization/v1"' metadata/vt-materialization.json >/dev/null
 jq -e '.schema == "r2sign-rl-materialization/v1"' metadata/rl-materialization.json >/dev/null
 
+jq -e '
+    .schema == "r2sign-a1000-corpus/v1"
+    and .provider == "ReversingLabs A1000"
+    and .redistributable == false
+    and (.samples | type == "array" and length > 0)
+    and (([.samples[].sha256] | length) == ([.samples[].sha256] | unique | length))
+    and all(.samples[];
+        (.sha256 | type == "string" and test("^[0-9a-f]{64}$"))
+        and (.family | type == "string" and length > 0)
+        and .classification == "Malicious"
+        and (.sample_type | type == "string" and startswith("PE"))
+        and (.size | type == "number" and . > 0)
+        and (.first_seen | type == "string" and length > 0))
+' metadata/a1000-corpus.json >/dev/null
+a1000_manifest_sha256=$(shasum -a 256 metadata/a1000-corpus.json | cut -d ' ' -f 1)
+jq -e --arg manifest_sha256 "$a1000_manifest_sha256" '
+    .schema == "r2sign-rl-materialization/v1"
+    and .manifest_sha256 == $manifest_sha256
+    and .samples_requested == 48
+    and .samples_verified == 48
+    and .samples_missing == 0
+' metadata/a1000-materialization.json >/dev/null
+jq -e -s '
+    ([.[0].samples[].sha256] | sort) == (.[1].sha256 | sort)
+' metadata/a1000-corpus.json metadata/a1000-materialization.json >/dev/null
+
 expected_goodware=$(jq -r '.sha256' goodware-db/manifest.json)
 actual_goodware=$(shasum -a 256 goodware-db/goodware_patterns.db | cut -d ' ' -f 1)
 test "$actual_goodware" = "$expected_goodware"
