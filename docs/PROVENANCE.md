@@ -33,7 +33,7 @@ and does not claim to represent family prevalence.
 - `expanded/holdout/<family>/` contains 99 samples across the same families,
   excluded from rule construction.
 - `near_family/` contains one Kryptik and one Cabby sample.
-- `goodware/pe/` contains three benign PE samples from the same published source dataset.
+- `goodware/pe/` contains 982 benign PE samples from the same published source dataset.
 - `goodware/fixtures/` contains five synthetic MIT-licensed fixtures covering ELF, Mach-O and PE on x86, x86-64 and ARM64. They were compiled locally and never executed.
 - `mutations/mediyes/` contains deterministic derivatives of two training samples.
 
