@@ -15,9 +15,13 @@ priority order when a published tag contains more than one family name:
 `Mediyes`, `Cabby`, `Sirefef`, `Upatre`, `Kryptik`, `Zbot`, `FakeAV`.
 Selection is deterministic and limited to PE files whose source path and
 SHA-256 agree. The source population contains 8878 valid labelled PE
-candidates after that priority assignment. The final malware split uses
+candidates after that priority assignment. The initial malware split uses
 predeclared family quotas totalling 447 samples, with complete retention of
-families below the quota floor. Within each family, candidates are ordered by
+families below the quota floor. Exact ssdeep duplicates are reduced to one
+representative, removing seven redundant samples. The holdout representative
+is retained when a duplicate group crosses splits; otherwise a VT-verified
+member with the smallest SHA-256 is retained. Within each family, candidates
+are ordered by
 the SHA-256 digest of `R2Sign-corpus-v3:<family>:<sample hash>`; every fifth
 selected sample is holdout. This exceeds the approximately 95% confidence,
 plus-or-minus 5% aggregate finite-population target. Family quotas preserve
@@ -28,9 +32,9 @@ and does not claim to represent family prevalence.
 
 - `training/mediyes/` contains three distinct Mediyes samples.
 - `holdout/mediyes/` contains two distinct Mediyes samples excluded from rule construction.
-- `expanded/training/<family>/` contains 348 samples across seven labelled
+- `expanded/training/<family>/` contains 342 samples across seven labelled
   families.
-- `expanded/holdout/<family>/` contains 99 samples across the same families,
+- `expanded/holdout/<family>/` contains 98 samples across the same families,
   excluded from rule construction.
 - `near_family/` contains one Kryptik and one Cabby sample.
 - `goodware/pe/` contains 982 benign PE samples from the same published source dataset.
