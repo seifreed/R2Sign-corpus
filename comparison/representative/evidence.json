@@ -1,0 +1,343 @@
+{
+  "analysis_stack": "IDA Pro 9.3.260421.be7de18d; BinDiff 8; SMDA 4.5.0",
+  "corpus": {
+    "goodware_total": 966,
+    "holdout_total": 133,
+    "manifest": "../../manifest.json",
+    "manifest_sha256": "295e79a98aabcce901c31a8c0443598e5d9a3008ae8d2671f2a4151c9170267d",
+    "mutation_total": 2,
+    "near_family_total": 2,
+    "selection": "Three training samples per family from its largest builder cohort",
+    "training_samples": [
+      {
+        "builder": "rich:cd4b7ccf7fed2014",
+        "family": "cabby",
+        "first_seen": "2021-03-11T19:39:42+02:00",
+        "path": "expanded/training/cabby/0cb17078bb20234b689836ff48c147ebcdf4abc3fe82e42ba51454fe1cb4a1e5.exe",
+        "sha256": "0cb17078bb20234b689836ff48c147ebcdf4abc3fe82e42ba51454fe1cb4a1e5"
+      },
+      {
+        "builder": "rich:cd4b7ccf7fed2014",
+        "family": "cabby",
+        "first_seen": "2021-03-11T19:27:18+02:00",
+        "path": "expanded/training/cabby/13ab0448483994b2a8e737655a844246f5974e46f2bba4e1164518610300e573.exe",
+        "sha256": "13ab0448483994b2a8e737655a844246f5974e46f2bba4e1164518610300e573"
+      },
+      {
+        "builder": "rich:cd4b7ccf7fed2014",
+        "family": "cabby",
+        "first_seen": "2021-03-11T19:27:18+02:00",
+        "path": "expanded/training/cabby/176f3ad6537a7c5f84d038bb961b14f28eba7ed32883bff4cca87581b978b657.exe",
+        "sha256": "176f3ad6537a7c5f84d038bb961b14f28eba7ed32883bff4cca87581b978b657"
+      },
+      {
+        "builder": "pe-header:6ac0e61aa254f887",
+        "family": "fakeav",
+        "first_seen": "2021-03-11T19:27:18+02:00",
+        "path": "expanded/training/fakeav/1706022cd4215c5f54f3d203d432a70d881a1bf7636c41130fa88a7094c328ab.exe",
+        "sha256": "1706022cd4215c5f54f3d203d432a70d881a1bf7636c41130fa88a7094c328ab"
+      },
+      {
+        "builder": "pe-header:6ac0e61aa254f887",
+        "family": "fakeav",
+        "first_seen": "2021-03-11T19:27:18+02:00",
+        "path": "expanded/training/fakeav/1ad0e3f2fee448eb3efa7b0b4408b28b66418c373f30ffece5a58a734edfe5c5.exe",
+        "sha256": "1ad0e3f2fee448eb3efa7b0b4408b28b66418c373f30ffece5a58a734edfe5c5"
+      },
+      {
+        "builder": "pe-header:6ac0e61aa254f887",
+        "family": "fakeav",
+        "first_seen": "2021-03-11T19:27:18+02:00",
+        "path": "expanded/training/fakeav/278e64142df7b133305e24e96b8f9d891ec4588dd44e0152f40095701374f7a1.exe",
+        "sha256": "278e64142df7b133305e24e96b8f9d891ec4588dd44e0152f40095701374f7a1"
+      },
+      {
+        "builder": "pe-header:989a62e8b3ed0344",
+        "family": "kryptik",
+        "first_seen": "2021-03-11T19:27:18+02:00",
+        "path": "expanded/training/kryptik/3eafd449fb1c0adad1a8bb9ec7baad5ce37163c57c70e5b365eed7ec646e843e.exe",
+        "sha256": "3eafd449fb1c0adad1a8bb9ec7baad5ce37163c57c70e5b365eed7ec646e843e"
+      },
+      {
+        "builder": "pe-header:989a62e8b3ed0344",
+        "family": "kryptik",
+        "first_seen": "2021-03-11T19:27:18+02:00",
+        "path": "expanded/training/kryptik/47772d4047014f4d9c3a8f375de1345694b018de0eff325967f59b81804fb81e.exe",
+        "sha256": "47772d4047014f4d9c3a8f375de1345694b018de0eff325967f59b81804fb81e"
+      },
+      {
+        "builder": "pe-header:989a62e8b3ed0344",
+        "family": "kryptik",
+        "first_seen": "2021-03-11T19:27:18+02:00",
+        "path": "expanded/training/kryptik/543101fe0616e5258ab9237a44c5fd8eae2ab59c2c93e688e0e7156275606003.exe",
+        "sha256": "543101fe0616e5258ab9237a44c5fd8eae2ab59c2c93e688e0e7156275606003"
+      },
+      {
+        "builder": "pe-header:f4e49f8d2927cff5",
+        "family": "mediyes",
+        "first_seen": "2021-03-11T19:39:42+02:00",
+        "path": "expanded/training/mediyes/02137a839aaec764236e42cf1e944139184ce81d3c89e722fd5b99e94a6146c9.exe",
+        "sha256": "02137a839aaec764236e42cf1e944139184ce81d3c89e722fd5b99e94a6146c9"
+      },
+      {
+        "builder": "pe-header:f4e49f8d2927cff5",
+        "family": "mediyes",
+        "first_seen": "2021-03-11T19:27:18+02:00",
+        "path": "expanded/training/mediyes/2585ff9e7e41c34bbfeb22dd863362119a2577fe986cad1195dc7fe7148d5856.exe",
+        "sha256": "2585ff9e7e41c34bbfeb22dd863362119a2577fe986cad1195dc7fe7148d5856"
+      },
+      {
+        "builder": "pe-header:f4e49f8d2927cff5",
+        "family": "mediyes",
+        "first_seen": "2021-03-11T19:27:18+02:00",
+        "path": "expanded/training/mediyes/61083ebb038d6ff1d64c75bd1b18825a58c4c31741cadf45d776a2cbaeb13335.exe",
+        "sha256": "61083ebb038d6ff1d64c75bd1b18825a58c4c31741cadf45d776a2cbaeb13335"
+      },
+      {
+        "builder": "pe-header:b2b89cf49c6d8630",
+        "family": "sirefef",
+        "first_seen": "2021-03-11T19:27:18+02:00",
+        "path": "expanded/training/sirefef/4a9e7e209193da1dfcbdc04d939f9ac3238e16d92e74e19fbad7d08b8d8f64f1.exe",
+        "sha256": "4a9e7e209193da1dfcbdc04d939f9ac3238e16d92e74e19fbad7d08b8d8f64f1"
+      },
+      {
+        "builder": "pe-header:b2b89cf49c6d8630",
+        "family": "sirefef",
+        "first_seen": "2021-03-11T19:27:18+02:00",
+        "path": "expanded/training/sirefef/659b7c3a678635b80d0ea9f7854af9b56ab8713d9a1c39c0a337f340aff0618c.exe",
+        "sha256": "659b7c3a678635b80d0ea9f7854af9b56ab8713d9a1c39c0a337f340aff0618c"
+      },
+      {
+        "builder": "pe-header:b2b89cf49c6d8630",
+        "family": "sirefef",
+        "first_seen": "2021-03-11T19:39:42+02:00",
+        "path": "expanded/training/sirefef/af29c6d25d15e878eb406276fe695017491f079509bbf5b2434fe975e4574679.exe",
+        "sha256": "af29c6d25d15e878eb406276fe695017491f079509bbf5b2434fe975e4574679"
+      },
+      {
+        "builder": "rich:8b43193cf894191b",
+        "family": "upatre",
+        "first_seen": "2021-03-11T19:27:18+02:00",
+        "path": "expanded/training/upatre/620bae1ab9de6fa46fe9eae40169f00e74374d9df32bc87c1a6a2954a70a6dce.exe",
+        "sha256": "620bae1ab9de6fa46fe9eae40169f00e74374d9df32bc87c1a6a2954a70a6dce"
+      },
+      {
+        "builder": "rich:8b43193cf894191b",
+        "family": "upatre",
+        "first_seen": "2021-03-11T19:27:18+02:00",
+        "path": "expanded/training/upatre/65d985debfd483eb49b40c58a3ff22641391a7cd6122784b23d439c49d034bea.exe",
+        "sha256": "65d985debfd483eb49b40c58a3ff22641391a7cd6122784b23d439c49d034bea"
+      },
+      {
+        "builder": "rich:8b43193cf894191b",
+        "family": "upatre",
+        "first_seen": "2021-03-11T19:27:18+02:00",
+        "path": "expanded/training/upatre/6c9feb09c2f76717829b2696c2ebe59d11b2ce69d4bccf698fd3aa0ba5c3fd21.exe",
+        "sha256": "6c9feb09c2f76717829b2696c2ebe59d11b2ce69d4bccf698fd3aa0ba5c3fd21"
+      },
+      {
+        "builder": "pe-header:989a62e8b3ed0344",
+        "family": "zbot",
+        "first_seen": "2021-03-11T19:39:42+02:00",
+        "path": "expanded/training/zbot/0d7f9a2daa3ce1ff75b726e758d99d622ac6e4c77ec216fc90853c356734dc76.exe",
+        "sha256": "0d7f9a2daa3ce1ff75b726e758d99d622ac6e4c77ec216fc90853c356734dc76"
+      },
+      {
+        "builder": "pe-header:989a62e8b3ed0344",
+        "family": "zbot",
+        "first_seen": "2021-03-11T19:27:18+02:00",
+        "path": "expanded/training/zbot/1a7895c50ce00d72188e1ad764fc8ddc32d7f2e437e2edd10e9229807118e10f.exe",
+        "sha256": "1a7895c50ce00d72188e1ad764fc8ddc32d7f2e437e2edd10e9229807118e10f"
+      },
+      {
+        "builder": "pe-header:989a62e8b3ed0344",
+        "family": "zbot",
+        "first_seen": "2021-03-11T19:39:42+02:00",
+        "path": "expanded/training/zbot/94efa32b73992f69ed5a23f81a7c75f72e4fed6f877e48fc0c5c3b6bd8123c2f.exe",
+        "sha256": "94efa32b73992f69ed5a23f81a7c75f72e4fed6f877e48fc0c5c3b6bd8123c2f"
+      }
+    ],
+    "training_total": 21,
+    "version": "0.5.0"
+  },
+  "cross_family": {
+    "bytes": 311552145,
+    "family_total": 47,
+    "index": "cross-family-a1000.json",
+    "provider": "ReversingLabs A1000",
+    "redistributable": false,
+    "sample_total": 100,
+    "source_version": "3.0.0"
+  },
+  "executed_at": "2026-09-04",
+  "platform": "macOS 26.6 arm64",
+  "runtime": "Python 3.14.7; Go 1.27.1; OpenJDK 26.0.2.1",
+  "schema": "r2sign-representative-comparison/v1",
+  "tools": {
+    "bass": {
+      "artifact": "bass.ndb",
+      "artifact_sha256": "42b1c79ebad5def3ae8f610c2e5e5bebb34836c871ea8bcc51830a5b37aa661d",
+      "format": "clamav-ndb",
+      "metrics": {
+        "commit_sha": "2059c0712678109ac302950d152f77172a301d1f",
+        "corpus_manifest_sha256": "295e79a98aabcce901c31a8c0443598e5d9a3008ae8d2671f2a4151c9170267d",
+        "cross_family_matches": 0,
+        "cross_family_total": 100,
+        "goodware_false_positive_rate": 0.0,
+        "goodware_matches": 0,
+        "goodware_total": 966,
+        "holdout_matches": 0,
+        "holdout_recall": 0.0,
+        "holdout_total": 133,
+        "latency_p50": 0.025700791040435433,
+        "latency_p95": 0.044484084006398916,
+        "max_rss_bytes": 58064896,
+        "mutation_matches": 0,
+        "mutation_total": 2,
+        "near_family_matches": 0,
+        "near_family_total": 2,
+        "positive_matches": 2,
+        "positive_recall": 0.09523809523809523,
+        "positive_total": 21,
+        "rule_bytes": 1632,
+        "rule_sha256": "42b1c79ebad5def3ae8f610c2e5e5bebb34836c871ea8bcc51830a5b37aa661d",
+        "scan_seconds": 35.21805804199539,
+        "throughput": 15531300.287703454
+      },
+      "status": {
+        "cabby": "no-signature",
+        "fakeav": "no-signature",
+        "kryptik": "no-signature",
+        "mediyes": "success",
+        "sirefef": "no-signature",
+        "upatre": "success",
+        "zbot": "no-signature"
+      },
+      "upstream_base": "6dd8b7aa4b13ddcd48f0c8fbd64ac43955157420",
+      "version": "448846fcf56895ac13aa810eb69b4eeaa694557b"
+    },
+    "vxsig": {
+      "artifact": "vxsig.yar",
+      "artifact_sha256": "c7bcf53407696a8ccc519b1fcb21461f721264082177aa4fbf4b689e28f2878e",
+      "format": "yara",
+      "metrics": {
+        "commit_sha": "2059c0712678109ac302950d152f77172a301d1f",
+        "corpus_manifest_sha256": "295e79a98aabcce901c31a8c0443598e5d9a3008ae8d2671f2a4151c9170267d",
+        "cross_family_matches": 18,
+        "cross_family_total": 100,
+        "goodware_false_positive_rate": 0.06418219461697723,
+        "goodware_matches": 62,
+        "goodware_total": 966,
+        "holdout_matches": 32,
+        "holdout_recall": 0.24060150375939848,
+        "holdout_total": 133,
+        "latency_p50": 0.0008314170408993959,
+        "latency_p95": 0.012773624970577657,
+        "max_rss_bytes": 90996736,
+        "mutation_matches": 2,
+        "mutation_total": 2,
+        "near_family_matches": 0,
+        "near_family_total": 2,
+        "positive_matches": 11,
+        "positive_recall": 0.5238095238095238,
+        "positive_total": 21,
+        "rule_bytes": 23947,
+        "rule_sha256": "c7bcf53407696a8ccc519b1fcb21461f721264082177aa4fbf4b689e28f2878e",
+        "scan_seconds": 3.8821860420284793,
+        "throughput": 140895420.5384234
+      },
+      "status": {
+        "cabby": "no-signature",
+        "fakeav": "success",
+        "kryptik": "success",
+        "mediyes": "success",
+        "sirefef": "success",
+        "upatre": "success",
+        "zbot": "success"
+      },
+      "version": "0366c9f2031799b576069afc1d5a6962b431db95"
+    },
+    "yara-signator": {
+      "artifact": "yara-signator.yar",
+      "artifact_sha256": "0b57a39aa846108782bebf1a247149da6c519dd4d46970fa676d1943b01d57a5",
+      "format": "yara",
+      "metrics": {
+        "commit_sha": "2059c0712678109ac302950d152f77172a301d1f",
+        "corpus_manifest_sha256": "295e79a98aabcce901c31a8c0443598e5d9a3008ae8d2671f2a4151c9170267d",
+        "cross_family_matches": 0,
+        "cross_family_total": 100,
+        "goodware_false_positive_rate": 0.0,
+        "goodware_matches": 0,
+        "goodware_total": 966,
+        "holdout_matches": 50,
+        "holdout_recall": 0.37593984962406013,
+        "holdout_total": 133,
+        "latency_p50": 0.0006654580356553197,
+        "latency_p95": 0.010707500041462481,
+        "max_rss_bytes": 90619904,
+        "mutation_matches": 2,
+        "mutation_total": 2,
+        "near_family_matches": 0,
+        "near_family_total": 2,
+        "positive_matches": 18,
+        "positive_recall": 0.8571428571428571,
+        "positive_total": 21,
+        "rule_bytes": 29117,
+        "rule_sha256": "0b57a39aa846108782bebf1a247149da6c519dd4d46970fa676d1943b01d57a5",
+        "scan_seconds": 3.3137717499630526,
+        "throughput": 165063340.58949554
+      },
+      "status": {
+        "cabby": "no-signature",
+        "fakeav": "success",
+        "kryptik": "success",
+        "mediyes": "success",
+        "sirefef": "success",
+        "upatre": "success",
+        "zbot": "success"
+      },
+      "version": "b7e005aba0cbbd789fd653c2303fd1e2dfe7f3b0"
+    },
+    "yargen-go": {
+      "artifact": "yargen-go.yar",
+      "artifact_sha256": "9098d5d6f302b3dc7a95fade633495b5757d86ce67d078d9893618feefd9d107",
+      "format": "yara",
+      "metrics": {
+        "commit_sha": "2059c0712678109ac302950d152f77172a301d1f",
+        "corpus_manifest_sha256": "295e79a98aabcce901c31a8c0443598e5d9a3008ae8d2671f2a4151c9170267d",
+        "cross_family_matches": 40,
+        "cross_family_total": 100,
+        "goodware_false_positive_rate": 0.6863354037267081,
+        "goodware_matches": 663,
+        "goodware_total": 966,
+        "holdout_matches": 66,
+        "holdout_recall": 0.49624060150375937,
+        "holdout_total": 133,
+        "latency_p50": 0.0007008339744061232,
+        "latency_p95": 0.010559875052422285,
+        "max_rss_bytes": 94552064,
+        "mutation_matches": 2,
+        "mutation_total": 2,
+        "near_family_matches": 1,
+        "near_family_total": 2,
+        "positive_matches": 21,
+        "positive_recall": 1.0,
+        "positive_total": 21,
+        "rule_bytes": 42275,
+        "rule_sha256": "9098d5d6f302b3dc7a95fade633495b5757d86ce67d078d9893618feefd9d107",
+        "scan_seconds": 3.4993450419278815,
+        "throughput": 156309888.97815377
+      },
+      "status": {
+        "cabby": "success",
+        "fakeav": "success",
+        "kryptik": "success",
+        "mediyes": "success",
+        "sirefef": "success",
+        "upatre": "success",
+        "zbot": "success"
+      },
+      "version": "2eb6e683156d11178db2e52636d05fa62456ffd3"
+    }
+  }
+}

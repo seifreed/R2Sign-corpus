@@ -1,0 +1,709 @@
+{
+  "schema": "r2sign-representative-cross-family/v1",
+  "provider": "ReversingLabs A1000",
+  "source_version": "3.0.0",
+  "redistributable": false,
+  "selection": "Up to five SHA-256-sorted samples per named A1000 family, excluding the seven public target families; first 100 records by family name",
+  "samples": [
+    {
+      "sha256": "18e4e00de162d0d44c0d57429e3e834d6bec9f087c5de5edbfb4ba2a2097f88c",
+      "family": "AdamantiumTheif",
+      "first_seen": "2026-09-02T02:38:36.853Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 585216
+    },
+    {
+      "sha256": "476e11facd9cfe06570ddf70f4d2cecd2dc5582c6b7455e798ac6c41afc98507",
+      "family": "AdamantiumTheif",
+      "first_seen": "2026-09-02T02:38:31.833Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 715264
+    },
+    {
+      "sha256": "10c378d0449cf7055587933980da9a48ad35a9f71543276573318a6b898c5734",
+      "family": "AdvML",
+      "first_seen": "2026-09-03T22:45:31.496Z",
+      "sample_type": "PE+/Exe",
+      "size": 6694784
+    },
+    {
+      "sha256": "1b723594e574c00aac2c946ff738a0454f7c24f6ebc84ae45a6af9628b08cb96",
+      "family": "AdvML",
+      "first_seen": "2026-09-01T23:58:14.839Z",
+      "sample_type": "PE+/Exe",
+      "size": 8777728
+    },
+    {
+      "sha256": "5fe1055c8dff5c3dcacfd42eb6424ebfc9db7b12def00a5c8d287425403ac67b",
+      "family": "AdvML",
+      "first_seen": "2026-09-03T16:23:18.195Z",
+      "sample_type": "PE+/Exe/UPX",
+      "size": 365056
+    },
+    {
+      "sha256": "78d45a3d9b2e82f6a181d42f6bf9262d2685bafb84a848201a4377c815c2f50c",
+      "family": "AdvML",
+      "first_seen": "2026-09-03T21:13:14.546Z",
+      "sample_type": "PE+/Exe",
+      "size": 2929664
+    },
+    {
+      "sha256": "7dbe5a1b260e5ce3c276d149ddd26c9026e6c759ddf9db819ba7119e0d9096be",
+      "family": "AdvML",
+      "first_seen": "2026-09-03T08:52:24.692Z",
+      "sample_type": "PE+/Exe/RAR",
+      "size": 3564939
+    },
+    {
+      "sha256": "0910fc3c5cb222b5b43eef9b187784e36e484728acaa1198b41fb54707c3e167",
+      "family": "AgentTesla",
+      "first_seen": "2026-09-02T22:33:21.139Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 1195008
+    },
+    {
+      "sha256": "6dd9cbb836647f0028f8569c5c1aa9594501dec9922e1f20c4b3b7ab43f3014f",
+      "family": "AgentTesla",
+      "first_seen": "2026-09-03T00:53:18.758Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 1082368
+    },
+    {
+      "sha256": "83272fd3adbddcdf1ffb022d442383b9e9bf2e66fa0a4847b2a9825b37fbf84b",
+      "family": "AgentTesla",
+      "first_seen": "2026-09-04T12:06:19.797Z",
+      "sample_type": "PE+/.Net Exe",
+      "size": 1408512
+    },
+    {
+      "sha256": "b4b38e1c2c99174f61ed28ee6651e492eb699ccb387433a0cf3861a73967706b",
+      "family": "AgentTesla",
+      "first_seen": "2026-09-01T06:11:18.454Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 1118720
+    },
+    {
+      "sha256": "5a8ab21cb329b8672379421dcf5bc59e6f174da6b835d5650cd0f50d7c4df534",
+      "family": "AsyncRAT",
+      "first_seen": "2026-09-02T08:11:17.893Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 13824
+    },
+    {
+      "sha256": "6008213f235e6a476423b5949d76a92914ad2e49152b90f7a08582498cc7f331",
+      "family": "AsyncRAT",
+      "first_seen": "2026-08-31T10:30:39.253Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 239616
+    },
+    {
+      "sha256": "7aaee32a94cf4a6b40140221bdef3b10de5620cd3ff2f41ff0710d31c9302545",
+      "family": "AsyncRAT",
+      "first_seen": "2026-09-04T12:54:20.902Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 133120
+    },
+    {
+      "sha256": "7b92ddcdd8d9a135b92e0b2f4d2e56439395be688892e2b3ce77b3446eeb6aa2",
+      "family": "AsyncRAT",
+      "first_seen": "2026-08-31T10:28:14.811Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 36864
+    },
+    {
+      "sha256": "7c90b06bfae099edd2ee3f98bd27ea92b32ed5c0f61b3fc6375a48a65ce6c54d",
+      "family": "AsyncRAT",
+      "first_seen": "2026-09-01T10:29:10.809Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 6840320
+    },
+    {
+      "sha256": "149977f683910a1b628460085407a8285817902b3e3d38952d78a6aa1f09f53a",
+      "family": "AveMariaRat",
+      "first_seen": "2026-08-31T19:06:19.765Z",
+      "sample_type": "PE+/Dll",
+      "size": 3814944
+    },
+    {
+      "sha256": "b485b423cffd3b237918feefb0d60977eb2747ad6c8ce49bac7cf1ee08d47de3",
+      "family": "Banbra",
+      "first_seen": "2026-09-01T18:25:27.819Z",
+      "sample_type": "PE+/Dll",
+      "size": 212616
+    },
+    {
+      "sha256": "35fba08472bb15b0ad1ddd41e561d031dc43ab7d8113e31ecb42eff27e906c68",
+      "family": "Bodegun",
+      "first_seen": "2026-09-04T02:28:38.066Z",
+      "sample_type": "PE+/.Net Exe",
+      "size": 34816
+    },
+    {
+      "sha256": "077da46ddd4a0ef891926d7666667d3f837e4ef6a76c05bf61e0ff1b8ea48e2c",
+      "family": "Cerbu",
+      "first_seen": "2026-09-01T13:34:20.172Z",
+      "sample_type": "PE+/Exe",
+      "size": 125440
+    },
+    {
+      "sha256": "00a9476f8cff511ec39cb92ea51ebcdfac66b2e10f9b4b1044fd406091492b03",
+      "family": "ClipBanker",
+      "first_seen": "2026-09-02T02:26:01.212Z",
+      "sample_type": "PE+/Exe",
+      "size": 6842794
+    },
+    {
+      "sha256": "02303be79c34f63b2ba3a37a7c4f1c66c123cdb45f5aac3e5862ea026d9b9364",
+      "family": "ClipBanker",
+      "first_seen": "2026-08-31T10:44:04.772Z",
+      "sample_type": "PE+/Exe",
+      "size": 6844122
+    },
+    {
+      "sha256": "0286d4f718260419d3180fe7e8bd4f65587ec671e79e8c227fd9f5e2674dfc37",
+      "family": "ClipBanker",
+      "first_seen": "2026-09-02T02:31:25.777Z",
+      "sample_type": "PE+/Exe",
+      "size": 6849811
+    },
+    {
+      "sha256": "039fe52f137b1c5b50ba9e7488ef0de588df2b2ba437cc8f733edd475d3a1186",
+      "family": "ClipBanker",
+      "first_seen": "2026-09-02T02:32:31.909Z",
+      "sample_type": "PE+/Exe",
+      "size": 6827183
+    },
+    {
+      "sha256": "040c999f37c1d5cf7b5b47054432f3f648a94c96a8f4cc37042fde40a9916b8b",
+      "family": "ClipBanker",
+      "first_seen": "2026-09-02T02:29:18.435Z",
+      "sample_type": "PE+/Exe",
+      "size": 6829092
+    },
+    {
+      "sha256": "255cdacde3f3951fc41cad1d6a248f0bf27ae7aa4fa5b058848b3a1cb93533c4",
+      "family": "CobaltStrike",
+      "first_seen": "2026-09-03T16:35:26.906Z",
+      "sample_type": "PE+/Dll",
+      "size": 7003137
+    },
+    {
+      "sha256": "6370953f49bf9c07f989500b7f6a0d84f4fefaf8e002770cde236f7f494f48c0",
+      "family": "Convagent",
+      "first_seen": "2026-08-31T16:17:47.702Z",
+      "sample_type": "PE+/Exe",
+      "size": 55296
+    },
+    {
+      "sha256": "b8b9654b57a0445ea1f5645d0f6063df790448dea4d5ae27d502a2b136bb8da1",
+      "family": "Convagent",
+      "first_seen": "2026-09-01T04:30:26.573Z",
+      "sample_type": "PE+/Exe",
+      "size": 295424
+    },
+    {
+      "sha256": "bb6afa93514e75276745b5ee7aaf8308d1dabe2ac40f1a1dbec76d0db48066a4",
+      "family": "Convagent",
+      "first_seen": "2026-09-03T01:40:45.644Z",
+      "sample_type": "PE+/Exe",
+      "size": 7348648
+    },
+    {
+      "sha256": "1c2b2aa4928ec4e719e6cd21a1d68efa68a82fe8dd99d1f24027477418c20ab2",
+      "family": "Dacic",
+      "first_seen": "2026-09-01T11:46:04.351Z",
+      "sample_type": "PE/Exe",
+      "size": 1237715
+    },
+    {
+      "sha256": "4680651d415f9c8ed345d16653529bba42a2d5371c92ba80ec83f458654cfcda",
+      "family": "Dacic",
+      "first_seen": "2026-09-01T11:46:04.351Z",
+      "sample_type": "PE/Exe",
+      "size": 1855132
+    },
+    {
+      "sha256": "5275b44590958e56d121829ed7ff18320ae8a6f2f6b25a00c29da1608a61929a",
+      "family": "Dacic",
+      "first_seen": "2026-09-01T11:46:04.351Z",
+      "sample_type": "PE/Exe",
+      "size": 2759481
+    },
+    {
+      "sha256": "813f1073597229c5d148689ddafa3efaaecb68a73ab505712e3a9b748cd69e63",
+      "family": "Dacic",
+      "first_seen": "2026-09-01T11:46:04.351Z",
+      "sample_type": "PE/Exe",
+      "size": 1970105
+    },
+    {
+      "sha256": "b01168b6a5517bc4491a2f0420def87e8ad4267c3662c498016eca1e37dca80a",
+      "family": "Dacic",
+      "first_seen": "2026-09-01T16:08:15.385Z",
+      "sample_type": "PE+/Exe",
+      "size": 646347
+    },
+    {
+      "sha256": "08295c1247b7ce6dc020bfba5ba75540e3b5c98665ba99f2f73b37016811f47c",
+      "family": "DcRat, DonutLoader, VenomRAT",
+      "first_seen": "2026-09-04T08:38:11.146Z",
+      "sample_type": "PE/Exe/NSIS",
+      "size": 433658
+    },
+    {
+      "sha256": "1159cff4969f8e7f7454e6fe8a97aa0a73b455460e2abf0c87f1343972d58a9a",
+      "family": "DcRat, DonutLoader, VenomRAT",
+      "first_seen": "2026-09-04T08:58:19.619Z",
+      "sample_type": "PE/Exe/NSIS",
+      "size": 433656
+    },
+    {
+      "sha256": "91847a5075fd0e938f4aec3a23a4437c6445f4eefc201fa288e0d1513edf0561",
+      "family": "DcRat, DonutLoader, VenomRAT",
+      "first_seen": "2026-09-04T11:40:24.751Z",
+      "sample_type": "PE/Exe/NSIS",
+      "size": 433657
+    },
+    {
+      "sha256": "aa8bf93029edf167b6eaa0cfbf2b60490da8f9e5788e871ffe9c363d45683988",
+      "family": "DcRat, DonutLoader, VenomRAT",
+      "first_seen": "2026-09-04T11:39:24.421Z",
+      "sample_type": "PE/Exe/NSIS",
+      "size": 443658
+    },
+    {
+      "sha256": "2faf35c81460f594d5471186c8a9be65c004c92c5f3968a67e8e88c11a35d347",
+      "family": "DllHijack",
+      "first_seen": "2026-09-03T20:11:25.231Z",
+      "sample_type": "PE/Dll",
+      "size": 4544000
+    },
+    {
+      "sha256": "a120203700369c2bb7ca8abd7d49a89070d73b4c0625203539c4fd47dc2231b9",
+      "family": "Doina",
+      "first_seen": "2026-09-04T06:47:20.574Z",
+      "sample_type": "PE+/Exe",
+      "size": 807936
+    },
+    {
+      "sha256": "87f1b3971bb5b44a760fe934c32c9364d1b417fb253da60bee93bf5569f7dc15",
+      "family": "Donut",
+      "first_seen": "2026-09-04T12:13:19.325Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 155648
+    },
+    {
+      "sha256": "9ef65179f70432f0a665ac922a6b78c494997128df69ac8da1b72bde28050bb4",
+      "family": "DonutLoader",
+      "first_seen": "2026-09-01T11:38:17.879Z",
+      "sample_type": "PE+/Exe",
+      "size": 312832
+    },
+    {
+      "sha256": "00185b382f80a141311fda66dd72215c4222d0eff9afaa6fde389b7773016634",
+      "family": "Draftor",
+      "first_seen": "2026-09-01T10:27:42.501Z",
+      "sample_type": "PE/Exe",
+      "size": 9082647
+    },
+    {
+      "sha256": "00bd984f1c4e94dcf0961a5825da90f99b53bd42bf78cb6cfb9b4a3f660b569f",
+      "family": "Draftor",
+      "first_seen": "2026-09-01T10:33:28.456Z",
+      "sample_type": "PE/Exe",
+      "size": 6216240
+    },
+    {
+      "sha256": "00e89bec6bb92f000d996555a0b5c7bc9d1205aad7d77f3d19be3940d00248b2",
+      "family": "Draftor",
+      "first_seen": "2026-09-01T10:28:33.379Z",
+      "sample_type": "PE/Exe",
+      "size": 6455984
+    },
+    {
+      "sha256": "0266f70a7acbf8926d10d404fa6e3474010bfe22e52a5906d3477706d3254703",
+      "family": "Draftor",
+      "first_seen": "2026-08-31T18:35:39.903Z",
+      "sample_type": "PE/Exe",
+      "size": 5537169
+    },
+    {
+      "sha256": "0357d328b9d578a8158e237224e207f1481cc2d35778ec69a5d289aae6b863d7",
+      "family": "Draftor",
+      "first_seen": "2026-08-31T10:30:24.200Z",
+      "sample_type": "PE/Exe",
+      "size": 5395619
+    },
+    {
+      "sha256": "071c66484ae758686ada6db2ee7d2d646c252c8fd9d99fafac1f8f9e758ce588",
+      "family": "Egairtigado",
+      "first_seen": "2026-09-02T14:31:23.765Z",
+      "sample_type": "PE+/Exe",
+      "size": 5495688
+    },
+    {
+      "sha256": "0acdb0d98ffa1c9775a40d6331f40021d199f99ef47406ccc875c88b82609140",
+      "family": "Egairtigado",
+      "first_seen": "2026-08-31T10:37:39.610Z",
+      "sample_type": "PE+/Exe",
+      "size": 6842803
+    },
+    {
+      "sha256": "1178349ef0c3277ab0b197b219eab20ef234d5ed72ac8e102f1e802855d9a6a4",
+      "family": "Egairtigado",
+      "first_seen": "2026-08-31T17:11:20.461Z",
+      "sample_type": "PE+/Exe",
+      "size": 8270280
+    },
+    {
+      "sha256": "170d46202f09e9b3a5cbb5e2056123838e7370e5f4e5edf7f4c4497d47842d01",
+      "family": "Egairtigado",
+      "first_seen": "2026-09-01T20:56:22.093Z",
+      "sample_type": "PE+/Exe",
+      "size": 8233928
+    },
+    {
+      "sha256": "1e27a6aa8b48f29511e3568755e0761811a169cae721aeaa5d4ed5ca092fe7e8",
+      "family": "Egairtigado",
+      "first_seen": "2026-09-01T19:15:32.293Z",
+      "sample_type": "PE+/Exe",
+      "size": 7710136
+    },
+    {
+      "sha256": "880588cd8ae4c088e65431c644708d8eb9b09ac4dd495c6660b1c6954e60d417",
+      "family": "ExplorerHijack",
+      "first_seen": "2026-09-03T03:13:51.931Z",
+      "sample_type": "PE/Exe",
+      "size": 4826112
+    },
+    {
+      "sha256": "52e889aa77ee3e84835f700f19ea091d48b7e0682c13cba6941129cdf9de27ba",
+      "family": "Farfli",
+      "first_seen": "2026-09-03T20:10:33.712Z",
+      "sample_type": "PE/Exe",
+      "size": 152576
+    },
+    {
+      "sha256": "09eb32938a0f1265b45c4724b1d994fbc6d2b2ad99f0fab17f545c93e2f42693",
+      "family": "FormBook",
+      "first_seen": "2026-09-01T12:09:42.862Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 942592
+    },
+    {
+      "sha256": "8c339a22cee49cf41b2e3cd902d628ce77c731c0f4be42706c8d0287f4643c9a",
+      "family": "FormBook",
+      "first_seen": "2026-09-02T06:53:18.772Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 1061888
+    },
+    {
+      "sha256": "97ef870406a1f48080539a324094cdb9eae8f41aeafdc8be86f4c4aaa5a4f14e",
+      "family": "FormBook",
+      "first_seen": "2026-09-01T09:50:32.653Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 864256
+    },
+    {
+      "sha256": "ae8a1e6cd66929b78a7f4b98911d04650346cefc046eb60f2bfc85eba95686f5",
+      "family": "FormBook",
+      "first_seen": "2026-09-01T06:22:08.075Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 1122304
+    },
+    {
+      "sha256": "0030c014ec4fae311492a87011f565f9ff3b1881137dda152953c6fe718e33e0",
+      "family": "Generic",
+      "first_seen": "2026-09-01T15:43:18.578Z",
+      "sample_type": "PE+/Exe",
+      "size": 1326080
+    },
+    {
+      "sha256": "06875f1f3d4dd52d71daafa23acc52a0d897bc495bfa3c4e381f20ae8d4d7390",
+      "family": "Generic",
+      "first_seen": "2026-09-04T04:58:17.485Z",
+      "sample_type": "PE+/Exe",
+      "size": 6388648
+    },
+    {
+      "sha256": "09dc920440c44799eca2afdd6203e4c336d6c02d61132951a05e69b401a95aea",
+      "family": "Generic",
+      "first_seen": "2026-09-03T12:23:16.740Z",
+      "sample_type": "PE+/Exe",
+      "size": 4672936
+    },
+    {
+      "sha256": "0b3092addec749c12d8785a4b983a007cab6c3d694a4b8ac24559f3898e07400",
+      "family": "Generic",
+      "first_seen": "2026-09-03T10:19:17.119Z",
+      "sample_type": "PE+/.Net Exe",
+      "size": 199681
+    },
+    {
+      "sha256": "0b37b477af11ec41fb6edbdeb6d9fecaa7b6e95636e036767fe64b029bbcb392",
+      "family": "Generic",
+      "first_seen": "2026-09-01T09:44:22.502Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 970408
+    },
+    {
+      "sha256": "5c80a2d4b00b367d44f0bc3540f7ec0158e4b216495de17be1ee2dad7a6651b7",
+      "family": "Genkryptikagen",
+      "first_seen": "2026-09-02T22:53:16.029Z",
+      "sample_type": "PE+/Exe",
+      "size": 538624
+    },
+    {
+      "sha256": "2ac8a1f38889ab3d80f71399cbdc509e1cb3ca8b687fb4a9ee96f3d9c81f3bf1",
+      "family": "GhostRAT",
+      "first_seen": "2026-09-01T09:48:20.441Z",
+      "sample_type": "PE/Exe",
+      "size": 328408
+    },
+    {
+      "sha256": "42f2f118c669f07f7a7f0b0834cc53d2800f01ab39304694c32bb06859ca6b23",
+      "family": "GoCrypt",
+      "first_seen": "2026-09-04T11:09:27.354Z",
+      "sample_type": "PE+/Exe",
+      "size": 4515328
+    },
+    {
+      "sha256": "a61a51ddcd88162bec985efffaf7577c2b1a663ac3969b4d009b256d8ea733a5",
+      "family": "GoCrypt",
+      "first_seen": "2026-09-04T11:09:51.280Z",
+      "sample_type": "PE+/Exe",
+      "size": 9036288
+    },
+    {
+      "sha256": "7b264bc6f2442a83e96f1c2da058fbcd8e66ab7c3c7470b88a96b77f51f7a2ed",
+      "family": "GoStealer",
+      "first_seen": "2026-09-02T08:29:17.897Z",
+      "sample_type": "PE+/Exe",
+      "size": 9139200
+    },
+    {
+      "sha256": "85a2a141e838b0ab2d506444430b75870919caec56768af7631d1c8f83dee2e8",
+      "family": "Gobin",
+      "first_seen": "2026-09-02T18:53:24.241Z",
+      "sample_type": "PE+/Exe",
+      "size": 3404672
+    },
+    {
+      "sha256": "a3d61fdbbc9a05985fd095df90251d8cad97d1ca00a15c15ed52f02a90bce9cb",
+      "family": "Gorat",
+      "first_seen": "2026-09-04T11:29:17.293Z",
+      "sample_type": "PE+/Exe",
+      "size": 5928448
+    },
+    {
+      "sha256": "01f59d2a9a7d2cbc83003f5733c3ea4b0d8d25456da49e5f11bf8bd4fcb3efc0",
+      "family": "Heuristic",
+      "first_seen": "2026-08-31T10:27:30.602Z",
+      "sample_type": "PE+/.Net Exe",
+      "size": 20480
+    },
+    {
+      "sha256": "0872c801ef3654ab9df33a5b7543871e11f86a5275f5d1da3c953457992f461d",
+      "family": "Heuristic",
+      "first_seen": "2026-08-31T18:39:02.339Z",
+      "sample_type": "PE/Exe",
+      "size": 5499904
+    },
+    {
+      "sha256": "117e2c3d3b40a2b2cbb2001fa0c1109e51cdec777672d5b325e7edecac442fdd",
+      "family": "Heuristic",
+      "first_seen": "2026-09-03T18:26:18.133Z",
+      "sample_type": "PE+/Exe",
+      "size": 6590848
+    },
+    {
+      "sha256": "13b5ce5838356cffbb328312b4509eef0662d2d3434b683f177bb0aaf8281b9c",
+      "family": "Heuristic",
+      "first_seen": "2026-09-04T15:19:20.310Z",
+      "sample_type": "PE/Exe",
+      "size": 30720
+    },
+    {
+      "sha256": "2010fe7559b37bab4d963ada636a9b1c34b70f1c7563678761425e4a25d40e5c",
+      "family": "Heuristic",
+      "first_seen": "2026-09-04T02:30:48.139Z",
+      "sample_type": "PE+/Exe",
+      "size": 7553536
+    },
+    {
+      "sha256": "3229113222e651706c19599c149228eef4b1120c1f9f84495781477a8f653d04",
+      "family": "Injectornett",
+      "first_seen": "2026-09-03T11:52:20.901Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 1342464
+    },
+    {
+      "sha256": "4d8eb4581c5f1d9eed622b29d673b64e6489a9fee170d91ed3bc4a62f5344707",
+      "family": "Jalapeno",
+      "first_seen": "2026-09-04T11:32:34.709Z",
+      "sample_type": "PE/.Net Dll",
+      "size": 3584
+    },
+    {
+      "sha256": "cd2e90bffc7e90abf6b959c2d83232249736cc14e848aa501147ad63fd62f94a",
+      "family": "Jalapeno",
+      "first_seen": "2026-09-04T11:42:22.684Z",
+      "sample_type": "PE/.Net Dll",
+      "size": 3584
+    },
+    {
+      "sha256": "0866f1acf9460fa133f76adff4182bbdf621083e807d49387b50a9e10bac3feb",
+      "family": "Kepavll",
+      "first_seen": "2026-09-01T01:31:18.418Z",
+      "sample_type": "PE+/Exe",
+      "size": 5003417
+    },
+    {
+      "sha256": "d7f58d86211d485f9c96a7ecc019f8d0152698244a582af7d53ec3e220dc3868",
+      "family": "Kepavll",
+      "first_seen": "2026-09-04T15:32:31.206Z",
+      "sample_type": "PE+/Exe",
+      "size": 5003787
+    },
+    {
+      "sha256": "5ca1827921a5a39b6cce3337c8c338433105240e643c280c7355a25076401ec3",
+      "family": "Koceg",
+      "first_seen": "2026-09-02T08:27:20.808Z",
+      "sample_type": "PE/Exe",
+      "size": 1407793
+    },
+    {
+      "sha256": "8b15c0686055ec3c4783df36c414c22fe9c5d5ba323edd66ffa87e49c31c7d52",
+      "family": "Koceg",
+      "first_seen": "2026-09-02T09:38:46.972Z",
+      "sample_type": "PE/Exe",
+      "size": 2361735
+    },
+    {
+      "sha256": "887811525a1a60e53d149bd4349ddefbe0a406c066c9286c12f605f3dc9b944a",
+      "family": "Krptik",
+      "first_seen": "2026-08-31T17:29:28.268Z",
+      "sample_type": "PE+/Exe",
+      "size": 7329728
+    },
+    {
+      "sha256": "670362ec4d0f78eb677b2e14eeb9403744b72706e071500ac6e64276711ccb5a",
+      "family": "Lausivloader",
+      "first_seen": "2026-09-03T06:40:20.188Z",
+      "sample_type": "PE/.Net Dll",
+      "size": 1294336
+    },
+    {
+      "sha256": "1b92d7190164658d01f5d9fa78525171ad8b4d07bf61507f83c36de906eeb0d5",
+      "family": "Loki",
+      "first_seen": "2026-09-01T12:51:22.394Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 998400
+    },
+    {
+      "sha256": "78b7ec93a3ed6758b0af69f71d1b0527723499c8317fa50058e9681403d45f7a",
+      "family": "Loregun",
+      "first_seen": "2026-09-01T13:34:21.388Z",
+      "sample_type": "PE+/Dll",
+      "size": 7680
+    },
+    {
+      "sha256": "0729b27468ab4f7558b02d34769705ea2846706844deacfade369c739b25f7cf",
+      "family": "Malgent",
+      "first_seen": "2026-09-01T11:08:41.113Z",
+      "sample_type": "PE+/Exe",
+      "size": 9447344
+    },
+    {
+      "sha256": "0ec3487f79cb0fc47ea70ce3f93b13bb3013e54cd65c2e9b3c83c4663652321f",
+      "family": "Malgent",
+      "first_seen": "2026-09-01T04:53:17.806Z",
+      "sample_type": "PE+/Exe",
+      "size": 3041280
+    },
+    {
+      "sha256": "29d4563a365a0a6a49eefafecd1a46934b9d07df340ddd23da81ce35e4b92276",
+      "family": "Malgent",
+      "first_seen": "2026-09-01T12:26:27.559Z",
+      "sample_type": "PE+/Exe",
+      "size": 9334704
+    },
+    {
+      "sha256": "2b20eb4237ad2eab05c4a2ad261bcfd436663cf32e2a45526e17dfd3a51a095d",
+      "family": "Malgent",
+      "first_seen": "2026-08-31T19:04:19.733Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 1488896
+    },
+    {
+      "sha256": "2f4348bb0f04eb8bd5f416ab396831fdf6198f74d23ebfa03a4a4bc9a0023fe0",
+      "family": "Malgent",
+      "first_seen": "2026-09-01T23:08:16.064Z",
+      "sample_type": "PE+/Exe",
+      "size": 2978304
+    },
+    {
+      "sha256": "b65ca4694681fa489e8ec033a389506ba72acb134f9f910a2d0fa30fa526fdd8",
+      "family": "Mandaph",
+      "first_seen": "2026-09-02T09:38:46.972Z",
+      "sample_type": "PE/Exe/UPX",
+      "size": 2188167
+    },
+    {
+      "sha256": "337383182a47e38d6a961223a537c7a41e2267f5f12ca474d61ff1b854801617",
+      "family": "Mardom",
+      "first_seen": "2026-09-02T03:35:27.861Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 848384
+    },
+    {
+      "sha256": "84a08ae2e244e25d470bbce199962d79da2a9e3a910b897bb5f7c96181439f93",
+      "family": "MassLogger",
+      "first_seen": "2026-08-31T18:34:14.862Z",
+      "sample_type": "PE+/.Net Exe",
+      "size": 276480
+    },
+    {
+      "sha256": "a7fd552ceaa3bea26e3ce090c53ef7002ebdef2ae643e24bac98118e2755a5bd",
+      "family": "MassLogger",
+      "first_seen": "2026-08-31T18:44:41.517Z",
+      "sample_type": "PE+/.Net Exe",
+      "size": 252416
+    },
+    {
+      "sha256": "94a1b30dad79489872b6a5ff9cbe753ad472e13754db96ed0c0e71c1f3d0f08a",
+      "family": "Mikey",
+      "first_seen": "2026-09-03T03:13:48.633Z",
+      "sample_type": "PE+/Exe",
+      "size": 4485632
+    },
+    {
+      "sha256": "1ce6afafe569d8e3b5e772f970a9ad1042104bedb7c648e0f902bd7dbb863f35",
+      "family": "MintAutorunner",
+      "first_seen": "2026-09-02T08:33:48.016Z",
+      "sample_type": "PE/Dll",
+      "size": 608768
+    },
+    {
+      "sha256": "4ca3a0088c63497d7fce4a305c3fd98646badb2278cbca85571b0831f915adde",
+      "family": "MsilHrcls",
+      "first_seen": "2026-09-01T09:44:20.366Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 48680
+    },
+    {
+      "sha256": "1ada0cf4bee30462f56672ec1669912234af3da96dc87b54987825a77673d890",
+      "family": "Msilheracles",
+      "first_seen": "2026-09-03T06:27:44.882Z",
+      "sample_type": "PE/.Net Dll",
+      "size": 2416640
+    },
+    {
+      "sha256": "632483ffc92cf6cf7aa1900f312ec8a89af06bc3ce8edab8147013cee68510dc",
+      "family": "NanoCore",
+      "first_seen": "2026-09-02T20:15:24.936Z",
+      "sample_type": "PE/.Net Exe",
+      "size": 207360
+    }
+  ]
+}
