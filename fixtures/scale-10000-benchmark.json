@@ -1,0 +1,25 @@
+{
+  "archive": "fixtures/scale-10000.zip",
+  "archive_sha256": "6ea9ac989bc1695ba9fd5d2168a0d6825677e3fcb1deb27c276e4c0b89bf11e4",
+  "bytes_per_second": 39488805.05656074,
+  "executed_at": "2026-09-04",
+  "extraction_seconds": 0.9701149159809574,
+  "files_per_second": 77126.5723760952,
+  "manifest": "fixtures/scale-10000-manifest.json",
+  "manifest_sha256": "b1480f5d1561bc4547cbd628f205a195e9c5505247e57174af67d95c26f9ffb4",
+  "matches": 10000,
+  "max_rss_bytes": 14106624,
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "python": "3.14.7",
+  "sample_bytes": 5120000,
+  "sample_count": 10000,
+  "scan_seconds": 0.1296570000704378,
+  "scanner": "YARA 4.5.8",
+  "schema": "r2sign-scale-benchmark/v1",
+  "storage": {
+    "archive_bytes": 6240022,
+    "extracted_allocated_bytes": 40960000,
+    "extracted_logical_bytes": 5120000,
+    "manifest_bytes": 1510326
+  }
+}

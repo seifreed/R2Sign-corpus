@@ -137,7 +137,12 @@ Rebuild or verify the archive with:
 ```bash
 python3.14 tools/build_scale_fixtures.py
 python3.14 tools/build_scale_fixtures.py --verify
+python3.14 tools/benchmark_scale_fixtures.py \
+  --output fixtures/scale-10000-benchmark.json
 ```
+
+`fixtures/scale-10000-benchmark.json` publishes the measured extraction time,
+scan time, throughput, peak resident memory, and logical and allocated storage.
 
 ## External comparison
 
