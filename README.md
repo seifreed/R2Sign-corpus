@@ -68,6 +68,18 @@ or invalid files and refresh the audit with verified and pending hashes.
 Use `--audit-only` as the final argument to refresh the partial report without
 consuming VirusTotal quota.
 
+The same licensed hashes can be materialized through an authenticated
+ReversingLabs A1000 profile when VirusTotal quota is unavailable:
+
+```bash
+tools/rl-materialize manifest.json .rl-materialized \
+  metadata/rl-materialization.json
+```
+
+The command searches pending hashes in batches, downloads only samples marked
+available by A1000, verifies each SHA-256, and records a resumable hash-only
+audit. Files not present in A1000 remain listed as missing.
+
 Run the benchmark and write its JSON result with:
 
 ```bash

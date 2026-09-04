@@ -1,0 +1,141 @@
+#!/bin/sh
+set -eu
+
+if [ "$#" -lt 3 ] || [ "$#" -gt 4 ]; then
+    echo "usage: rl-materialize MANIFEST OUTPUT AUDIT [LIMIT|--audit-only]" >&2
+    exit 2
+fi
+
+manifest=$1
+output=$2
+audit=$3
+option=${4:-}
+limit=
+download=true
+
+if [ "$option" = "--audit-only" ]; then
+    download=false
+else
+    limit=$option
+fi
+
+if [ -n "$limit" ] && { ! [ "$limit" -eq "$limit" ] 2>/dev/null || [ "$limit" -lt 1 ]; }; then
+    echo "LIMIT must be a positive integer" >&2
+    exit 2
+fi
+
+command -v rl-cli >/dev/null
+command -v jq >/dev/null
+command -v shasum >/dev/null
+
+jq -e '
+    .schema == "r2sign-corpus/v1"
+    and .redistributable == true
+    and (.samples | type == "array" and length > 0)
+    and all(.samples[] | select(.role != "mutation");
+        (.sha256 | type == "string" and test("^[0-9a-fA-F]{64}$")))
+' "$manifest" >/dev/null
+
+temporary=$(mktemp -d)
+trap 'rm -rf "$temporary"' EXIT HUP INT TERM
+hashes=$temporary/hashes
+pending=$temporary/pending
+available=$temporary/available
+downloadable=$temporary/downloadable
+verified=$temporary/verified
+absent=$temporary/absent
+touch "$pending" "$available" "$verified" "$absent"
+
+jq -er '
+    .samples[] | select(.role != "mutation") | .sha256 | ascii_downcase
+' "$manifest" >"$hashes"
+if [ -n "$limit" ]; then
+    head -n "$limit" "$hashes" >"$temporary/limited"
+    mv "$temporary/limited" "$hashes"
+fi
+if [ "$(sort "$hashes" | uniq | wc -l | tr -d ' ')" -ne "$(wc -l <"$hashes" | tr -d ' ')" ]; then
+    echo "corpus SHA-256 values must be unique" >&2
+    exit 1
+fi
+
+mkdir -p "$output" "$(dirname "$audit")" "$temporary/download"
+while IFS= read -r digest; do
+    if [ -f "$output/$digest" ] &&
+        [ "$(shasum -a 256 "$output/$digest" | cut -d ' ' -f 1)" = "$digest" ]; then
+        continue
+    fi
+    printf '%s\n' "$digest" >>"$pending"
+done <"$hashes"
+
+rl_status=0
+if [ "$download" = true ] && [ -s "$pending" ]; then
+    split -l 50 "$pending" "$temporary/chunk."
+    for chunk in "$temporary"/chunk.*; do
+        query=$(awk 'BEGIN { separator = "" } { printf "%ssha256:%s", separator, $0; separator = " OR " }' "$chunk")
+        result=$chunk.json
+        if rl-cli -q -o json a1000 search -q "$query" -l 100 >"$result" 2>"$chunk.err" &&
+            jq -e 'type == "array"' "$result" >/dev/null; then
+            jq -r '.[].sha256 // empty | ascii_downcase' "$result" >>"$available"
+        else
+            rl_status=1
+        fi
+    done
+    sort -u "$available" >"$temporary/available.sorted"
+    sort -u "$pending" >"$temporary/pending.sorted"
+    comm -12 "$temporary/pending.sorted" "$temporary/available.sorted" >"$downloadable"
+
+    while IFS= read -r digest; do
+        candidate=$temporary/download/$digest.malware
+        rm -f "$candidate"
+        if rl-cli -q a1000 download "$digest" --output-dir "$temporary/download" >/dev/null 2>&1 &&
+            [ -f "$candidate" ] &&
+            [ "$(shasum -a 256 "$candidate" | cut -d ' ' -f 1)" = "$digest" ]; then
+            mv "$candidate" "$output/$digest"
+        else
+            rl_status=1
+        fi
+    done <"$downloadable"
+fi
+
+while IFS= read -r digest; do
+    if [ -f "$output/$digest" ] &&
+        [ "$(shasum -a 256 "$output/$digest" | cut -d ' ' -f 1)" = "$digest" ]; then
+        printf '%s\n' "$digest" >>"$verified"
+    else
+        printf '%s\n' "$digest" >>"$absent"
+    fi
+done <"$hashes"
+
+verified_count=$(wc -l <"$verified" | tr -d ' ')
+absent_count=$(wc -l <"$absent" | tr -d ' ')
+if [ "$download" = true ] && [ "$rl_status" -eq 0 ] && [ "$absent_count" -ne 0 ]; then
+    rl_status=1
+fi
+
+jq -Rs 'split("\n") | map(select(length > 0)) | sort' "$verified" >"$temporary/verified.json"
+jq -Rs 'split("\n") | map(select(length > 0)) | sort' "$absent" >"$temporary/absent.json"
+manifest_sha256=$(shasum -a 256 "$manifest" | cut -d ' ' -f 1)
+jq -n \
+    --arg manifest_sha256 "$manifest_sha256" \
+    --argjson download_attempted "$download" \
+    --argjson rl_exit_code "$rl_status" \
+    --slurpfile hashes "$temporary/verified.json" \
+    --slurpfile missing "$temporary/absent.json" \
+    '{
+        schema: "r2sign-rl-materialization/v1",
+        provider: "ReversingLabs A1000",
+        manifest_sha256: $manifest_sha256,
+        download_attempted: $download_attempted,
+        rl_exit_code: $rl_exit_code,
+        samples_requested: (($hashes[0] | length) + ($missing[0] | length)),
+        samples_verified: ($hashes[0] | length),
+        samples_missing: ($missing[0] | length),
+        sha256: $hashes[0],
+        missing_sha256: $missing[0]
+    }' >"$audit.tmp"
+mv "$audit.tmp" "$audit"
+
+printf 'verified=%s missing=%s\n' "$verified_count" "$absent_count"
+if [ "$download" = true ]; then
+    test "$rl_status" -eq 0
+fi

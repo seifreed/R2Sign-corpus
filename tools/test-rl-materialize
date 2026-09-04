@@ -1,0 +1,47 @@
+#!/bin/sh
+set -eu
+
+root=$(mktemp -d)
+trap 'rm -rf "$root"' EXIT HUP INT TERM
+mkdir -p "$root/bin"
+content=r2sign-reversinglabs-fixture
+digest=$(printf '%s' "$content" | shasum -a 256 | cut -d ' ' -f 1)
+export RL_TEST_CONTENT="$content" RL_TEST_DIGEST="$digest"
+
+cat >"$root/bin/rl-cli" <<'EOF'
+#!/bin/sh
+case " $* " in
+    *" a1000 search "*)
+        printf '[{"sha256":"%s"}]\n' "$RL_TEST_DIGEST"
+        ;;
+    *" a1000 download "*)
+        while [ "$#" -gt 0 ]; do
+            if [ "$1" = "--output-dir" ]; then
+                shift
+                output=$1
+            fi
+            shift
+        done
+        printf '%s' "$RL_TEST_CONTENT" >"$output/$RL_TEST_DIGEST.malware"
+        ;;
+    *)
+        exit 1
+        ;;
+esac
+EOF
+chmod +x "$root/bin/rl-cli"
+
+cat >"$root/manifest.json" <<EOF
+{
+  "schema": "r2sign-corpus/v1",
+  "redistributable": true,
+  "samples": [{"role": "training", "sha256": "$digest"}]
+}
+EOF
+
+PATH="$root/bin:$PATH" tools/rl-materialize \
+    "$root/manifest.json" "$root/output" "$root/audit.json"
+
+test "$(shasum -a 256 "$root/output/$digest" | cut -d ' ' -f 1)" = "$digest"
+jq -e '.rl_exit_code == 0 and .samples_verified == 1 and .samples_missing == 0' \
+    "$root/audit.json" >/dev/null

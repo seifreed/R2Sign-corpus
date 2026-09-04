@@ -1,2 +1,3 @@
 .vt-materialized/
+.rl-materialized/
 *.i64
