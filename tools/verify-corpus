@@ -37,17 +37,20 @@ jq -r '.samples[] | "\(.sha256)  \(.path)"' manifest.json >"$checksums"
 shasum -a 256 -c "$checksums" >/dev/null
 
 manifest_sha256=$(shasum -a 256 manifest.json | cut -d ' ' -f 1)
-jq -e --arg manifest_sha256 "$manifest_sha256" '
-    .schema == "r2sign-vt-materialization/v1"
-    and .manifest_sha256 == $manifest_sha256
-    and .samples_requested == ((.sha256 | length) + (.missing_sha256 | length))
-    and ((.sha256 | length) == (.sha256 | unique | length))
-    and ((.missing_sha256 | length) == (.missing_sha256 | unique | length))
-' metadata/vt-materialization.json >/dev/null
-jq -e -s '
-    ([.[0].samples[] | select(.role != "mutation") | .sha256] | sort) ==
-    ((.[1].sha256 + .[1].missing_sha256) | sort)
-' manifest.json metadata/vt-materialization.json >/dev/null
+for audit in metadata/vt-materialization.json metadata/rl-materialization.json; do
+    jq -e --arg manifest_sha256 "$manifest_sha256" '
+        .manifest_sha256 == $manifest_sha256
+        and .samples_requested == ((.sha256 | length) + (.missing_sha256 | length))
+        and ((.sha256 | length) == (.sha256 | unique | length))
+        and ((.missing_sha256 | length) == (.missing_sha256 | unique | length))
+    ' "$audit" >/dev/null
+    jq -e -s '
+        ([.[0].samples[] | select(.role != "mutation") | .sha256] | sort) ==
+        ((.[1].sha256 + .[1].missing_sha256) | sort)
+    ' manifest.json "$audit" >/dev/null
+done
+jq -e '.schema == "r2sign-vt-materialization/v1"' metadata/vt-materialization.json >/dev/null
+jq -e '.schema == "r2sign-rl-materialization/v1"' metadata/rl-materialization.json >/dev/null
 
 expected_goodware=$(jq -r '.sha256' goodware-db/manifest.json)
 actual_goodware=$(shasum -a 256 goodware-db/goodware_patterns.db | cut -d ' ' -f 1)

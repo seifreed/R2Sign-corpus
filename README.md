@@ -43,7 +43,7 @@ tools/verify-corpus
 ```
 
 This verifies the manifest structure and uniqueness, every sample SHA-256,
-the VirusTotal audit partition, the goodware database digest, and all 10,000
+the provider audit partitions, the goodware database digest, and all 10,000
 scale fixtures. The R2Sign release-contract check additionally requires the
 pending VirusTotal provenance metadata:
 
