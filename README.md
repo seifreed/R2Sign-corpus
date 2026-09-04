@@ -43,6 +43,19 @@ PYTHONPATH=../R2Sign python -m r2sign.cli.app corpus manifest.json
 
 The command verifies the manifest and every sample digest.
 
+Materialize the licensed, non-derived samples through an authenticated
+VirusTotal CLI without placing the downloaded staging directory in Git:
+
+```bash
+tools/vt-materialize manifest.json .vt-materialized \
+  metadata/vt-materialization.json
+```
+
+The command accepts only a manifest marked as redistributable, sends declared
+SHA-256 values to `vt download`, verifies every downloaded digest, and writes a
+hash-only audit. Mutation samples remain reproducible from their documented
+source sample and are not requested from VirusTotal.
+
 Run the benchmark and write its JSON result with:
 
 ```bash

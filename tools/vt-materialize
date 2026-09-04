@@ -1,0 +1,73 @@
+#!/bin/sh
+set -eu
+
+if [ "$#" -lt 3 ] || [ "$#" -gt 4 ]; then
+    echo "usage: vt-materialize MANIFEST OUTPUT AUDIT [LIMIT]" >&2
+    exit 2
+fi
+
+manifest=$1
+output=$2
+audit=$3
+limit=${4:-}
+
+if [ -n "$limit" ] && { ! [ "$limit" -eq "$limit" ] 2>/dev/null || [ "$limit" -lt 1 ]; }; then
+    echo "LIMIT must be a positive integer" >&2
+    exit 2
+fi
+
+command -v vt >/dev/null
+command -v jq >/dev/null
+command -v shasum >/dev/null
+
+jq -e '
+    .schema == "r2sign-corpus/v1"
+    and .redistributable == true
+    and (.license | type == "string" and length > 0)
+    and (.provenance | type == "array" and length > 0)
+    and (.samples | type == "array" and length > 0)
+' "$manifest" >/dev/null
+
+jq -e '
+    [.samples[] | select(.role != "mutation") |
+        (.source_url | type == "string" and startswith("https://"))] | all
+' "$manifest" >/dev/null
+
+hashes=$(mktemp)
+hash_array=$(mktemp)
+trap 'rm -f "$hashes" "$hash_array"' EXIT HUP INT TERM
+
+jq -er '
+    .samples[] | select(.role != "mutation") | .sha256 |
+    select(test("^[0-9a-fA-F]{64}$")) | ascii_downcase
+' "$manifest" >"$hashes"
+
+if [ -n "$limit" ]; then
+    head -n "$limit" "$hashes" >"$hashes.limited"
+    mv "$hashes.limited" "$hashes"
+fi
+
+if [ "$(sort "$hashes" | uniq | wc -l | tr -d ' ')" -ne "$(wc -l <"$hashes" | tr -d ' ')" ]; then
+    echo "corpus SHA-256 values must be unique" >&2
+    exit 1
+fi
+
+mkdir -p "$output" "$(dirname "$audit")"
+vt --silent download - --output "$output" --threads 5 <"$hashes"
+
+while IFS= read -r digest; do
+    printf '%s  %s\n' "$digest" "$output/$digest"
+done <"$hashes" | shasum -a 256 -c -
+
+jq -Rs 'split("\n") | map(select(length > 0)) | sort' "$hashes" >"$hash_array"
+manifest_sha256=$(shasum -a 256 "$manifest" | cut -d ' ' -f 1)
+jq -n \
+    --arg manifest_sha256 "$manifest_sha256" \
+    --slurpfile hashes "$hash_array" \
+    '{
+        schema: "r2sign-vt-materialization/v1",
+        manifest_sha256: $manifest_sha256,
+        samples_verified: ($hashes[0] | length),
+        sha256: $hashes[0]
+    }' >"$audit.tmp"
+mv "$audit.tmp" "$audit"
