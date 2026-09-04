@@ -88,6 +88,18 @@ The published bundle SHA-256 is recorded in the release asset and the bundle's
 Redistribution remains subject to the source dataset license and attribution
 requirements documented in [PROVENANCE.md](docs/PROVENANCE.md).
 
+## Synthetic scale fixtures
+
+`fixtures/scale-10000.zip` contains 10,000 deterministic, non-executable
+512-byte fixtures for scan-throughput and storage tests. They do not represent
+goodware diversity and must not be used to support false-positive claims.
+Rebuild or verify the archive with:
+
+```bash
+python3.14 tools/build_scale_fixtures.py
+python3.14 tools/build_scale_fixtures.py --verify
+```
+
 ## External comparison
 
 `comparison/comparison.json` records the metric deltas against VxSig built from
