@@ -84,7 +84,7 @@ The command searches pending hashes in batches, downloads only samples marked
 available by A1000, verifies each SHA-256, and records a resumable hash-only
 audit. Files not present in A1000 remain listed as missing.
 
-`metadata/a1000-corpus.json` adds 250 available malicious PE records from 49
+`metadata/a1000-corpus.json` adds 1,000 available malicious PE records from 96
 families for analysts with access to the configured A1000 instance. Materialize
 and verify them locally with:
 
