@@ -102,11 +102,11 @@
       18
     ]
   ],
-  "commit_sha": "2059c0712678109ac302950d152f77172a301d1f",
+  "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
   "compiled_yara": true,
   "compiled_yara_x": true,
   "corpus_bytes_scanned": 546982235,
-  "corpus_manifest_sha256": "295e79a98aabcce901c31a8c0443598e5d9a3008ae8d2671f2a4151c9170267d",
+  "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
   "cross_family_matches": 0,
   "cross_family_total": 100,
   "files_scanned": 1224,
@@ -116,9 +116,9 @@
   "holdout_matches": 50,
   "holdout_recall": 0.37593984962406013,
   "holdout_total": 133,
-  "latency_p50": 0.0006654580356553197,
-  "latency_p95": 0.010707500041462481,
-  "max_rss_bytes": 90619904,
+  "latency_p50": 0.0006273329490795732,
+  "latency_p95": 0.010521832969971001,
+  "max_rss_bytes": 115048448,
   "mutation_matches": 2,
   "mutation_total": 2,
   "near_family_matches": 0,
@@ -130,7 +130,122 @@
   "precision": 1.0,
   "rule_bytes": 29117,
   "rule_sha256": "0b57a39aa846108782bebf1a247149da6c519dd4d46970fa676d1943b01d57a5",
-  "scan_seconds": 3.3137717499630526,
-  "throughput": 165063340.58949554,
+  "scan_seconds": 3.225880458019674,
+  "throughput": 169560602.7930078,
+  "validation_report": {
+    "atom_warnings": [
+      "$sequence_0 has no stable four-byte atom",
+      "$sequence_1 has no stable four-byte atom",
+      "$sequence_2 has no stable four-byte atom",
+      "$sequence_3 has no stable four-byte atom",
+      "$sequence_4 has no stable four-byte atom",
+      "$sequence_5 has no stable four-byte atom",
+      "$sequence_6 has no stable four-byte atom",
+      "$sequence_7 has no stable four-byte atom",
+      "$sequence_8 has no stable four-byte atom",
+      "$sequence_9 has no stable four-byte atom",
+      "$sequence_0 has no stable four-byte atom",
+      "$sequence_1 has no stable four-byte atom",
+      "$sequence_2 has no stable four-byte atom",
+      "$sequence_3 has no stable four-byte atom",
+      "$sequence_4 has no stable four-byte atom",
+      "$sequence_5 has no stable four-byte atom",
+      "$sequence_6 has no stable four-byte atom",
+      "$sequence_7 has no stable four-byte atom",
+      "$sequence_8 has no stable four-byte atom",
+      "$sequence_9 has no stable four-byte atom",
+      "$sequence_0 has no stable four-byte atom",
+      "$sequence_1 has no stable four-byte atom",
+      "$sequence_2 has no stable four-byte atom",
+      "$sequence_3 has no stable four-byte atom",
+      "$sequence_4 has no stable four-byte atom",
+      "$sequence_5 has no stable four-byte atom",
+      "$sequence_6 has no stable four-byte atom",
+      "$sequence_7 has no stable four-byte atom",
+      "$sequence_8 has no stable four-byte atom",
+      "$sequence_9 has no stable four-byte atom",
+      "$sequence_0 has no stable four-byte atom",
+      "$sequence_1 has no stable four-byte atom",
+      "$sequence_2 has no stable four-byte atom",
+      "$sequence_3 has no stable four-byte atom",
+      "$sequence_4 has no stable four-byte atom",
+      "$sequence_5 has no stable four-byte atom",
+      "$sequence_6 has no stable four-byte atom",
+      "$sequence_7 has no stable four-byte atom",
+      "$sequence_8 has no stable four-byte atom",
+      "$sequence_9 has no stable four-byte atom",
+      "$sequence_0 has no stable four-byte atom",
+      "$sequence_1 has no stable four-byte atom",
+      "$sequence_2 has no stable four-byte atom",
+      "$sequence_3 has no stable four-byte atom",
+      "$sequence_4 has no stable four-byte atom",
+      "$sequence_5 has no stable four-byte atom",
+      "$sequence_6 has no stable four-byte atom",
+      "$sequence_8 has no stable four-byte atom",
+      "$sequence_0 has no stable four-byte atom",
+      "$sequence_1 has no stable four-byte atom",
+      "$sequence_2 has no stable four-byte atom",
+      "$sequence_3 has no stable four-byte atom",
+      "$sequence_4 has no stable four-byte atom",
+      "$sequence_5 has no stable four-byte atom",
+      "$sequence_6 has no stable four-byte atom",
+      "$sequence_7 has no stable four-byte atom",
+      "$sequence_8 has no stable four-byte atom",
+      "$sequence_9 has no stable four-byte atom"
+    ],
+    "candidate_contribution": [
+      [
+        "$sequence_0",
+        18
+      ],
+      [
+        "$sequence_1",
+        18
+      ],
+      [
+        "$sequence_2",
+        18
+      ],
+      [
+        "$sequence_3",
+        18
+      ],
+      [
+        "$sequence_4",
+        18
+      ],
+      [
+        "$sequence_5",
+        18
+      ],
+      [
+        "$sequence_6",
+        18
+      ],
+      [
+        "$sequence_7",
+        18
+      ],
+      [
+        "$sequence_8",
+        18
+      ],
+      [
+        "$sequence_9",
+        18
+      ]
+    ],
+    "compiled_yara": true,
+    "compiled_yara_x": true,
+    "cross_family_matches": 0,
+    "goodware_matches": 0,
+    "holdout_recall": 0.37593984962406013,
+    "mutation_recall": 1.0,
+    "near_family_matches": 0,
+    "rule_size": 29117,
+    "scan_time": 3.225880458019674,
+    "throughput": 169560602.7930078,
+    "training_recall": 0.8571428571428571
+  },
   "violations": []
 }

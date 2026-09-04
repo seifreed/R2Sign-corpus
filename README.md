@@ -108,6 +108,24 @@ PYTHONPATH=../R2Sign/src python3.14 -m r2sign.cli.app benchmark benchmark/manife
 
 The benchmark requires YARA-X when the optional dependency is installed and
 fails when any declared threshold is missed.
+The fixed release smoke cohort contains two FakeAV training samples sharing
+builder `rich:e298e226a220a277` and two later holdout samples from the same
+builder. It is measured against all 966 goodware samples and both near-family
+samples. The broader multi-family results are published separately below.
+
+Package and verify the complete release artifact set with:
+
+```bash
+PYTHONPATH=../R2Sign/src python3.14 -m r2sign.cli.app corpus manifest.json \
+  --package --output corpus-r2sign.zip
+PYTHONPATH=../R2Sign/src python3.14 -m r2sign.cli.app release-check \
+  corpus-r2sign.zip benchmark/results.json goodware-r2sign.zip \
+  comparison/representative/comparison.json \
+  --commit-sha 1edb364d2f706200f06bee9aeeb5f57ef30ae773 > release-check.json
+```
+
+`release-check.json` records the passing gate. The 176 MB corpus ZIP remains
+ignored and is intended for release-asset storage rather than Git.
 
 ## Goodware distribution
 
@@ -146,38 +164,21 @@ scan time, throughput, peak resident memory, and logical and allocated storage.
 
 ## External comparison
 
-`comparison/comparison.json` records the metric deltas against VxSig built from
-commit `5afa34b60656624e125e8555dc48b04e3ae8ef04`. The directory also contains
-the generated VxSig rule, its benchmark manifest and JSON, and the real BinDiff
-v8 artifact created from Ghidra `BinExport` files for one training and one
-holdout sample. Reproduce the external benchmark with:
+`comparison/representative/` publishes one common measurement of BASS, VxSig,
+yarGen-Go and yara-signator. Generation used 21 training samples across seven
+families. Evaluation used all 133 temporal holdout samples, all 966 goodware
+samples, both near-family samples, both mutations, and 100 non-redistributable
+A1000 samples from 47 other families. The private sample index contains hashes
+and metadata only.
 
-```bash
-PYTHONPATH=../R2Sign/src python3.14 -m r2sign.cli.app benchmark \
-  comparison/vxsig-benchmark.yml > /tmp/vxsig-benchmark.json
-```
-
-The directory also contains the reproducible yarGen-Go `0.1.0` comparison from
-commit `2efb97368ecc12250c4762977e51505d71ccc6a0`. It uses a local goodware
-database built from this repository and records the exact rule, manifest, and
-metric delta in `yargen-go-comparison.json`. Reproduce it with:
-
-```bash
-PYTHONPATH=../R2Sign/src python3.14 -m r2sign.cli.app benchmark \
-  comparison/yargen-go-benchmark.yml > /tmp/yargen-go-benchmark.json
-```
-
-The directory also contains the `yara-signator` rule and benchmark generated
-from three real `mediyes` training samples using SMDA `4.5.0`. Its benchmark
-records `1.0` training, holdout, and mutation recall with zero goodware false
-positives. The original Java pipeline requires PostgreSQL and capstone-server;
-the generated artifact and normalized benchmark are retained here for direct
-comparison.
-
-The BASS execution attempt is recorded in `bass-execution.json`. Its legacy
-Docker stack needs a licensed IDA Pro 7 installer and fails on this host before
-analysis, so no BASS metric is claimed. The release comparison criterion is
-covered by the published VxSig result.
+`comparison/representative/comparison.json` is the normalized four-tool matrix
+accepted by the release gate. The directory retains every generated signature,
+raw metric file, external benchmark wrapper, tool commit and artifact digest.
+Its R2Sign baseline uses the same 21-sample, seven-family training cohort and
+the same evaluation sets as every external tool.
+BASS used the published IDA Pro 9.3 adapter and BinDiff 8 workflow; no legacy
+IDA 7 Docker result is claimed. See `comparison/representative/README.md` for
+the measured table and generation outcomes by family.
 
 `comparison/bass-algorithm-benchmark.json` separately records execution of
 BASS's published `hamming_klcs_c` component over the same 32 recompilations used

@@ -1,0 +1,376 @@
+{
+  "atom_warnings": [],
+  "candidate_ablation": [
+    {
+      "candidate": "$cabby__0cb17078bb20_text_10",
+      "cross_family_match_rate_delta": 0.0,
+      "cross_family_matches": 45,
+      "goodware_false_positive_rate_delta": 0.0,
+      "goodware_matches": 148,
+      "holdout_matches": 75,
+      "holdout_recall_delta": 0.0,
+      "mutation_matches": 2,
+      "mutation_recall_delta": 0.0,
+      "near_family_match_rate_delta": 0.0,
+      "near_family_matches": 1,
+      "positive_matches": 21,
+      "positive_recall_delta": 0.0
+    },
+    {
+      "candidate": "$cabby__13ab04484839_text_10",
+      "cross_family_match_rate_delta": 0.0,
+      "cross_family_matches": 45,
+      "goodware_false_positive_rate_delta": 0.0,
+      "goodware_matches": 148,
+      "holdout_matches": 75,
+      "holdout_recall_delta": 0.0,
+      "mutation_matches": 2,
+      "mutation_recall_delta": 0.0,
+      "near_family_match_rate_delta": 0.0,
+      "near_family_matches": 1,
+      "positive_matches": 21,
+      "positive_recall_delta": 0.0
+    },
+    {
+      "candidate": "$cabby__176f3ad6537a_text_10",
+      "cross_family_match_rate_delta": 0.0,
+      "cross_family_matches": 45,
+      "goodware_false_positive_rate_delta": 0.0,
+      "goodware_matches": 148,
+      "holdout_matches": 75,
+      "holdout_recall_delta": 0.0,
+      "mutation_matches": 2,
+      "mutation_recall_delta": 0.0,
+      "near_family_match_rate_delta": 0.0,
+      "near_family_matches": 1,
+      "positive_matches": 21,
+      "positive_recall_delta": 0.0
+    },
+    {
+      "candidate": "$fakeav_func_0",
+      "cross_family_match_rate_delta": -0.07,
+      "cross_family_matches": 38,
+      "goodware_false_positive_rate_delta": -0.06625258799171843,
+      "goodware_matches": 84,
+      "holdout_matches": 52,
+      "holdout_recall_delta": -0.17293233082706772,
+      "mutation_matches": 2,
+      "mutation_recall_delta": 0.0,
+      "near_family_match_rate_delta": 0.0,
+      "near_family_matches": 1,
+      "positive_matches": 18,
+      "positive_recall_delta": -0.1428571428571429
+    },
+    {
+      "candidate": "$kryptik_func_0",
+      "cross_family_match_rate_delta": 0.0,
+      "cross_family_matches": 45,
+      "goodware_false_positive_rate_delta": 0.0,
+      "goodware_matches": 148,
+      "holdout_matches": 75,
+      "holdout_recall_delta": 0.0,
+      "mutation_matches": 2,
+      "mutation_recall_delta": 0.0,
+      "near_family_match_rate_delta": 0.0,
+      "near_family_matches": 1,
+      "positive_matches": 21,
+      "positive_recall_delta": 0.0
+    },
+    {
+      "candidate": "$mediyes_func_0",
+      "cross_family_match_rate_delta": 0.0,
+      "cross_family_matches": 45,
+      "goodware_false_positive_rate_delta": 0.0,
+      "goodware_matches": 148,
+      "holdout_matches": 56,
+      "holdout_recall_delta": -0.1428571428571429,
+      "mutation_matches": 0,
+      "mutation_recall_delta": -1.0,
+      "near_family_match_rate_delta": 0.0,
+      "near_family_matches": 1,
+      "positive_matches": 18,
+      "positive_recall_delta": -0.1428571428571429
+    },
+    {
+      "candidate": "$mediyes_func_1",
+      "cross_family_match_rate_delta": 0.0,
+      "cross_family_matches": 45,
+      "goodware_false_positive_rate_delta": 0.0,
+      "goodware_matches": 148,
+      "holdout_matches": 56,
+      "holdout_recall_delta": -0.1428571428571429,
+      "mutation_matches": 0,
+      "mutation_recall_delta": -1.0,
+      "near_family_match_rate_delta": 0.0,
+      "near_family_matches": 1,
+      "positive_matches": 18,
+      "positive_recall_delta": -0.1428571428571429
+    },
+    {
+      "candidate": "$sirefef__4a9e7e209193_text_1608",
+      "cross_family_match_rate_delta": 0.0,
+      "cross_family_matches": 45,
+      "goodware_false_positive_rate_delta": 0.0,
+      "goodware_matches": 148,
+      "holdout_matches": 75,
+      "holdout_recall_delta": 0.0,
+      "mutation_matches": 2,
+      "mutation_recall_delta": 0.0,
+      "near_family_match_rate_delta": 0.0,
+      "near_family_matches": 1,
+      "positive_matches": 21,
+      "positive_recall_delta": 0.0
+    },
+    {
+      "candidate": "$sirefef__659b7c3a6786_text_1004",
+      "cross_family_match_rate_delta": 0.0,
+      "cross_family_matches": 45,
+      "goodware_false_positive_rate_delta": 0.0,
+      "goodware_matches": 148,
+      "holdout_matches": 75,
+      "holdout_recall_delta": 0.0,
+      "mutation_matches": 2,
+      "mutation_recall_delta": 0.0,
+      "near_family_match_rate_delta": 0.0,
+      "near_family_matches": 1,
+      "positive_matches": 21,
+      "positive_recall_delta": 0.0
+    },
+    {
+      "candidate": "$sirefef_af29c6d25d15_text_17",
+      "cross_family_match_rate_delta": 0.0,
+      "cross_family_matches": 45,
+      "goodware_false_positive_rate_delta": 0.0,
+      "goodware_matches": 148,
+      "holdout_matches": 75,
+      "holdout_recall_delta": 0.0,
+      "mutation_matches": 2,
+      "mutation_recall_delta": 0.0,
+      "near_family_match_rate_delta": 0.0,
+      "near_family_matches": 1,
+      "positive_matches": 21,
+      "positive_recall_delta": 0.0
+    },
+    {
+      "candidate": "$upatre__620bae1ab9de_text_130",
+      "cross_family_match_rate_delta": -0.36,
+      "cross_family_matches": 9,
+      "goodware_false_positive_rate_delta": -0.07971014492753624,
+      "goodware_matches": 71,
+      "holdout_matches": 75,
+      "holdout_recall_delta": 0.0,
+      "mutation_matches": 2,
+      "mutation_recall_delta": 0.0,
+      "near_family_match_rate_delta": 0.0,
+      "near_family_matches": 1,
+      "positive_matches": 21,
+      "positive_recall_delta": 0.0
+    },
+    {
+      "candidate": "$upatre__65d985debfd4_text_10",
+      "cross_family_match_rate_delta": 0.0,
+      "cross_family_matches": 45,
+      "goodware_false_positive_rate_delta": 0.0,
+      "goodware_matches": 148,
+      "holdout_matches": 75,
+      "holdout_recall_delta": 0.0,
+      "mutation_matches": 2,
+      "mutation_recall_delta": 0.0,
+      "near_family_match_rate_delta": 0.0,
+      "near_family_matches": 1,
+      "positive_matches": 21,
+      "positive_recall_delta": 0.0
+    },
+    {
+      "candidate": "$upatre__6c9feb09c2f7_text_113",
+      "cross_family_match_rate_delta": 0.0,
+      "cross_family_matches": 45,
+      "goodware_false_positive_rate_delta": -0.0010351966873705931,
+      "goodware_matches": 147,
+      "holdout_matches": 75,
+      "holdout_recall_delta": 0.0,
+      "mutation_matches": 2,
+      "mutation_recall_delta": 0.0,
+      "near_family_match_rate_delta": 0.0,
+      "near_family_matches": 1,
+      "positive_matches": 21,
+      "positive_recall_delta": 0.0
+    },
+    {
+      "candidate": "$zbot_func_0",
+      "cross_family_match_rate_delta": 0.0,
+      "cross_family_matches": 45,
+      "goodware_false_positive_rate_delta": 0.0,
+      "goodware_matches": 148,
+      "holdout_matches": 75,
+      "holdout_recall_delta": 0.0,
+      "mutation_matches": 2,
+      "mutation_recall_delta": 0.0,
+      "near_family_match_rate_delta": 0.0,
+      "near_family_matches": 1,
+      "positive_matches": 21,
+      "positive_recall_delta": 0.0
+    }
+  ],
+  "candidate_contribution": [
+    [
+      "$cabby__0cb17078bb20_text_10",
+      3
+    ],
+    [
+      "$cabby__13ab04484839_text_10",
+      3
+    ],
+    [
+      "$cabby__176f3ad6537a_text_10",
+      3
+    ],
+    [
+      "$fakeav_func_0",
+      3
+    ],
+    [
+      "$kryptik_func_0",
+      6
+    ],
+    [
+      "$mediyes_func_0",
+      3
+    ],
+    [
+      "$mediyes_func_1",
+      3
+    ],
+    [
+      "$sirefef__4a9e7e209193_text_1608",
+      3
+    ],
+    [
+      "$sirefef__659b7c3a6786_text_1004",
+      1
+    ],
+    [
+      "$sirefef_af29c6d25d15_text_17",
+      3
+    ],
+    [
+      "$upatre__620bae1ab9de_text_130",
+      3
+    ],
+    [
+      "$upatre__65d985debfd4_text_10",
+      3
+    ],
+    [
+      "$upatre__6c9feb09c2f7_text_113",
+      3
+    ],
+    [
+      "$zbot_func_0",
+      6
+    ]
+  ],
+  "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
+  "compiled_yara": true,
+  "compiled_yara_x": true,
+  "corpus_bytes_scanned": 546982235,
+  "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
+  "cross_family_matches": 45,
+  "cross_family_total": 100,
+  "files_scanned": 1224,
+  "goodware_false_positive_rate": 0.15320910973084886,
+  "goodware_matches": 148,
+  "goodware_total": 966,
+  "holdout_matches": 75,
+  "holdout_recall": 0.5639097744360902,
+  "holdout_total": 133,
+  "latency_p50": 0.00036270800046622753,
+  "latency_p95": 0.00615895795635879,
+  "max_rss_bytes": 174456832,
+  "mutation_matches": 2,
+  "mutation_total": 2,
+  "near_family_matches": 1,
+  "near_family_total": 2,
+  "passed": true,
+  "positive_matches": 21,
+  "positive_recall": 1.0,
+  "positive_total": 21,
+  "precision": 0.1242603550295858,
+  "rule_bytes": 3990,
+  "rule_sha256": "7a7769bfc006df15fcc516160e936696542ee7dd214156c2e240bff64eebee7d",
+  "scan_seconds": 2.0241562919691205,
+  "throughput": 270227273.0471272,
+  "validation_report": {
+    "atom_warnings": [],
+    "candidate_contribution": [
+      [
+        "$cabby__0cb17078bb20_text_10",
+        3
+      ],
+      [
+        "$cabby__13ab04484839_text_10",
+        3
+      ],
+      [
+        "$cabby__176f3ad6537a_text_10",
+        3
+      ],
+      [
+        "$fakeav_func_0",
+        3
+      ],
+      [
+        "$kryptik_func_0",
+        6
+      ],
+      [
+        "$mediyes_func_0",
+        3
+      ],
+      [
+        "$mediyes_func_1",
+        3
+      ],
+      [
+        "$sirefef__4a9e7e209193_text_1608",
+        3
+      ],
+      [
+        "$sirefef__659b7c3a6786_text_1004",
+        1
+      ],
+      [
+        "$sirefef_af29c6d25d15_text_17",
+        3
+      ],
+      [
+        "$upatre__620bae1ab9de_text_130",
+        3
+      ],
+      [
+        "$upatre__65d985debfd4_text_10",
+        3
+      ],
+      [
+        "$upatre__6c9feb09c2f7_text_113",
+        3
+      ],
+      [
+        "$zbot_func_0",
+        6
+      ]
+    ],
+    "compiled_yara": true,
+    "compiled_yara_x": true,
+    "cross_family_matches": 45,
+    "goodware_matches": 148,
+    "holdout_recall": 0.5639097744360902,
+    "mutation_recall": 1.0,
+    "near_family_matches": 1,
+    "rule_size": 3990,
+    "scan_time": 2.0241562919691205,
+    "throughput": 270227273.0471272,
+    "training_recall": 1.0
+  },
+  "violations": []
+}

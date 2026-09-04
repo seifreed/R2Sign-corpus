@@ -1,0 +1,15 @@
+{
+  "benchmark_rule_sha256": "ef0eaf51ba8eb324048a80779d6d9e89e1795940dd268af397b475a2ac1978a6",
+  "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
+  "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
+  "corpus_samples": 1410,
+  "external_tools": [
+    "BASS",
+    "VxSig",
+    "yara-signator",
+    "yarGen-Go"
+  ],
+  "passed": true,
+  "release": "2.0.1",
+  "schema": "r2sign-release-check/v1"
+}

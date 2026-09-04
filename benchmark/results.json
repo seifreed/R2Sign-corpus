@@ -1,65 +1,76 @@
 {
   "atom_warnings": [],
+  "candidate_ablation": [
+    {
+      "candidate": "$func_0",
+      "cross_family_match_rate_delta": 0.0,
+      "cross_family_matches": 0,
+      "goodware_false_positive_rate_delta": 0.0,
+      "goodware_matches": 0,
+      "holdout_matches": 0,
+      "holdout_recall_delta": -1.0,
+      "mutation_matches": 0,
+      "mutation_recall_delta": 0.0,
+      "near_family_match_rate_delta": 0.0,
+      "near_family_matches": 0,
+      "positive_matches": 0,
+      "positive_recall_delta": -1.0
+    }
+  ],
   "candidate_contribution": [
     [
-      "$blob_0",
+      "$func_0",
       2
-    ],
-    [
-      "$blob_1",
-      2
-    ],
-    [
-      "$blob_2",
-      1
     ]
   ],
+  "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
   "compiled_yara": true,
   "compiled_yara_x": true,
-  "corpus_manifest_sha256": "c2c2c63713e36bf3ceceae50d0dc9b6f45381a9d6cd39424adfb3778f52c9f8a",
+  "corpus_bytes_scanned": 191988950,
+  "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
+  "cross_family_matches": 0,
+  "cross_family_total": 0,
+  "files_scanned": 972,
   "goodware_false_positive_rate": 0.0,
   "goodware_matches": 0,
-  "goodware_total": 3,
+  "goodware_total": 966,
   "holdout_matches": 2,
   "holdout_recall": 1.0,
   "holdout_total": 2,
-  "mutation_matches": 2,
-  "mutation_total": 2,
+  "latency_p50": 0.00029191700741648674,
+  "latency_p95": 0.002937291981652379,
+  "max_rss_bytes": 118734848,
+  "mutation_matches": 0,
+  "mutation_total": 0,
   "near_family_matches": 0,
   "near_family_total": 2,
   "passed": true,
-  "positive_matches": 3,
+  "positive_matches": 2,
   "positive_recall": 1.0,
-  "positive_total": 3,
+  "positive_total": 2,
   "precision": 1.0,
-  "rule_bytes": 428,
-  "rule_sha256": "5db63d59c7801c81dbaf4ac4aea5eb211f2a47c093a2a52b49b11f50c1040104",
-  "scan_seconds": 0.00672070799919311,
+  "rule_bytes": 762,
+  "rule_sha256": "ef0eaf51ba8eb324048a80779d6d9e89e1795940dd268af397b475a2ac1978a6",
+  "scan_seconds": 0.6676925420761108,
+  "throughput": 287540953.2103401,
   "validation_report": {
     "atom_warnings": [],
     "candidate_contribution": [
       [
-        "$blob_0",
+        "$func_0",
         2
-      ],
-      [
-        "$blob_1",
-        2
-      ],
-      [
-        "$blob_2",
-        1
       ]
     ],
     "compiled_yara": true,
     "compiled_yara_x": true,
+    "cross_family_matches": 0,
     "goodware_matches": 0,
     "holdout_recall": 1.0,
-    "mutation_recall": 1.0,
+    "mutation_recall": null,
     "near_family_matches": 0,
-    "rule_size": 428,
-    "scan_time": 0.00672070799919311,
-    "throughput": 63683.76665842138,
+    "rule_size": 762,
+    "scan_time": 0.6676925420761108,
+    "throughput": 287540953.2103401,
     "training_recall": 1.0
   },
   "violations": []

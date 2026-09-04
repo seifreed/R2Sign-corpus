@@ -13,10 +13,11 @@ private sample hashes and metadata without redistributing their bytes.
 
 | Tool | Rules/families | Training | Holdout | Goodware FP | Cross-family | Scan seconds |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| BASS | 2/7 | 2/21 | 0/133 | 0/966 | 0/100 | 35.218 |
-| VxSig | 6/7 | 11/21 | 32/133 | 62/966 | 18/100 | 3.882 |
-| yara-signator | 6/7 | 18/21 | 50/133 | 0/966 | 0/100 | 3.314 |
-| yarGen-Go | 7/7 | 21/21 | 66/133 | 663/966 | 40/100 | 3.499 |
+| R2Sign | 7/7 | 21/21 | 75/133 | 148/966 | 45/100 | 2.024 |
+| BASS | 2/7 | 2/21 | 0/133 | 0/966 | 0/100 | 30.445 |
+| VxSig | 6/7 | 11/21 | 32/133 | 62/966 | 18/100 | 3.812 |
+| yara-signator | 6/7 | 18/21 | 50/133 | 0/966 | 0/100 | 3.226 |
+| yarGen-Go | 7/7 | 21/21 | 66/133 | 663/966 | 40/100 | 3.257 |
 
 The table includes failed generation outcomes instead of dropping those
 families. BASS and VxSig consumed IDA Pro 9.3/BinDiff 8 artifacts. BASS used
@@ -24,6 +25,6 @@ the `ida93-python3` fork. yara-signator consumed SMDA 4.5.0 reports and ran its
 PostgreSQL/capstone_server pipeline. yarGen-Go used a goodware database built
 from the same 966 public goodware samples and ran without LLM assistance.
 
-The four `*-metrics.json` files are raw `BenchmarkResult` records emitted by
+The five `*-metrics.json` files are raw `BenchmarkResult` records emitted by
 R2Sign's common scanner. YARA artifacts were compiled by both YARA and YARA-X;
 the BASS NDB was scanned by ClamAV.

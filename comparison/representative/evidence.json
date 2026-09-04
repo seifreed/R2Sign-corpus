@@ -4,7 +4,7 @@
     "goodware_total": 966,
     "holdout_total": 133,
     "manifest": "../../manifest.json",
-    "manifest_sha256": "295e79a98aabcce901c31a8c0443598e5d9a3008ae8d2671f2a4151c9170267d",
+    "manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
     "mutation_total": 2,
     "near_family_total": 2,
     "selection": "Three training samples per family from its largest builder cohort",
@@ -179,8 +179,8 @@
       "artifact_sha256": "42b1c79ebad5def3ae8f610c2e5e5bebb34836c871ea8bcc51830a5b37aa661d",
       "format": "clamav-ndb",
       "metrics": {
-        "commit_sha": "2059c0712678109ac302950d152f77172a301d1f",
-        "corpus_manifest_sha256": "295e79a98aabcce901c31a8c0443598e5d9a3008ae8d2671f2a4151c9170267d",
+        "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
+        "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
         "cross_family_matches": 0,
         "cross_family_total": 100,
         "goodware_false_positive_rate": 0.0,
@@ -189,9 +189,9 @@
         "holdout_matches": 0,
         "holdout_recall": 0.0,
         "holdout_total": 133,
-        "latency_p50": 0.025700791040435433,
-        "latency_p95": 0.044484084006398916,
-        "max_rss_bytes": 58064896,
+        "latency_p50": 0.022404124960303307,
+        "latency_p95": 0.03753616602625698,
+        "max_rss_bytes": 79577088,
         "mutation_matches": 0,
         "mutation_total": 2,
         "near_family_matches": 0,
@@ -201,8 +201,8 @@
         "positive_total": 21,
         "rule_bytes": 1632,
         "rule_sha256": "42b1c79ebad5def3ae8f610c2e5e5bebb34836c871ea8bcc51830a5b37aa661d",
-        "scan_seconds": 35.21805804199539,
-        "throughput": 15531300.287703454
+        "scan_seconds": 30.44466833304614,
+        "throughput": 17966437.63749854
       },
       "status": {
         "cabby": "no-signature",
@@ -221,8 +221,8 @@
       "artifact_sha256": "c7bcf53407696a8ccc519b1fcb21461f721264082177aa4fbf4b689e28f2878e",
       "format": "yara",
       "metrics": {
-        "commit_sha": "2059c0712678109ac302950d152f77172a301d1f",
-        "corpus_manifest_sha256": "295e79a98aabcce901c31a8c0443598e5d9a3008ae8d2671f2a4151c9170267d",
+        "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
+        "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
         "cross_family_matches": 18,
         "cross_family_total": 100,
         "goodware_false_positive_rate": 0.06418219461697723,
@@ -231,9 +231,9 @@
         "holdout_matches": 32,
         "holdout_recall": 0.24060150375939848,
         "holdout_total": 133,
-        "latency_p50": 0.0008314170408993959,
-        "latency_p95": 0.012773624970577657,
-        "max_rss_bytes": 90996736,
+        "latency_p50": 0.0007669170154258609,
+        "latency_p95": 0.012851916952058673,
+        "max_rss_bytes": 114720768,
         "mutation_matches": 2,
         "mutation_total": 2,
         "near_family_matches": 0,
@@ -243,8 +243,8 @@
         "positive_total": 21,
         "rule_bytes": 23947,
         "rule_sha256": "c7bcf53407696a8ccc519b1fcb21461f721264082177aa4fbf4b689e28f2878e",
-        "scan_seconds": 3.8821860420284793,
-        "throughput": 140895420.5384234
+        "scan_seconds": 3.811993582989089,
+        "throughput": 143489810.01460558
       },
       "status": {
         "cabby": "no-signature",
@@ -262,8 +262,8 @@
       "artifact_sha256": "0b57a39aa846108782bebf1a247149da6c519dd4d46970fa676d1943b01d57a5",
       "format": "yara",
       "metrics": {
-        "commit_sha": "2059c0712678109ac302950d152f77172a301d1f",
-        "corpus_manifest_sha256": "295e79a98aabcce901c31a8c0443598e5d9a3008ae8d2671f2a4151c9170267d",
+        "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
+        "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
         "cross_family_matches": 0,
         "cross_family_total": 100,
         "goodware_false_positive_rate": 0.0,
@@ -272,9 +272,9 @@
         "holdout_matches": 50,
         "holdout_recall": 0.37593984962406013,
         "holdout_total": 133,
-        "latency_p50": 0.0006654580356553197,
-        "latency_p95": 0.010707500041462481,
-        "max_rss_bytes": 90619904,
+        "latency_p50": 0.0006273329490795732,
+        "latency_p95": 0.010521832969971001,
+        "max_rss_bytes": 115048448,
         "mutation_matches": 2,
         "mutation_total": 2,
         "near_family_matches": 0,
@@ -284,8 +284,8 @@
         "positive_total": 21,
         "rule_bytes": 29117,
         "rule_sha256": "0b57a39aa846108782bebf1a247149da6c519dd4d46970fa676d1943b01d57a5",
-        "scan_seconds": 3.3137717499630526,
-        "throughput": 165063340.58949554
+        "scan_seconds": 3.225880458019674,
+        "throughput": 169560602.7930078
       },
       "status": {
         "cabby": "no-signature",
@@ -303,8 +303,8 @@
       "artifact_sha256": "9098d5d6f302b3dc7a95fade633495b5757d86ce67d078d9893618feefd9d107",
       "format": "yara",
       "metrics": {
-        "commit_sha": "2059c0712678109ac302950d152f77172a301d1f",
-        "corpus_manifest_sha256": "295e79a98aabcce901c31a8c0443598e5d9a3008ae8d2671f2a4151c9170267d",
+        "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
+        "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
         "cross_family_matches": 40,
         "cross_family_total": 100,
         "goodware_false_positive_rate": 0.6863354037267081,
@@ -313,9 +313,9 @@
         "holdout_matches": 66,
         "holdout_recall": 0.49624060150375937,
         "holdout_total": 133,
-        "latency_p50": 0.0007008339744061232,
-        "latency_p95": 0.010559875052422285,
-        "max_rss_bytes": 94552064,
+        "latency_p50": 0.0006294170161709189,
+        "latency_p95": 0.009739292087033391,
+        "max_rss_bytes": 116703232,
         "mutation_matches": 2,
         "mutation_total": 2,
         "near_family_matches": 1,
@@ -325,8 +325,8 @@
         "positive_total": 21,
         "rule_bytes": 42275,
         "rule_sha256": "9098d5d6f302b3dc7a95fade633495b5757d86ce67d078d9893618feefd9d107",
-        "scan_seconds": 3.4993450419278815,
-        "throughput": 156309888.97815377
+        "scan_seconds": 3.2569801249774173,
+        "throughput": 167941532.95724905
       },
       "status": {
         "cabby": "success",
@@ -338,6 +338,47 @@
         "zbot": "success"
       },
       "version": "2eb6e683156d11178db2e52636d05fa62456ffd3"
+    },
+    "r2sign": {
+      "artifact": "r2sign.yar",
+      "artifact_sha256": "7a7769bfc006df15fcc516160e936696542ee7dd214156c2e240bff64eebee7d",
+      "format": "yara",
+      "metrics": {
+        "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
+        "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
+        "cross_family_matches": 45,
+        "cross_family_total": 100,
+        "goodware_false_positive_rate": 0.15320910973084886,
+        "goodware_matches": 148,
+        "goodware_total": 966,
+        "holdout_matches": 75,
+        "holdout_recall": 0.5639097744360902,
+        "holdout_total": 133,
+        "latency_p50": 0.00036270800046622753,
+        "latency_p95": 0.00615895795635879,
+        "max_rss_bytes": 174456832,
+        "mutation_matches": 2,
+        "mutation_total": 2,
+        "near_family_matches": 1,
+        "near_family_total": 2,
+        "positive_matches": 21,
+        "positive_recall": 1.0,
+        "positive_total": 21,
+        "rule_bytes": 3990,
+        "rule_sha256": "7a7769bfc006df15fcc516160e936696542ee7dd214156c2e240bff64eebee7d",
+        "scan_seconds": 2.0241562919691205,
+        "throughput": 270227273.0471272
+      },
+      "status": {
+        "cabby": "success",
+        "fakeav": "success",
+        "kryptik": "success",
+        "mediyes": "success",
+        "sirefef": "success",
+        "upatre": "success",
+        "zbot": "success"
+      },
+      "version": "1edb364d2f706200f06bee9aeeb5f57ef30ae773"
     }
   }
 }

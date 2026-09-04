@@ -87,11 +87,11 @@
       2
     ]
   ],
-  "commit_sha": "2059c0712678109ac302950d152f77172a301d1f",
+  "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
   "compiled_yara": true,
   "compiled_yara_x": true,
   "corpus_bytes_scanned": 546982235,
-  "corpus_manifest_sha256": "295e79a98aabcce901c31a8c0443598e5d9a3008ae8d2671f2a4151c9170267d",
+  "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
   "cross_family_matches": 40,
   "cross_family_total": 100,
   "files_scanned": 1224,
@@ -101,9 +101,9 @@
   "holdout_matches": 66,
   "holdout_recall": 0.49624060150375937,
   "holdout_total": 133,
-  "latency_p50": 0.0007008339744061232,
-  "latency_p95": 0.010559875052422285,
-  "max_rss_bytes": 94552064,
+  "latency_p50": 0.0006294170161709189,
+  "latency_p95": 0.009739292087033391,
+  "max_rss_bytes": 116703232,
   "mutation_matches": 2,
   "mutation_total": 2,
   "near_family_matches": 1,
@@ -115,7 +115,107 @@
   "precision": 0.03070175438596491,
   "rule_bytes": 42275,
   "rule_sha256": "9098d5d6f302b3dc7a95fade633495b5757d86ce67d078d9893618feefd9d107",
-  "scan_seconds": 3.4993450419278815,
-  "throughput": 156309888.97815377,
+  "scan_seconds": 3.2569801249774173,
+  "throughput": 167941532.95724905,
+  "validation_report": {
+    "atom_warnings": [],
+    "candidate_contribution": [
+      [
+        "$s1",
+        50
+      ],
+      [
+        "$s10",
+        56
+      ],
+      [
+        "$s11",
+        52
+      ],
+      [
+        "$s12",
+        46
+      ],
+      [
+        "$s13",
+        56
+      ],
+      [
+        "$s14",
+        51
+      ],
+      [
+        "$s15",
+        48
+      ],
+      [
+        "$s16",
+        42
+      ],
+      [
+        "$s17",
+        40
+      ],
+      [
+        "$s18",
+        44
+      ],
+      [
+        "$s19",
+        46
+      ],
+      [
+        "$s2",
+        57
+      ],
+      [
+        "$s20",
+        37
+      ],
+      [
+        "$s3",
+        51
+      ],
+      [
+        "$s4",
+        52
+      ],
+      [
+        "$s5",
+        61
+      ],
+      [
+        "$s6",
+        53
+      ],
+      [
+        "$s7",
+        52
+      ],
+      [
+        "$s8",
+        56
+      ],
+      [
+        "$s9",
+        56
+      ],
+      [
+        "$x1",
+        2
+      ]
+    ],
+    "compiled_yara": true,
+    "compiled_yara_x": true,
+    "cross_family_matches": 40,
+    "goodware_matches": 663,
+    "holdout_recall": 0.49624060150375937,
+    "mutation_recall": 1.0,
+    "near_family_matches": 1,
+    "rule_size": 42275,
+    "scan_time": 3.2569801249774173,
+    "throughput": 167941532.95724905,
+    "training_recall": 1.0
+  },
   "violations": []
 }

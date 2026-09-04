@@ -1,0 +1,231 @@
+{
+  "comparisons": [
+    {
+      "artifact": "bass.ndb",
+      "artifact_sha256": "42b1c79ebad5def3ae8f610c2e5e5bebb34836c871ea8bcc51830a5b37aa661d",
+      "deltas": {
+        "cross_family_match_rate": 0.45,
+        "goodware_false_positive_rate": 0.15320910973084886,
+        "holdout_recall": 0.5639097744360902,
+        "latency_p50": -0.02204141695983708,
+        "latency_p95": -0.03137720806989819,
+        "max_rss_bytes": 94879744.0,
+        "mutation_recall": 1.0,
+        "near_family_match_rate": 0.5,
+        "positive_recall": 0.9047619047619048,
+        "scan_seconds": -28.420512041077018,
+        "throughput": 252260835.40962866
+      },
+      "external": {
+        "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
+        "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
+        "cross_family_match_rate": 0.0,
+        "goodware_false_positive_rate": 0.0,
+        "holdout_recall": 0.0,
+        "latency_p50": 0.022404124960303307,
+        "latency_p95": 0.03753616602625698,
+        "max_rss_bytes": 79577088,
+        "mutation_recall": 0.0,
+        "near_family_match_rate": 0.0,
+        "positive_recall": 0.09523809523809523,
+        "rule_sha256": "42b1c79ebad5def3ae8f610c2e5e5bebb34836c871ea8bcc51830a5b37aa661d",
+        "scan_seconds": 30.44466833304614,
+        "throughput": 17966437.63749854
+      },
+      "external_version": "448846fcf56895ac13aa810eb69b4eeaa694557b",
+      "ours": {
+        "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
+        "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
+        "cross_family_match_rate": 0.45,
+        "goodware_false_positive_rate": 0.15320910973084886,
+        "holdout_recall": 0.5639097744360902,
+        "latency_p50": 0.00036270800046622753,
+        "latency_p95": 0.00615895795635879,
+        "max_rss_bytes": 174456832,
+        "mutation_recall": 1.0,
+        "near_family_match_rate": 0.5,
+        "positive_recall": 1.0,
+        "rule_sha256": "7a7769bfc006df15fcc516160e936696542ee7dd214156c2e240bff64eebee7d",
+        "scan_seconds": 2.0241562919691205,
+        "throughput": 270227273.0471272
+      },
+      "provenance": [
+        "https://github.com/seifreed/BASS/commit/448846fcf56895ac13aa810eb69b4eeaa694557b"
+      ],
+      "schema": "r2sign-external-comparison/v1",
+      "tool": "BASS"
+    },
+    {
+      "artifact": "vxsig.yar",
+      "artifact_sha256": "c7bcf53407696a8ccc519b1fcb21461f721264082177aa4fbf4b689e28f2878e",
+      "deltas": {
+        "cross_family_match_rate": 0.27,
+        "goodware_false_positive_rate": 0.08902691511387163,
+        "holdout_recall": 0.32330827067669177,
+        "latency_p50": -0.00040420901495963335,
+        "latency_p95": -0.0066929589956998825,
+        "max_rss_bytes": 59736064.0,
+        "mutation_recall": 0.0,
+        "near_family_match_rate": 0.5,
+        "positive_recall": 0.47619047619047616,
+        "scan_seconds": -1.7878372910199687,
+        "throughput": 126737463.0325216
+      },
+      "external": {
+        "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
+        "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
+        "cross_family_match_rate": 0.18,
+        "goodware_false_positive_rate": 0.06418219461697723,
+        "holdout_recall": 0.24060150375939848,
+        "latency_p50": 0.0007669170154258609,
+        "latency_p95": 0.012851916952058673,
+        "max_rss_bytes": 114720768,
+        "mutation_recall": 1.0,
+        "near_family_match_rate": 0.0,
+        "positive_recall": 0.5238095238095238,
+        "rule_sha256": "c7bcf53407696a8ccc519b1fcb21461f721264082177aa4fbf4b689e28f2878e",
+        "scan_seconds": 3.811993582989089,
+        "throughput": 143489810.01460558
+      },
+      "external_version": "0366c9f2031799b576069afc1d5a6962b431db95",
+      "ours": {
+        "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
+        "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
+        "cross_family_match_rate": 0.45,
+        "goodware_false_positive_rate": 0.15320910973084886,
+        "holdout_recall": 0.5639097744360902,
+        "latency_p50": 0.00036270800046622753,
+        "latency_p95": 0.00615895795635879,
+        "max_rss_bytes": 174456832,
+        "mutation_recall": 1.0,
+        "near_family_match_rate": 0.5,
+        "positive_recall": 1.0,
+        "rule_sha256": "7a7769bfc006df15fcc516160e936696542ee7dd214156c2e240bff64eebee7d",
+        "scan_seconds": 2.0241562919691205,
+        "throughput": 270227273.0471272
+      },
+      "provenance": [
+        "https://github.com/google/vxsig/commit/0366c9f2031799b576069afc1d5a6962b431db95"
+      ],
+      "schema": "r2sign-external-comparison/v1",
+      "tool": "VxSig"
+    },
+    {
+      "artifact": "yara-signator.yar",
+      "artifact_sha256": "0b57a39aa846108782bebf1a247149da6c519dd4d46970fa676d1943b01d57a5",
+      "deltas": {
+        "cross_family_match_rate": 0.45,
+        "goodware_false_positive_rate": 0.15320910973084886,
+        "holdout_recall": 0.18796992481203012,
+        "latency_p50": -0.0002646249486133456,
+        "latency_p95": -0.004362875013612211,
+        "max_rss_bytes": 59408384.0,
+        "mutation_recall": 0.0,
+        "near_family_match_rate": 0.5,
+        "positive_recall": 0.1428571428571429,
+        "scan_seconds": -1.2017241660505533,
+        "throughput": 100666670.2541194
+      },
+      "external": {
+        "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
+        "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
+        "cross_family_match_rate": 0.0,
+        "goodware_false_positive_rate": 0.0,
+        "holdout_recall": 0.37593984962406013,
+        "latency_p50": 0.0006273329490795732,
+        "latency_p95": 0.010521832969971001,
+        "max_rss_bytes": 115048448,
+        "mutation_recall": 1.0,
+        "near_family_match_rate": 0.0,
+        "positive_recall": 0.8571428571428571,
+        "rule_sha256": "0b57a39aa846108782bebf1a247149da6c519dd4d46970fa676d1943b01d57a5",
+        "scan_seconds": 3.225880458019674,
+        "throughput": 169560602.7930078
+      },
+      "external_version": "b7e005aba0cbbd789fd653c2303fd1e2dfe7f3b0",
+      "ours": {
+        "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
+        "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
+        "cross_family_match_rate": 0.45,
+        "goodware_false_positive_rate": 0.15320910973084886,
+        "holdout_recall": 0.5639097744360902,
+        "latency_p50": 0.00036270800046622753,
+        "latency_p95": 0.00615895795635879,
+        "max_rss_bytes": 174456832,
+        "mutation_recall": 1.0,
+        "near_family_match_rate": 0.5,
+        "positive_recall": 1.0,
+        "rule_sha256": "7a7769bfc006df15fcc516160e936696542ee7dd214156c2e240bff64eebee7d",
+        "scan_seconds": 2.0241562919691205,
+        "throughput": 270227273.0471272
+      },
+      "provenance": [
+        "https://github.com/fkie-cad/yara-signator/commit/b7e005aba0cbbd789fd653c2303fd1e2dfe7f3b0"
+      ],
+      "schema": "r2sign-external-comparison/v1",
+      "tool": "yara-signator"
+    },
+    {
+      "artifact": "yargen-go.yar",
+      "artifact_sha256": "9098d5d6f302b3dc7a95fade633495b5757d86ce67d078d9893618feefd9d107",
+      "deltas": {
+        "cross_family_match_rate": 0.04999999999999999,
+        "goodware_false_positive_rate": -0.5331262939958592,
+        "holdout_recall": 0.06766917293233088,
+        "latency_p50": -0.0002667090157046914,
+        "latency_p95": -0.0035803341306746006,
+        "max_rss_bytes": 57753600.0,
+        "mutation_recall": 0.0,
+        "near_family_match_rate": 0.0,
+        "positive_recall": 0.0,
+        "scan_seconds": -1.2328238330082968,
+        "throughput": 102285740.08987814
+      },
+      "external": {
+        "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
+        "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
+        "cross_family_match_rate": 0.4,
+        "goodware_false_positive_rate": 0.6863354037267081,
+        "holdout_recall": 0.49624060150375937,
+        "latency_p50": 0.0006294170161709189,
+        "latency_p95": 0.009739292087033391,
+        "max_rss_bytes": 116703232,
+        "mutation_recall": 1.0,
+        "near_family_match_rate": 0.5,
+        "positive_recall": 1.0,
+        "rule_sha256": "9098d5d6f302b3dc7a95fade633495b5757d86ce67d078d9893618feefd9d107",
+        "scan_seconds": 3.2569801249774173,
+        "throughput": 167941532.95724905
+      },
+      "external_version": "2eb6e683156d11178db2e52636d05fa62456ffd3",
+      "ours": {
+        "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
+        "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
+        "cross_family_match_rate": 0.45,
+        "goodware_false_positive_rate": 0.15320910973084886,
+        "holdout_recall": 0.5639097744360902,
+        "latency_p50": 0.00036270800046622753,
+        "latency_p95": 0.00615895795635879,
+        "max_rss_bytes": 174456832,
+        "mutation_recall": 1.0,
+        "near_family_match_rate": 0.5,
+        "positive_recall": 1.0,
+        "rule_sha256": "7a7769bfc006df15fcc516160e936696542ee7dd214156c2e240bff64eebee7d",
+        "scan_seconds": 2.0241562919691205,
+        "throughput": 270227273.0471272
+      },
+      "provenance": [
+        "https://github.com/Neo23x0/yarGen-Go/commit/2eb6e683156d11178db2e52636d05fa62456ffd3"
+      ],
+      "schema": "r2sign-external-comparison/v1",
+      "tool": "yarGen-Go"
+    }
+  ],
+  "schema": "r2sign-external-comparison-matrix/v1",
+  "tools": [
+    "BASS",
+    "VxSig",
+    "yara-signator",
+    "yarGen-Go"
+  ]
+}

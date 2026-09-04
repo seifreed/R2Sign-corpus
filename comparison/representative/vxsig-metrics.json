@@ -7,11 +7,11 @@
       13
     ]
   ],
-  "commit_sha": "2059c0712678109ac302950d152f77172a301d1f",
+  "commit_sha": "1edb364d2f706200f06bee9aeeb5f57ef30ae773",
   "compiled_yara": true,
   "compiled_yara_x": true,
   "corpus_bytes_scanned": 546982235,
-  "corpus_manifest_sha256": "295e79a98aabcce901c31a8c0443598e5d9a3008ae8d2671f2a4151c9170267d",
+  "corpus_manifest_sha256": "b8e8642ffa91672b7807adaea72380e9f56cc8caafe7e3e754635b8d42a51f11",
   "cross_family_matches": 18,
   "cross_family_total": 100,
   "files_scanned": 1224,
@@ -21,9 +21,9 @@
   "holdout_matches": 32,
   "holdout_recall": 0.24060150375939848,
   "holdout_total": 133,
-  "latency_p50": 0.0008314170408993959,
-  "latency_p95": 0.012773624970577657,
-  "max_rss_bytes": 90996736,
+  "latency_p50": 0.0007669170154258609,
+  "latency_p95": 0.012851916952058673,
+  "max_rss_bytes": 114720768,
   "mutation_matches": 2,
   "mutation_total": 2,
   "near_family_matches": 0,
@@ -35,7 +35,27 @@
   "precision": 0.1506849315068493,
   "rule_bytes": 23947,
   "rule_sha256": "c7bcf53407696a8ccc519b1fcb21461f721264082177aa4fbf4b689e28f2878e",
-  "scan_seconds": 3.8821860420284793,
-  "throughput": 140895420.5384234,
+  "scan_seconds": 3.811993582989089,
+  "throughput": 143489810.01460558,
+  "validation_report": {
+    "atom_warnings": [],
+    "candidate_contribution": [
+      [
+        "$",
+        13
+      ]
+    ],
+    "compiled_yara": true,
+    "compiled_yara_x": true,
+    "cross_family_matches": 18,
+    "goodware_matches": 62,
+    "holdout_recall": 0.24060150375939848,
+    "mutation_recall": 1.0,
+    "near_family_matches": 0,
+    "rule_size": 23947,
+    "scan_time": 3.811993582989089,
+    "throughput": 143489810.01460558,
+    "training_recall": 0.5238095238095238
+  },
   "violations": []
 }

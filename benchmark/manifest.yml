@@ -1,16 +1,14 @@
-rule: ../rules/mediyes.yar
-positive: ../expanded/training/mediyes
-holdout: ../expanded/holdout/mediyes
+rule: ../rules/fakeav-e298.yar
+positive: cohort/training
+holdout: cohort/holdout
 goodware: ../goodware/pe
 near_family: ../near_family
-mutations: ../mutations/mediyes
 corpus_manifest: ../manifest.json
 thresholds:
   minimum_training_recall: 1.0
   minimum_holdout_recall: 1.0
   maximum_goodware_false_positive_rate: 0.0
   maximum_near_family_match_rate: 0.0
-  minimum_mutation_recall: 1.0
   maximum_scan_seconds: 1.0
   minimum_throughput: 100.0
   require_yara_x: true
